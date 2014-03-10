@@ -1,0 +1,5 @@
+FROM localhost:5000/codenvy/opensuse-12-3-tomcat-7
+MAINTAINER Codenvy Corp
+ADD $app$ /usr/share/apache-tomcat-7.0.42/webapps/$app$
+EXPOSE 8080
+CMD /bin/bash -cl "/usr/share/apache-tomcat-7.0.42/bin/catalina.sh run"

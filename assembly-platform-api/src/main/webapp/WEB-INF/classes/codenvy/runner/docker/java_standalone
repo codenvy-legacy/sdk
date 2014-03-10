@@ -1,0 +1,5 @@
+FROM localhost:5000/codenvy/opensuse-12-3-java-7
+MAINTAINER Codenvy Corp
+ADD $app$ /tmp/$app$
+CMD /bin/bash -cl "java $jvm_args$ -classpath /tmp/$app$ $main_class$ $prg_args$"
+#ENTRYPOINT "java $jvm_args$ -classpath /tmp/$app$ $main_class$ $prg_args$"

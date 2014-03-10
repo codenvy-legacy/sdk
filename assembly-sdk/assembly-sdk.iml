@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.13" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.13" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ide-api:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api:codenvy-api-project:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.commons:codenvy-commons-json:0.16.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.everrest:everrest-core:1.1.9" level="project" />
+    <orderEntry type="library" name="Maven: javax.ws.rs:jsr311-api:1.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: commons-fileupload:commons-fileupload:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.commons:codenvy-commons-lang:0.16.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api:codenvy-api-core:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.commons:codenvy-commons-inject:0.16.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-multibindings:3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-servlet:3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.everrest:everrest-integration-guice:1.1.9" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api:codenvy-dto:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:12.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.9-RC1" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.16.1-GA" level="project" />
+    <orderEntry type="library" name="Maven: net.java.dev.jna:jna:3.5.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.codenvy.platform-api:codenvy-api-vfs:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.commons:codenvy-commons-env:0.16.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.lucene:lucene-core:2.9.4" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api:codenvy-api-user:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-api-project-gwt-client:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-api-core-gwt-client:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-gwt-client-commons:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google.gwt:gwt-elemental:collide" level="project" />
+    <orderEntry type="library" name="Maven: com.google.gwt.inject:gin:2.1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-assistedinject:3.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-utils:2.0.6" level="project" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-api-user-gwt-client:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-api-vfs-gwt-client:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-git:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-ssh:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ide-core:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.commons:codenvy-commons-servlet:0.16.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ide-ui:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.everrest:everrest-websockets:1.1.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ide-security:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google.api-client:google-api-client:1.9.0-beta" level="project" />
+    <orderEntry type="library" name="Maven: com.google.oauth-client:google-oauth-client:1.9.0-beta" level="project" />
+    <orderEntry type="library" name="Maven: com.google.http-client:google-http-client:1.9.0-beta" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.4" level="project" />
+    <orderEntry type="library" name="Maven: xpp3:xpp3:1.1.4c" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.2.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.codenvy.ide:codenvy-ide-vfs-fs:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.jcraft:jsch:0.1.44-1" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-maven-tools:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-github:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-builder:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-java:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-builder-maven:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api:codenvy-api-builder:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.jobs:3.5.300.v20120912-155018" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.resources:3.8.100.v20130521-2026" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.core.runtime:3.9.0.v20130326-1255" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.birt.runtime:org.eclipse.equinox.common:3.6.200.v20130402-1505" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:org.eclipse.core.contenttype:3.4.100.v20100505-1235" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:org.eclipse.equinox.preferences:3.3.0.v20100503" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:org.eclipse.equinox.registry:3.5.0.v20100503" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:org.eclipse.core.jobs:3.5.0.v20100515" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:org.eclipse.equinox.common:3.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.text:org.eclipse.text:3.5.101" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:org.eclipse.core.commands:3.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.tycho:org.eclipse.jdt.core:3.9.0.v20130604-1421" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.tycho:org.eclipse.osgi:3.9.1.v20130814-1242" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-api-builder-gwt-client:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-extensions:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api:codenvy-api-runner:0.10.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.platform-api-gwt-client:codenvy-api-runner-gwt-client:0.1.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-runner:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-tutorials:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-web:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ide-client:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:codenvy-ext-debugger-java:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr:3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:stringtemplate:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.google.gwt:gwt-servlet:2.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:empty-extension:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:gist-extension:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.codenvy.ide:helloworld-extension:3.0.0-M11-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="assembly-ide" />
+    <orderEntry type="module" module-name="assembly-platform-api" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.5" level="project" />
+  </component>
+</module>
+

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    CODENVY CONFIDENTIAL
+    __________________
+
+     [2012] - [2013] Codenvy, S.A.
+     All Rights Reserved.
+
+    NOTICE:  All information contained herein is, and remains
+    the property of Codenvy S.A. and its suppliers,
+    if any.  The intellectual and technical concepts contained
+    herein are proprietary to Codenvy S.A.
+    and its suppliers and may be covered by U.S. and Foreign Patents,
+    patents in process, and are protected by trade secret or copyright law.
+    Dissemination of this information or reproduction of this material
+    is strictly forbidden unless prior written permission is obtained
+    from Codenvy S.A..
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>codenvy-sdk-parent</artifactId>
+        <groupId>com.codenvy.sdk</groupId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+    </parent>
+    <artifactId>assembly-sdk</artifactId>
+    <packaging>pom</packaging>
+    <name>Codenvy :: Assemblies Tomcat</name>
+    <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${ch.qos.logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${ch.qos.logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>action-api-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-git</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-github</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-ssh</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ide-core</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-sdk-private-dependencies</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>empty-extension</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>gin-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>gist-extension</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>helloworld-extension</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>new-resource-wizard-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>notification-api-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>parts-api-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>wizard-api-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>wysiwyg-editor-tutorial</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.sdk</groupId>
+            <artifactId>assembly-ide</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.sdk</groupId>
+            <artifactId>assembly-platform-api</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>${jsch.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${org.slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jul-to-slf4j</artifactId>
+            <version>${org.slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>${org.slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ide-vfs-fs</artifactId>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-api-vfs</artifactId>
+            <version>${com.codenvy.platform-api.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-clear-tomcat</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.apache.tomcat</groupId>
+                                    <artifactId>tomcat</artifactId>
+                                    <type>zip</type>
+                                    <version>${tomcat.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip</outputDirectory>
+                                    <destFileName>tomcat.zip</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-dependencies-war</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includeTypes>war</includeTypes>
+                            <silent>true</silent>
+                            <outputDirectory>${project.build.directory}/packager-conf/war</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-tomcat-libs</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>log4j-over-slf4j</artifactId>
+                                    <version>${org.slf4j.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>log4j-over-slf4j.jar</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-api</artifactId>
+                                    <version>${org.slf4j.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>slf4j-api.jar</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>jul-to-slf4j</artifactId>
+                                    <version>${org.slf4j.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>jul-to-slf4j.jar</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>ch.qos.logback</groupId>
+                                    <artifactId>logback-core</artifactId>
+                                    <version>${ch.qos.logback.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>logback-core.jar</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>ch.qos.logback</groupId>
+                                    <artifactId>logback-classic</artifactId>
+                                    <version>${ch.qos.logback.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>logback-classic.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-tutorials</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>action-api-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>action-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>new-resource-wizard-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>new-resource-wizard-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>notification-api-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>notification-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>parts-api-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>parts-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>wizard-api-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>wizard-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>editor-api-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>editor-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>gin-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>gin-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>gist-extension</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>gist-extension.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>empty-extension</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>empty-extension.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>helloworld-extension</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>helloworld-extension.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>wysiwyg-editor-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${project.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>wysiwyg-editor-tutorial.zip</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-sdk-tools</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>codenvy-sdk-tools</artifactId>
+                                    <version>${project.version}</version>
+                                    <classifier>jar-with-dependencies</classifier>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/sdk-tools</outputDirectory>
+                                    <destFileName>codenvy-sdk-tools.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-private-dependencies-for-sdk</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>codenvy-sdk-private-dependencies</artifactId>
+                                    <type>zip</type>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                    <destFileName>repo.zip</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>Prepare Tomcat</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <unzip dest="${project.build.directory}" src="${project.build.directory}/packager-conf/zip/tomcat.zip">
+                                    <patternset>
+                                        <exclude name="**/ROOT/**" />
+                                        <exclude name="**/docs/**" />
+                                        <exclude name="**/examples/**" />
+                                        <exclude name="**/manager/**" />
+                                        <exclude name="**/host-manager/**" />
+                                    </patternset>
+                                </unzip>
+                                <move file="${project.build.directory}/apache-tomcat-${tomcat.version}" tofile="${project.build.directory}/tomcat-ide" />
+                                <copy overwrite="true" todir="${project.build.directory}/tomcat-ide">
+                                    <fileset dir="${basedir}/src/main/resources/tomcat" />
+                                </copy>
+                                <chmod dir="${project.build.directory}/tomcat-ide/bin" includes="**/*.sh" perm="+x" />
+                                <move file="${project.build.directory}/tomcat-ide/bin/catalina.sh" tofile="${project.build.directory}/tomcat-ide/bin/codenvy.sh" />
+                                <!-- Copy resources to re-build Codenvy IDE with 3rd-party extensions. -->
+                                <copy overwrite="true" todir="${project.build.directory}/tomcat-ide/sdk-resources">
+                                    <fileset dir="${project.build.directory}/../../assembly-ide" includes="src/**, pom.xml" />
+                                </copy>
+                                <unwar dest="${project.build.directory}/packager-conf/war/ide" src="${project.build.directory}/packager-conf/war/assembly-ide-${project.version}.war" />
+                                <move todir="${project.build.directory}/packager-conf/war/ide/_app">
+                                    <fileset dir="${project.build.directory}/packager-conf/war/ide/_app/" />
+                                </move>
+                                <move todir="${project.build.directory}/tomcat-ide/tutorials">
+                                    <fileset dir="${project.build.directory}/packager-conf/zip/tutorials" />
+                                </move>
+                                <war destfile="${project.build.directory}/tomcat-ide/webapps/ide.war" needxmlfile="false">
+                                    <fileset dir="${project.build.directory}/packager-conf/war/ide" />
+                                </war>
+                                <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
+                                <unzip dest="${project.build.directory}/tomcat-ide" src="${project.build.directory}/repo.zip" />
+                                <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <!-- Create the distribution zip and attach it to maven -->
+                    <execution>
+                        <id>tomcat-zip</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <updateOnly>false</updateOnly>
+                            <descriptors>
+                                <descriptor>${project.basedir}/src/main/assembly/tomcat-archive.xml</descriptor>
+                            </descriptors>
+                            <finalName>codenvy-${project.version}</finalName>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

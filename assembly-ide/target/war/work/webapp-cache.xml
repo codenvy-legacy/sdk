@@ -1,0 +1,1411 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>_app/logoCodenvy2x.png</string>
+          <string>_app/google-like.html</string>
+          <string>_app/favicon.ico</string>
+          <string>_app/facebook-like.html</string>
+          <string>_app/browserNotSupported.js</string>
+          <string>WEB-INF/classes/META-INF/services/com.codenvy.commons.servlet.DispatcherServletConfigurationFactory</string>
+          <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/com/codenvy/ide/IDE_dev.gwt.xml</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$6.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$5.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$4.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$7.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$2.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$3.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/servlet/CodenvyDispatcherServletConfigurationFactory$1.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/IDE.gwt.xml</string>
+          <string>WEB-INF/classes/com/codenvy/ide/BuildInfo.properties</string>
+          <string>WEB-INF/classes/com/codenvy/ide/client/inject/IDEInjector.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/client/ExtensionManager.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/client/DtoFactoryVisitorRegistry.class</string>
+          <string>WEB-INF/classes/com/codenvy/ide/public/IDE.css</string>
+          <string>WEB-INF/lib/codenvy-commons-servlet-0.16.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-commons-env-0.16.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/slf4j-api-1.7.6.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-builder-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ide-api-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-builder-0.10.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-commons-inject-0.16.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/guice-multibindings-3.0.jar</string>
+          <string>WEB-INF/lib/guice-servlet-3.0.jar</string>
+          <string>WEB-INF/lib/everrest-integration-guice-1.1.9.jar</string>
+          <string>WEB-INF/lib/codenvy-api-builder-gwt-client-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/validation-api-1.0.0.GA.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-debugger-java-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-runner-0.10.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/antlr-3.3.jar</string>
+          <string>WEB-INF/lib/antlr-runtime-3.3.jar</string>
+          <string>WEB-INF/lib/stringtemplate-3.2.1.jar</string>
+          <string>WEB-INF/lib/antlr-2.7.7.jar</string>
+          <string>WEB-INF/lib/everrest-websockets-1.1.9.jar</string>
+          <string>WEB-INF/lib/commons-codec-1.6.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-extensions-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-maven-tools-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-runner-gwt-client-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/jsr311-api-1.0.jar</string>
+          <string>WEB-INF/lib/maven-model-3.0.5.jar</string>
+          <string>WEB-INF/lib/plexus-utils-2.0.6.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-git-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-ssh-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/jsch-0.1.44-1.jar</string>
+          <string>WEB-INF/lib/codenvy-ide-security-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/google-api-client-1.9.0-beta.jar</string>
+          <string>WEB-INF/lib/google-oauth-client-1.9.0-beta.jar</string>
+          <string>WEB-INF/lib/google-http-client-1.9.0-beta.jar</string>
+          <string>WEB-INF/lib/jackson-core-asl-1.9.4.jar</string>
+          <string>WEB-INF/lib/xpp3-1.1.4c.jar</string>
+          <string>WEB-INF/lib/protobuf-java-2.2.0.jar</string>
+          <string>WEB-INF/lib/codenvy-ide-vfs-fs-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-core-0.10.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/jna-3.5.2.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-github-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-java-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-builder-maven-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/gwt-elemental-collide.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-runner-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-tutorials-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ext-web-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ide-core-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-commons-lang-0.16.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-ide-ui-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-vfs-gwt-client-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/gson-2.1.jar</string>
+          <string>WEB-INF/lib/guava-12.0.1.jar</string>
+          <string>WEB-INF/lib/jsr305-1.3.9.jar</string>
+          <string>WEB-INF/lib/commons-io-2.4.jar</string>
+          <string>WEB-INF/lib/everrest-core-1.1.9.jar</string>
+          <string>WEB-INF/lib/mail-1.4.2.jar</string>
+          <string>WEB-INF/lib/reflections-0.9.9-RC1.jar</string>
+          <string>WEB-INF/lib/javassist-3.16.1-GA.jar</string>
+          <string>WEB-INF/lib/dom4j-1.6.1.jar</string>
+          <string>WEB-INF/lib/xml-apis-1.0.b2.jar</string>
+          <string>WEB-INF/lib/codenvy-ide-env-dummy-3.0.0-M11-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-user-0.10.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-project-gwt-client-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-core-gwt-client-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-api-user-gwt-client-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-commons-json-0.16.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-gwt-client-commons-0.1.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/codenvy-dto-0.10.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/gin-2.1.2.jar</string>
+          <string>WEB-INF/lib/guice-3.0.jar</string>
+          <string>WEB-INF/lib/aopalliance-1.0.jar</string>
+          <string>WEB-INF/lib/guice-assistedinject-3.0.jar</string>
+          <string>WEB-INF/lib/commons-fileupload-1.2.1.jar</string>
+          <string>WEB-INF/lib/jsr250-api-1.0.jar</string>
+          <string>WEB-INF/lib/javax.inject-1.jar</string>
+          <string>WEB-INF/lib/lucene-core-2.9.4.jar</string>
+          <string>WEB-INF/lib/gwt-servlet-2.6.0.jar</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+  <dependenciesInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.commons</groupId>
+        <artifactId>codenvy-commons-servlet</artifactId>
+        <version>0.16.0-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>37</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source>
+                <modelId>com.codenvy.sdk:assembly-ide:3.0.0-M11-SNAPSHOT</modelId>
+                <location>/home/vetal/codenvy/projects/sdk/assembly-ide/pom.xml</location>
+              </source>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>38</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>39</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>40</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-builder</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>42</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>43</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>44</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>45</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-builder-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-debugger-java</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>tools</artifactId>
+            <groupId>sun.jdt</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>52</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>53</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>54</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+        </exclusions>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>47</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>48</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>49</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>50</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-debugger-java-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-extensions</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>58</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>59</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>60</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>61</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-extensions-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-git</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>63</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>64</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>65</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>66</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-git-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-github</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>68</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>69</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>70</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>71</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-github-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-java</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.core.jobs</artifactId>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>78</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>79</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>80</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.core.resources</artifactId>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>82</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>83</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>84</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.core.runtime</artifactId>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>86</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>87</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>88</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.equinox.common</artifactId>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>90</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>91</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>92</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.core.contenttype</artifactId>
+            <groupId>org.eclipse.core</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>94</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>95</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>96</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.text</artifactId>
+            <groupId>org.eclipse.text</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>98</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>99</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>100</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.jdt.core</artifactId>
+            <groupId>org.eclipse.tycho</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>102</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>103</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>104</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+          <org.apache.maven.model.Exclusion>
+            <artifactId>org.eclipse.osgi</artifactId>
+            <groupId>org.eclipse.tycho</groupId>
+            <locations class="linked-hash-map">
+              <entry>
+                <string></string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>106</lineNumber>
+                  <columnNumber>28</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>artifactId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>107</lineNumber>
+                  <columnNumber>33</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+              <entry>
+                <string>groupId</string>
+                <org.apache.maven.model.InputLocation>
+                  <lineNumber>108</lineNumber>
+                  <columnNumber>30</columnNumber>
+                  <source reference="../../../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+                </org.apache.maven.model.InputLocation>
+              </entry>
+            </locations>
+          </org.apache.maven.model.Exclusion>
+        </exclusions>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>73</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>74</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>75</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>76</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-java-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-runner</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>112</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>113</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>114</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>115</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-runner-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-tutorials</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>117</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>118</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>119</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>120</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-tutorials-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ext-web</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>122</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>123</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>124</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>125</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ext-web-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ide-core</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>127</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>128</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>129</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>130</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ide-core-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ide-env-dummy</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>132</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>133</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>134</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>135</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-ide-env-dummy-3.0.0-M11-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.platform-api</groupId>
+        <artifactId>codenvy-api-user</artifactId>
+        <version>0.10.0-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>137</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>138</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>139</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>140</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.platform-api-gwt-client</groupId>
+        <artifactId>codenvy-api-project-gwt-client</artifactId>
+        <version>0.1.1-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>142</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>143</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>144</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>145</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-api-project-gwt-client-0.1.1-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.platform-api-gwt-client</groupId>
+        <artifactId>codenvy-api-user-gwt-client</artifactId>
+        <version>0.1.1-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>147</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>148</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>149</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>150</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-api-user-gwt-client-0.1.1-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.platform-api-gwt-client</groupId>
+        <artifactId>codenvy-gwt-client-commons</artifactId>
+        <version>0.1.1-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>152</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>153</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>154</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>155</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>codenvy-gwt-client-commons-0.1.1-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.google.gwt.inject</groupId>
+        <artifactId>gin</artifactId>
+        <version>2.1.2</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>157</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>158</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>159</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>160</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>gin-2.1.2.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.ide</groupId>
+        <artifactId>codenvy-ide-client</artifactId>
+        <version>3.0.0-M11-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>provided</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>162</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>163</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>164</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>165</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>scope</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>166</lineNumber>
+              <columnNumber>20</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.platform-api</groupId>
+        <artifactId>codenvy-api-project</artifactId>
+        <version>0.10.0-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>provided</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>168</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>169</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>170</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>171</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>scope</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>172</lineNumber>
+              <columnNumber>20</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.codenvy.platform-api</groupId>
+        <artifactId>codenvy-api-vfs</artifactId>
+        <version>0.10.0-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>provided</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>174</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>175</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>176</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>177</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>scope</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>178</lineNumber>
+              <columnNumber>20</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-user</artifactId>
+        <version>2.6.0</version>
+        <type>jar</type>
+        <scope>provided</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>180</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>181</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>182</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>183</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>scope</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>184</lineNumber>
+              <columnNumber>20</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-servlet</artifactId>
+        <version>2.6.0</version>
+        <type>jar</type>
+        <scope>runtime</scope>
+        <exclusions/>
+        <locations class="linked-hash-map">
+          <entry>
+            <string></string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>186</lineNumber>
+              <columnNumber>21</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>groupId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>187</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>artifactId</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>188</lineNumber>
+              <columnNumber>25</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>version</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>189</lineNumber>
+              <columnNumber>22</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+          <entry>
+            <string>scope</string>
+            <org.apache.maven.model.InputLocation>
+              <lineNumber>190</lineNumber>
+              <columnNumber>20</columnNumber>
+              <source reference="../../../../../../org.apache.maven.plugin.war.util.DependencyInfo/dependency/locations/entry/org.apache.maven.model.InputLocation/source"/>
+            </org.apache.maven.model.InputLocation>
+          </entry>
+        </locations>
+      </dependency>
+      <targetFileName>gwt-servlet-2.6.0.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+  </dependenciesInfo>
+</webapp-structure>

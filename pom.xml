@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    CODENVY CONFIDENTIAL
+    __________________
+
+     [2012] - [2013] Codenvy, S.A.
+     All Rights Reserved.
+
+    NOTICE:  All information contained herein is, and remains
+    the property of Codenvy S.A. and its suppliers,
+    if any.  The intellectual and technical concepts contained
+    herein are proprietary to Codenvy S.A.
+    and its suppliers and may be covered by U.S. and Foreign Patents,
+    patents in process, and are protected by trade secret or copyright law.
+    Dissemination of this information or reproduction of this material
+    is strictly forbidden unless prior written permission is obtained
+    from Codenvy S.A..
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>maven-parent-pom</artifactId>
+        <groupId>com.codenvy</groupId>
+        <version>3.1.1</version>
+    </parent>
+    <groupId>com.codenvy.sdk</groupId>
+    <artifactId>codenvy-sdk-parent</artifactId>
+    <version>3.0.0-M11-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Codenvy :: SDK :: Parent</name>
+    <modules>
+        <module>assembly-platform-api</module>
+        <module>assembly-ide</module>
+        <module>assembly-sdk</module>
+    </modules>
+    <scm>
+        <connection>scm:git:git@github.com:codenvy/sdk.git</connection>
+        <developerConnection>scm:git:git@github.com:codenvy/sdk.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <properties>
+        <ant.version>1.9.1</ant.version>
+        <antlr.version>3.3</antlr.version>
+        <buildNumber>${maven.build.timestamp}</buildNumber>
+        <buildnumber.plugin.version>1.1</buildnumber.plugin.version>
+        <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
+        <codenvy.platform-api-gwt-client.version>0.1.1-SNAPSHOT</codenvy.platform-api-gwt-client.version>
+        <com.codenvy.commons.version>0.16.0-SNAPSHOT</com.codenvy.commons.version>
+        <com.codenvy.platform-api.version>0.10.0-SNAPSHOT</com.codenvy.platform-api.version>
+        <commons-codec.version>1.6</commons-codec.version>
+        <commons-fileupload.version>1.2.1</commons-fileupload.version>
+        <commons-io.version>2.4</commons-io.version>
+        <commons.compress.version>1.6</commons.compress.version>
+        <enforcer.plugin.version>1.0.1</enforcer.plugin.version>
+        <everrest.version>1.1.9</everrest.version>
+        <failsafe.plugin.version>2.6</failsafe.plugin.version>
+        <gin.version>2.1.2</gin.version>
+        <google.api.client.version>1.9.0-beta</google.api.client.version>
+        <gson.version>2.1</gson.version>
+        <guava.version>12.0.1</guava.version>
+        <gwt.maven.plugin.version>2.6.0</gwt.maven.plugin.version>
+        <gwt.version>2.6.0</gwt.version>
+        <jsch.version>0.1.44-1</jsch.version>
+        <maven.build.timestamp.format>dd.MM.yy HH:mm</maven.build.timestamp.format>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.releases.repo.url>https://maven.codenvycorp.com/content/repositories/codenvy-private-releases/</maven.releases.repo.url>
+        <maven.snapshots.repo.url>https://maven.codenvycorp.com/content/repositories/codenvy-private-snapshots/</maven.snapshots.repo.url>
+        <org.slf4j.version>1.7.5</org.slf4j.version>
+        <reflections.version>0.9.9-RC1</reflections.version>
+        <release.plugin.version>2.2.1</release.plugin.version>
+        <servlet-api.version>3.0.1</servlet-api.version>
+        <tomcat.version>7.0.50</tomcat.version>
+        <version.animal-sniffer.enforcer-rule>1.8</version.animal-sniffer.enforcer-rule>
+        <version.enforcer.plugin>1.2</version.enforcer.plugin>
+    </properties>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.codenvy.platform-api</groupId>
+                    <artifactId>codenvy-dto-maven-plugin</artifactId>
+                    <version>${com.codenvy.platform-api.version}</version>
+                </plugin>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.codehaus.mojo</groupId>
+                                        <artifactId>exec-maven-plugin</artifactId>
+                                        <versionRange>[1.2.1,)</versionRange>
+                                        <goals>
+                                            <goal>java</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.codenvy.platform-api</groupId>
+                                        <artifactId>codenvy-dto-maven-plugin</artifactId>
+                                        <versionRange>[0.4.0-SNAPSHOT,)</versionRange>
+                                        <goals>
+                                            <goal>generate</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-dependency-plugin</artifactId>
+                                        <versionRange>[2.6,)</versionRange>
+                                        <goals>
+                                            <goal>copy</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.google.code.maven-replacer-plugin</groupId>
+                                        <artifactId>replacer</artifactId>
+                                        <versionRange>[1.5.2,)</versionRange>
+                                        <goals>
+                                            <goal>replace</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
