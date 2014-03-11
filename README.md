@@ -1,5 +1,9 @@
 The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The Codenvy IDE is an application built using the Codenvy SDK, its embedded APIs, and executes on the Codenvy Web Client Platform (WCP).
 
+Codenvy SDK can be installed on any Unix based system - desktop, server or cloud. It has been extensively tested on Ubuntu, Linux and MacOS. GWT, GIN and Javascript are core technologies underlying the SDK.
+
+![image] (http://docs.codenvy.com/wp-content/uploads/extension3.png)
+
 ### Clone Repository
 
 Clone Codenvy SDK to your local machine:
