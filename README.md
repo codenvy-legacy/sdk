@@ -21,7 +21,7 @@ mvn clean install
 
 Go to ```sdk/assembly-sdk/target/tomcat-ide/bin``` and execute:
 ```sh
-./codenvy.sh run
+./codenvy
 ```
 Codenvy SDK will be available at ```localhost:8080```
 
@@ -33,7 +33,7 @@ Go to **Project** menu and build your extension. After the build is finished you
 
 Copy the JAR artifact from the previous step to ```/ext``` directory of the SDK.
 
-Execute ```extInstall.sh``` script in the root of the SDK to load this plug-in. The project will be re-compiled.
+Execute ```extInstall``` script in the root of the SDK to load this plug-in. The project will be re-compiled.
 
 Restart the SDK to have the changes take affect permanently.
 
