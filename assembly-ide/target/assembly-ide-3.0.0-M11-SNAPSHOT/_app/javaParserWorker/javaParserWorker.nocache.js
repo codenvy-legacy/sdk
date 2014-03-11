@@ -1,2 +1,0 @@
-$stats=function(){};$self=self;$sessionId=null;$wnd=this;function javaParserWorker(){var l='',j='.cache.js',i='/',g=':',f='C34CD9C03A0F1681176BDF6C021650CB',h='deferredjs/',k='javaParserWorker';var b;var c=0;try{b=f}catch(a){var d={'worker bootstrap error':a.message};self.postMessage(JSON.stringify(d));return}var e=b.indexOf(g);if(e!=-1){c=Number(b.substring(e+1));b=b.substring(0,e)}__gwtStartLoadingFragment=function(a){importScripts(h+b+i+a+j);return null};importScripts(b+j);gwtOnLoad(undefined,k,l,c)}
-javaParserWorker();

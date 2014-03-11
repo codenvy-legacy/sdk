@@ -50,6 +50,7 @@ import com.codenvy.api.vfs.server.exceptions.PermissionDeniedExceptionMapper;
 import com.codenvy.api.vfs.server.exceptions.VirtualFileSystemRuntimeExceptionMapper;
 import com.codenvy.api.vfs.server.observation.EventListenerList;
 import com.codenvy.api.vfs.server.search.SearcherProvider;
+import com.codenvy.ide.env.TokenValidatorImpl;
 import com.codenvy.ide.everrest.CodenvyAsynchronousJobPool;
 import com.codenvy.ide.ext.git.server.GitConnectionFactory;
 import com.codenvy.ide.ext.git.server.nativegit.NativeGitConnectionFactory;
