@@ -41,7 +41,8 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 
 ### Helping Codenvy
 
-**Contribute**: Codenvy accepts pull requests, so if you feel like contributing to the project, you are definitely welcome to do so. 
+**Contribute**: Codenvy accepts pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
+
 **Report Bugs**: Our JIRA is private at the moment but we are thinking of opening it up. You can report bugs directly to our dedicated support email (see Contact Information)
 
 ### Documentation  & Tutorials
