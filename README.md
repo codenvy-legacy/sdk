@@ -32,3 +32,7 @@ Execute **extInstall.sh** script in the root of the SDK to load this plug-in. Th
 Restart the SDK to have the changes take affect permanently.
 
 You may need to empty browser’s cache (if you haven’t set appropriate HTTP headers) to see the extension.
+Documentation  & Tutorials
+==================
+Browse SDK docs - http://docs.codenvy.com/sdk/
+
