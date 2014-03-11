@@ -6,36 +6,37 @@ The Codenvy SDK is currently licensed on a proprietary Codenvy license. We will 
 
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
-### Clone Repository
+### Clone Codenvy SDK Repository
 
-Clone Codenvy SDK to your local machine:
+```sh
+git clone https://github.com/codenvy/sdk.git
+```
 
-```git clone git@github.com:codenvy/sdk.git``` or 
-```git clone https://github.com/codenvy/sdk.git```
+The Codenvy SDK is an assembly of other public Codenvy projects including the IDE, Platform API, a suite of plug-ins, and commons.
 
 ### Build the Project
-
-Go to **sdk** directory and run:
 ```sh
+cd /sdk
 mvn clean install
 ```
-### Run Codenvy SDK
 
-Go to ```sdk/assembly-sdk/target/tomcat-ide/bin``` and execute:
+### Run the Codenvy SDK
 ```sh
+cd assembly-sdk/target/tomcat-ide/bin
 ./codenvy
 ```
-Codenvy SDK will is available at ```localhost:8080```
+
+The hosted IDE will be available at ```localhost:8080```
 
 ### Add Your Extensions (Plug-Ins) to the SDK
 
-Go to **Project** menu and build your extension. After the build is finished you will see a link in the Output console that points to a location to download your artifacts. Skip this step if you already have your plugin packaged as JAR. 
+1. Package your extension as a JAR either offline or in the IDE.  If in the IDE, go to **Project** menu and build your extension. After the build is finished you will see a link in the Output console that points to a location to download your artifacts.  
 
-Copy the JAR artifact from the previous step to ```/ext``` directory of the SDK.  
+2. Copy the JAR artifact from the previous step to ```/ext``` directory of the SDK.  
 
-Execute ```extInstall``` script in the root of the SDK to load this plug-in. The project will be re-compiled.
+3. Execute ```extInstall``` script in the root of the SDK to load this plug-in. The project will be re-compiled.
 
-Restart the SDK to have the changes take affect permanently.
+4. Restart the SDK to have the changes take affect permanently.
 
 You may need to empty browser’s cache (if you haven’t set appropriate HTTP headers) to see the extension.
 
@@ -51,8 +52,9 @@ API JavaDoc - http://docs.codenvy.com/ide/apidocs/
 
 ### Contact Information
 
+* **Website:** [www.codenvy.com](https://www.codenvy.com)
+* **Twitter:** [@CodenvyHQ](https://twitter.com/CoenvyHQ)
+* **Blog:** [blog.codenvy.com](http://blog.codenvy.com)
+* **Google Group:** [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
+
 Feel free to contact us with questions, comments, bug reports and feedback.
-
-Tech support- support@codenvy.com
-
-Codenvy Group Discussion - [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
