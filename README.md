@@ -48,6 +48,7 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 
 ### Documentation  & Tutorials
 Browse SDK docs - http://docs.codenvy.com/sdk/
+
 API JavaDoc - http://docs.codenvy.com/ide/apidocs/
 
 ### Contact Information
