@@ -52,6 +52,9 @@ Browse SDK docs - http://docs.codenvy.com/sdk/
 API JavaDoc - http://docs.codenvy.com/ide/apidocs/
 
 ### Contact Information
+
+Feel free to contact us with questions, comments, bug reports and feedback.
+
 Tech support- support@codenvy.com
 
 Codenvy Group Discussion - helpdesk.codenvy.com
