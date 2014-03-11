@@ -57,4 +57,4 @@ Feel free to contact us with questions, comments, bug reports and feedback.
 
 Tech support- support@codenvy.com
 
-Codenvy Group Discussion - helpdesk.codenvy.com
+Codenvy Group Discussion - [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
