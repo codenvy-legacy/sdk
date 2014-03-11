@@ -46,7 +46,7 @@
         <buildNumber>${maven.build.timestamp}</buildNumber>
         <buildnumber.plugin.version>1.1</buildnumber.plugin.version>
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
-        <codenvy.platform-api-gwt-client.version>0.1.1-SNAPSHOT</codenvy.platform-api-gwt-client.version>
+        <codenvy.platform-api-gwt-client.version>0.2.0-SNAPSHOT</codenvy.platform-api-gwt-client.version>
         <com.codenvy.commons.version>0.16.0-SNAPSHOT</com.codenvy.commons.version>
         <com.codenvy.platform-api.version>0.10.0-SNAPSHOT</com.codenvy.platform-api.version>
         <commons-codec.version>1.6</commons-codec.version>
