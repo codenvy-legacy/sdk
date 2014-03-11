@@ -2,7 +2,7 @@
 
 Clone Codenvy SDK to your local machine:
 
-```git clone git@github.com:codenvy/sdk.gi``` or ```it clone https://github.com/codenvy/sdk.git```
+```git clone git@github.com:codenvy/sdk.git``` or ```it clone https://github.com/codenvy/sdk.git```
 
 ## Build the Project
 
