@@ -1,4 +1,4 @@
-### Clone repository
+### Clone Repository
 
 Clone Codenvy SDK to your local machine:
 
