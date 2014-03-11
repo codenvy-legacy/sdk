@@ -38,10 +38,18 @@ Execute ```extInstall.sh``` script in the root of the SDK to load this plug-in. 
 Restart the SDK to have the changes take affect permanently.
 
 You may need to empty browser’s cache (if you haven’t set appropriate HTTP headers) to see the extension.
+
+### Helping Codenvy
+
+**Contribute**: Codenvy accepts pull requests, so if you feel like contributing to the project, you are definitely welcome to do so. 
+**Report Bugs**: Our JIRA is private at the moment but we are thinking of opening it up. You can report bugs directly to our dedicated support email (see Contact Information)
+
 ### Documentation  & Tutorials
 
 Browse SDK docs - http://docs.codenvy.com/sdk/
 
 API JavaDoc - http://docs.codenvy.com/ide/apidocs/
 
+### Contact Information
+Tech support support@codenvy.com
 Codenvy Group Discussion - helpdesk.codenvy.com
