@@ -5,12 +5,12 @@ Codenvy SDK can be installed on any operating system that supports Java 1.7 - de
 The Codenvy SDK is currently licensed on a proprietary Codenvy license. We will provide an open license for the SDK once it has hit a stabilization point.
 
 The Codenvy SDK is an assembly point for other projects that combine together to construct the system. These projects include:
-* **IDE**: [IDE and Default Plug-Ins] (github.com/codenvy/ide)
-* **Platform API**: [REST APIs and Platform Services] (github.com/codenvy/platform-api)
-* **Platform API GWT Client**: [Client Library for Platform API] (github.com/codenvy/platform-api-client-gwt)
-* **Commons**: [Shared Utility Libraries] (github.com/codenvy/commons)
-* **Everrest**: [Command Palette Abstraction on Web Services] (github.com/codenvy/everrest)
-* **Plugin Datasource**: [Community Developed Database Plugin] (github.com/codenvy/plugin-datasource)
+* **IDE**:                     [IDE and Default Plug-Ins] (http://github.com/codenvy/ide)
+* **Platform API**:            [REST APIs and Platform Services] (http://github.com/codenvy/platform-api)
+* **Platform API GWT Client**: [Client Library for Platform API] (http://github.com/codenvy/platform-api-client-gwt)
+* **Commons**:                 [Shared Utility Libraries] (http://github.com/codenvy/commons)
+* **Everrest**:                [Command Palette Abstraction on Web Services] (http://github.com/codenvy/everrest)
+* **Plugin Datasource**:       [Community Developed Database Plugin] (http://github.com/codenvy/plugin-datasource)
 
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
