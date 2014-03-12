@@ -36,17 +36,17 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-builder-ant</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-builder-maven</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>tools</artifactId>
@@ -57,22 +57,22 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-extensions</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-java</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>org.eclipse.jdt.core</artifactId>
@@ -83,12 +83,12 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-tutorials</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-core</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>servlet-api</artifactId>
@@ -99,17 +99,12 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-vfs-fs</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <!--dependency>
             <groupId>com.codenvy.ide</groupId>
@@ -119,12 +114,12 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-runner-sdk</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-runner-webapps</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>

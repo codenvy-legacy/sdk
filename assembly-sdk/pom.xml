@@ -42,88 +42,88 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>action-api-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-ssh</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-core</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-sdk-private-dependencies</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>empty-extension</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>gin-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>gist-extension</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>helloworld-extension</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>new-resource-wizard-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>notification-api-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>parts-api-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>wizard-api-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>wysiwyg-editor-tutorial</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
@@ -161,7 +161,7 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-vfs-fs</artifactId>
-            <version>${project.version}</version>
+            <version>${com.codenvy.ide.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -267,7 +267,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>action-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>action-api-tutorial.zip</destFileName>
@@ -276,7 +276,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>new-resource-wizard-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>new-resource-wizard-tutorial.zip</destFileName>
@@ -285,7 +285,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>notification-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>notification-api-tutorial.zip</destFileName>
@@ -294,7 +294,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>parts-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>parts-api-tutorial.zip</destFileName>
@@ -303,7 +303,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>wizard-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>wizard-api-tutorial.zip</destFileName>
@@ -312,7 +312,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>editor-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>editor-api-tutorial.zip</destFileName>
@@ -321,7 +321,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>gin-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>gin-tutorial.zip</destFileName>
@@ -330,7 +330,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>gist-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>gist-extension.zip</destFileName>
@@ -339,7 +339,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>empty-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>empty-extension.zip</destFileName>
@@ -348,7 +348,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>helloworld-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>helloworld-extension.zip</destFileName>
@@ -357,7 +357,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>wysiwyg-editor-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>wysiwyg-editor-tutorial.zip</destFileName>
@@ -376,7 +376,7 @@
                                 <artifactItem>
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>codenvy-sdk-tools</artifactId>
-                                    <version>${project.version}</version>
+                                    <version>${com.codenvy.ide.version}</version>
                                     <classifier>jar-with-dependencies</classifier>
                                     <outputDirectory>${project.build.directory}/tomcat-ide/sdk-tools</outputDirectory>
                                     <destFileName>codenvy-sdk-tools.jar</destFileName>
