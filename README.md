@@ -1,8 +1,16 @@
-The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The Codenvy IDE is an application built using the Codenvy SDK, its embedded APIs, and executes on the Codenvy Web Client Platform (WCP).  The WCP is a thin servlet-based application that loads and manages plug-ins against the API set.  The WCP can be run in any servlet container.  The checkout and build process on this page grabs the WCP, IDE, and SDK and creates an assembly for Tomcat.  Tomcat is also included in the distribution to make startup configuration simpler. 
+The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The SDK contains:
+* Codenvy IDE
+* Codenvy WCP
+* Platform APIs
+* Commons Utility Libraries
+* 15+ Plug-Ins
+* Developer tooling for building and packaging plug-ins
 
-Codenvy SDK can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been extensively tested on Ubuntu, Linux, MacOS and Windows.  Java, GWT, GIN and Javascript are the core technologies underlying the SDK.
+The Codenvy IDE is a Web client application that contains a variety of plug-ins, makes use of the platform APIs, and runs on the Codenvy Web Client Platform (WCP).  The WCP is a thin servlet-based framework that loads and manages plug-ins.  The WCP can be run in any servlet container.  The build process for the SDK combines all of these components into an assembly readied for Tomcat.  Tomcat is also included in the distribution to make startup configuration simpler. 
 
-The Codenvy SDK is currently licensed on a proprietary Codenvy license. We will provide an open license for the SDK once it has hit a stabilization point.
+The Codenvy SDK can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been extensively tested on Ubuntu, Linux, MacOS and Windows.  Java, GWT, GIN and Javascript are the core technologies used to build the SDK.
+
+The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an open license for the SDK once it has hit a stabilization point.
 
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
