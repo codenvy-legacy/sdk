@@ -1,4 +1,6 @@
-The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The SDK contains:
+The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The Codenvy IDE is included with the SDK, packaged as a GWT Java application that compiles to optimized JavaScript with support for most modern browsers.
+
+The SDK contains:
 * Codenvy IDE
 * Codenvy WCP
 * Platform APIs
