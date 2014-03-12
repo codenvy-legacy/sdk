@@ -14,7 +14,7 @@ The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an
 
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
-### Clone Codenvy SDK Repository
+### Clone the Repository
 
 ```sh
 git clone https://github.com/codenvy/sdk.git
@@ -65,7 +65,7 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 * **SDK Binaries** [docs.codenvy.com/sdk/download] (http://docs.codenvy.com/sdk/download/)
 * **SDK Getting Started** [http://docs.codenvy.com/sdk/introduction/] (http://docs.codenvy.com/sdk/introduction/)
 * **SDK JavaDoc** [docs.codenvy.com/ide/apidocs/] (http://docs.codenvy.com/ide/apidocs/)
-* **SDK Extension Tutorials** (http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/) (http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/)
+* **SDK Extension Tutorials** [http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/] (http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/)
 
 
 ### Contact Information
