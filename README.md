@@ -59,9 +59,9 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 
 **Contribute**: Codenvy accepts pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
 
-**Report Bugs**: Our JIRA is private at the moment but we are working to open it up. In the mean time we accept bug and enhancement requests by posting on our Google Group at https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy.
+**Report Bugs**: Our JIRA is private at the moment but we are working to open it up. In the mean time we accept bug and enhancement requests by posting on our Google Group. 
 
-### Documentation  & Tutorials
+### Documentation & Tutorials
 * **SDK Binaries** [docs.codenvy.com/sdk/download] (http://docs.codenvy.com/sdk/download/)
 * **SDK Getting Started** [http://docs.codenvy.com/sdk/introduction/] (http://docs.codenvy.com/sdk/introduction/)
 * **SDK JavaDoc** [docs.codenvy.com/ide/apidocs/] (http://docs.codenvy.com/ide/apidocs/)
@@ -69,10 +69,7 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 
 
 ### Contact Information
-
 * **Website:** [www.codenvy.com](https://www.codenvy.com)
 * **Twitter:** [@CodenvyHQ](https://twitter.com/CoenvyHQ)
 * **Blog:** [blog.codenvy.com](http://blog.codenvy.com)
 * **Google Group:** [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
-
-Feel free to contact us with questions, comments, bug reports and feedback.
