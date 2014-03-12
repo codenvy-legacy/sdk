@@ -4,6 +4,14 @@ Codenvy SDK can be installed on any operating system that supports Java 1.7 - de
 
 The Codenvy SDK is currently licensed on a proprietary Codenvy license. We will provide an open license for the SDK once it has hit a stabilization point.
 
+The Codenvy SDK is an assembly point for other projects that combine together to construct the system. These projects include:
+* **IDE**: [IDE and Default Plug-Ins] (github.com/codenvy/ide)
+* **Platform API**: [REST APIs and Platform Services] (github.com/codenvy/platform-api)
+* **Platform API GWT Client**: [Client Library for Platform API] (github.com/codenvy/platform-api-client-gwt)
+* **Commons**: [Shared Utility Libraries] (github.com/codenvy/commons)
+* **Everrest**: [Command Palette Abstraction on Web Services] (github.com/codenvy/everrest)
+* **Plugin Datasource**: [Community Developed Database Plugin] (github.com/codenvy/plugin-datasource)
+
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
 ### Clone Codenvy SDK Repository
@@ -47,9 +55,11 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 **Report Bugs**: Our JIRA is private at the moment but we are working to open it up. In the mean time we accept bug and enhancement requests by posting on our Google Group at https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy.
 
 ### Documentation  & Tutorials
-Browse SDK docs - http://docs.codenvy.com/sdk/
+* **SDK Binaries** [docs.codenvy.com/sdk/download] (http://docs.codenvy.com/sdk/download/)
+* **SDK Getting Started** [http://docs.codenvy.com/sdk/introduction/] (http://docs.codenvy.com/sdk/introduction/)
+* **SDK JavaDoc** [docs.codenvy.com/ide/apidocs/] (http://docs.codenvy.com/ide/apidocs/)
+* **SDK Extension Tutorials** (http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/) (http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/)
 
-API JavaDoc - http://docs.codenvy.com/ide/apidocs/
 
 ### Contact Information
 
