@@ -48,7 +48,6 @@ import com.codenvy.api.vfs.server.exceptions.LockExceptionMapper;
 import com.codenvy.api.vfs.server.exceptions.NotSupportedExceptionMapper;
 import com.codenvy.api.vfs.server.exceptions.PermissionDeniedExceptionMapper;
 import com.codenvy.api.vfs.server.exceptions.VirtualFileSystemRuntimeExceptionMapper;
-import com.codenvy.api.vfs.server.observation.EventListenerList;
 import com.codenvy.api.vfs.server.search.SearcherProvider;
 import com.codenvy.ide.env.TokenValidatorImpl;
 import com.codenvy.ide.everrest.CodenvyAsynchronousJobPool;
@@ -98,7 +97,6 @@ public class ApiModule extends AbstractModule {
         bind(LocalFileSystemRegistryPlugin.class);
         bind(LocalFSMountStrategy.class).to(WorkspaceHashLocalFSMountStrategy.class);
         bind(SearcherProvider.class).to(CleanableSearcherProvider.class);
-        bind(EventListenerList.class).toInstance(new EventListenerList());
         bind(RequestValidator.class).toProvider(Providers.<RequestValidator>of(null));
         bind(ContentStreamWriter.class).toInstance(new ContentStreamWriter());
         bind(ConstraintExceptionMapper.class).toInstance(new ConstraintExceptionMapper());
