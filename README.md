@@ -20,7 +20,7 @@ The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an
 ### Clone the Repository & Checkout Latest Stable Branch
 
 ```sh
-git clone https://github.com/codenvy/sdk.gi
+git clone https://github.com/codenvy/sdk.git
 git checkout 3.0.0-M11
 ```
 
