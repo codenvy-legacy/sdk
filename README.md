@@ -6,6 +6,7 @@ The SDK contains:
 * Platform APIs
 * Commons Utility Libraries
 * 15+ Plug-Ins
+* Everrest open source utility for mapping Java to Web Services
 * Developer tooling for building and packaging plug-ins
 
 The Codenvy IDE is a Web client application that contains a variety of plug-ins, makes use of the platform APIs, and runs on the Codenvy Web Client Platform (WCP).  The WCP is a thin servlet-based framework that loads and manages plug-ins.  The WCP can be run in any servlet container.  The build process for the SDK combines all of these components into an assembly readied for Tomcat.  Tomcat is also included in the distribution to make startup configuration simpler. 
@@ -16,13 +17,16 @@ The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an
 
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
-### Clone the Repository
+### Clone the Repository & Checkout Latest Stable Branch
 
 ```sh
-git clone https://github.com/codenvy/sdk.git
+git clone https://github.com/codenvy/sdk.gi
+git checkout 3.0.0-M11
 ```
 
-The Codenvy SDK is an assembly point for other projects that combine together to construct the system. These projects include:
+If you do not perform the checkout, you will be in the master branch.  We develop directly onto this branch and you may encounter intermediate errors.  Checkout the latest stable branch before compiling.
+
+GitHub projects for each of the sub-projects:
 * **IDE**:                     [IDE and Default Plug-Ins] (http://github.com/codenvy/ide)
 * **Platform API**:            [REST APIs and Platform Services] (http://github.com/codenvy/platform-api)
 * **Platform API GWT Client**: [Client Library for Platform API] (http://github.com/codenvy/platform-api-client-gwt)
