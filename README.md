@@ -21,6 +21,7 @@ The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an
 
 ```sh
 git clone https://github.com/codenvy/sdk.git
+cd sdk
 git checkout 3.0.0-M11
 ```
 
