@@ -75,6 +75,13 @@
         <version.enforcer.plugin>1.2</version.enforcer.plugin>
         <version.gwt.plugin>2.6.0</version.gwt.plugin>
     </properties>
+    <repositories>
+        <repository>
+            <id>codenvy-public-repo</id>
+            <name>codenvy public</name>
+            <url>https://maven.codenvycorp.com/content/groups/public/</url>
+        </repository>
+    </repositories>
     <build>
         <pluginManagement>
             <plugins>
