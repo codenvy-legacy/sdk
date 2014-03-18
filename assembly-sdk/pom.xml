@@ -27,7 +27,7 @@
     </parent>
     <artifactId>assembly-sdk</artifactId>
     <packaging>pom</packaging>
-    <name>Codenvy :: Assemblies Tomcat</name>
+    <name>Codenvy SDK :: Assemblies Tomcat</name>
     <dependencies>
         <dependency>
             <groupId>ch.qos.logback</groupId>

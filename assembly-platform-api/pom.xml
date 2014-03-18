@@ -27,6 +27,7 @@
     </parent>
     <artifactId>assembly-platform-api</artifactId>
     <packaging>war</packaging>
+    <name>Codenvy SDK :: Platform API</name>
     <dependencies>
         <dependency>
             <groupId>com.codenvy.commons</groupId>

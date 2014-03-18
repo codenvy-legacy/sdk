@@ -29,7 +29,7 @@
     <artifactId>codenvy-sdk-parent</artifactId>
     <version>3.0.0-M12-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Codenvy :: SDK :: Parent</name>
+    <name>Codenvy SDK :: Parent</name>
     <modules>
         <module>assembly-platform-api</module>
         <module>assembly-ide</module>

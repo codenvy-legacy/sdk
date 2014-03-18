@@ -27,7 +27,7 @@
     </parent>
     <artifactId>assembly-ide</artifactId>
     <packaging>war</packaging>
-    <name>Codenvy :: Packaging :: Application</name>
+    <name>Codenvy SDK :: Application</name>
     <properties>
         <generated.sources.directory>${project.build.directory}/generated-sources/gen</generated.sources.directory>
         <ide.module>com.codenvy.ide.IDE</ide.module>
