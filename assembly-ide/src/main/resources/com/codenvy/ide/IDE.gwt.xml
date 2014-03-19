@@ -58,6 +58,11 @@
     <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
     <inherits name="com.codenvy.api.Project"/>
 
+    <!-- AngularJS plugin -->
+    <inherits name="com.codenvy.plugin.angularjs.completion.dto.Completion" />
+    <inherits name="com.codenvy.plugin.angularjs.core.client.AngularJS"/>
+
+
     <stylesheet src="IDE.css"/>
 
     <!-- Specify the app entry point class.                         -->

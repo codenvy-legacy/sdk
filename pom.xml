@@ -4,7 +4,7 @@
     CODENVY CONFIDENTIAL
     __________________
 
-     [2012] - [2013] Codenvy, S.A.
+     [2012] - [2014] Codenvy, S.A.
      All Rights Reserved.
 
     NOTICE:  All information contained herein is, and remains
@@ -29,7 +29,7 @@
     <artifactId>codenvy-sdk-parent</artifactId>
     <version>3.0.0-M14-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Codenvy :: SDK :: Parent</name>
+    <name>Codenvy SDK :: Parent</name>
     <modules>
         <module>assembly-platform-api</module>
         <module>assembly-ide</module>
@@ -42,6 +42,7 @@
         <tag>HEAD</tag>
     </scm>
     <properties>
+        <angularjs-plugin.version>1.0.0-M1-SNAPSHOT</angularjs-plugin.version>
         <ant.version>1.9.1</ant.version>
         <antlr.version>3.3</antlr.version>
         <arquillian.phantom.driver.version>1.1.0.Final</arquillian.phantom.driver.version>
