@@ -98,6 +98,12 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>icons-registry-api</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>new-resource-wizard-tutorial</artifactId>
             <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
@@ -367,6 +373,15 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>helloworld-extension.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>icons-registry-api</artifactId>
+                                    <type>zip</type>
+                                    <version>${com.codenvy.ide.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>icons-registry-api-tutorial.zip</destFileName>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>com.codenvy.ide</groupId>

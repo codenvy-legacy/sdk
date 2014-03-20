@@ -63,6 +63,7 @@ import com.codenvy.ide.ext.git.server.rest.TagListWriter;
 import com.codenvy.ide.ext.github.server.rest.GitHubService;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
 import com.codenvy.ide.ext.java.server.RestNameEnvironment;
+import com.codenvy.ide.ext.java.server.format.FormatService;
 import com.codenvy.ide.ext.ssh.server.KeyService;
 import com.codenvy.ide.ext.ssh.server.SshKeyStore;
 import com.codenvy.ide.ext.ssh.server.UserProfileSshKeyStore;
@@ -136,6 +137,7 @@ public class ApiModule extends AbstractModule {
         bind(RemoteListWriter.class).toInstance(new RemoteListWriter());
         bind(StatusPageWriter.class).toInstance(new StatusPageWriter());
         bind(TagListWriter.class).toInstance(new TagListWriter());
+        bind(FormatService.class);
         bind(GitHubService.class);
         bind(GitConnectionFactory.class).to(NativeGitConnectionFactory.class);
         bind(KeyService.class);
