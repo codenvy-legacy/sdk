@@ -1,6 +1,6 @@
 @echo off
 
-cd bin
+cd assembly-sdk/target/tomcat-ide/bin
 
 echo Launching Codenvy SDK
 
