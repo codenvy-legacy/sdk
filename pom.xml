@@ -48,8 +48,8 @@
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
         <codenvy.platform-api-gwt-client.version>0.3.0-SNAPSHOT</codenvy.platform-api-gwt-client.version>
         <com.codenvy.commons.version>0.18.0-SNAPSHOT</com.codenvy.commons.version>
-        <com.codenvy.ide.version>3.0.0-M12-SNAPSHOT</com.codenvy.ide.version>
-        <com.codenvy.platform-api.version>0.12.0-SNAPSHOT</com.codenvy.platform-api.version>
+        <com.codenvy.ide.version>3.0.0-M14-SNAPSHOT</com.codenvy.ide.version>
+        <com.codenvy.platform-api.version>0.14.0-SNAPSHOT</com.codenvy.platform-api.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-fileupload.version>1.2.1</commons-fileupload.version>
         <commons-io.version>2.4</commons-io.version>
