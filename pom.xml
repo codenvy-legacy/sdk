@@ -48,7 +48,7 @@
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
         <codenvy.platform-api-gwt-client.version>0.3.0</codenvy.platform-api-gwt-client.version>
         <com.codenvy.commons.version>0.17.0</com.codenvy.commons.version>
-        <com.codenvy.ide.version>3.0.0-M12-SNAPSHOT</com.codenvy.ide.version>
+        <com.codenvy.ide.version>3.0.0-M12</com.codenvy.ide.version>
         <com.codenvy.platform-api.version>0.12.0</com.codenvy.platform-api.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-fileupload.version>1.2.1</commons-fileupload.version>
