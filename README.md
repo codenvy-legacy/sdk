@@ -77,6 +77,6 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 
 ### Contact Information
 * **Website:** [www.codenvy.com](https://www.codenvy.com)
-* **Twitter:** [@CodenvyHQ](https://twitter.com/CoenvyHQ)
+* **Twitter:** [@CodenvyHQ](https://twitter.com/CodenvyHQ)
 * **Blog:** [blog.codenvy.com](http://blog.codenvy.com)
 * **Google Group:** [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
