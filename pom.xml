@@ -34,6 +34,7 @@
         <module>assembly-platform-api</module>
         <module>assembly-ide</module>
         <module>assembly-sdk</module>
+        <module>sdk-qa</module>
     </modules>
     <scm>
         <connection>scm:git:git@github.com:codenvy/sdk.git</connection>
@@ -43,6 +44,7 @@
     <properties>
         <ant.version>1.9.1</ant.version>
         <antlr.version>3.3</antlr.version>
+        <arquillian.phantom.driver.version>1.1.0.Final</arquillian.phantom.driver.version>
         <buildNumber>${maven.build.timestamp}</buildNumber>
         <buildnumber.plugin.version>1.1</buildnumber.plugin.version>
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
@@ -54,6 +56,8 @@
         <commons-fileupload.version>1.2.1</commons-fileupload.version>
         <commons-io.version>2.4</commons-io.version>
         <commons.compress.version>1.6</commons.compress.version>
+        <concordion.ext.version>1.1.1</concordion.ext.version>
+        <concordion.version>1.4.4</concordion.version>
         <enforcer.plugin.version>1.0.1</enforcer.plugin.version>
         <everrest.version>1.1.9</everrest.version>
         <failsafe.plugin.version>2.6</failsafe.plugin.version>
@@ -63,6 +67,7 @@
         <guava.version>12.0.1</guava.version>
         <gwt.version>2.6.0</gwt.version>
         <jsch.version>0.1.44-1</jsch.version>
+        <junit.version>4.8.1</junit.version>
         <maven.build.timestamp.format>dd.MM.yy HH:mm</maven.build.timestamp.format>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
