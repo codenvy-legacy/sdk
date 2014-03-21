@@ -44,7 +44,6 @@
     <inherits name='com.codenvy.ide.ext.git.Git'/>
     <inherits name='com.codenvy.ide.ext.github.GitHub'/>
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
-    <inherits name='com.codenvy.ide.ext.extensions.Extensions'/>
     <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
 
     <inherits name='com.codenvy.api.Core'/>

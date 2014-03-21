@@ -1,18 +1,40 @@
-The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The Codenvy IDE is an application built using the Codenvy SDK, its embedded APIs, and executes on the Codenvy Web Client Platform (WCP).  The WCP is a thin servlet-based application that loads and manages plug-ins against the API set.  The WCP can be run in any servlet container.  The checkout and build process on this page grabs the WCP, IDE, and SDK and creates an assembly for Tomcat.  Tomcat is also included in the distribution to make startup configuration simpler. 
+The Codenvy SDK is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. The Codenvy IDE is included with the SDK, packaged as a GWT Java application that compiles to optimized JavaScript with support for most modern browsers.
 
-Codenvy SDK can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been extensively tested on Ubuntu, Linux, MacOS and Windows.  Java, GWT, GIN and Javascript are the core technologies underlying the SDK.
+The SDK contains:
+* Codenvy IDE
+* Codenvy WCP
+* Platform APIs
+* Commons Utility Libraries
+* 15+ Plug-Ins
+* Everrest open source utility for mapping Java to Web Services
+* Developer tooling for building and packaging plug-ins
 
-The Codenvy SDK is currently licensed on a proprietary Codenvy license. We will provide an open license for the SDK once it has hit a stabilization point.
+The Codenvy IDE is a Web client application that contains a variety of plug-ins, makes use of the platform APIs, and runs on the Codenvy Web Client Platform (WCP).  The WCP is a thin servlet-based framework that loads and manages plug-ins.  The WCP can be run in any servlet container.  The build process for the SDK combines all of these components into an assembly readied for Tomcat.  Tomcat is also included in the distribution to make startup configuration simpler. 
+
+The Codenvy SDK can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been extensively tested on Ubuntu, Linux, MacOS and Windows.  Java, GWT, GIN and Javascript are the core technologies used to build the SDK.
+
+The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an open license for the SDK once it has hit a stabilization point.
 
 ![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
-### Clone Codenvy SDK Repository
+### Clone the Repository & Checkout Latest Stable Branch
 
 ```sh
 git clone https://github.com/codenvy/sdk.git
+cd sdk
+git checkout 3.0.0-M11
 ```
 
-The Codenvy SDK is an assembly of other public Codenvy projects including the IDE, Platform API, a suite of plug-ins, and commons.
+If you do not perform the checkout, you will be in the master branch.  We develop directly onto this branch and you may encounter intermediate errors.  Checkout the latest stable branch before compiling.
+
+GitHub projects for each of the sub-projects:
+* **IDE**:                     [IDE and Default Plug-Ins] (http://github.com/codenvy/ide)
+* **Platform API**:            [REST APIs and Platform Services] (http://github.com/codenvy/platform-api)
+* **Platform API GWT Client**: [Client Library for Platform API] (http://github.com/codenvy/platform-api-client-gwt)
+* **Commons**:                 [Shared Utility Libraries] (http://github.com/codenvy/commons)
+* **Everrest**:                [Command Palette Abstraction on Web Services] (http://github.com/codenvy/everrest)
+* **Plugin Datasource**:       [Community Developed Database Plugin] (http://github.com/codenvy/plugin-datasource)
+
 
 ### Build the Project
 ```sh
@@ -44,18 +66,17 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 
 **Contribute**: Codenvy accepts pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
 
-**Report Bugs**: Our JIRA is private at the moment but we are working to open it up. In the mean time we accept bug and enhancement requests by posting on our Google Group at https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy.
+**Report Bugs**: Our JIRA is private at the moment but we are working to open it up. In the mean time we accept bug and enhancement requests by posting on our Google Group. 
 
-### Documentation  & Tutorials
-Browse SDK docs - http://docs.codenvy.com/sdk/
+### Documentation & Tutorials
+* **SDK Binaries** [docs.codenvy.com/sdk/download] (http://docs.codenvy.com/sdk/download/)
+* **SDK Getting Started** [http://docs.codenvy.com/sdk/introduction/] (http://docs.codenvy.com/sdk/introduction/)
+* **SDK JavaDoc** [docs.codenvy.com/ide/apidocs/] (http://docs.codenvy.com/ide/apidocs/)
+* **SDK Extension Tutorials** [http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/] (http://docs.codenvy.com/sdk/writing-your-first-codenvy-extension/)
 
-API JavaDoc - http://docs.codenvy.com/ide/apidocs/
 
 ### Contact Information
-
 * **Website:** [www.codenvy.com](https://www.codenvy.com)
-* **Twitter:** [@CodenvyHQ](https://twitter.com/CoenvyHQ)
+* **Twitter:** [@CodenvyHQ](https://twitter.com/CodenvyHQ)
 * **Blog:** [blog.codenvy.com](http://blog.codenvy.com)
 * **Google Group:** [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
-
-Feel free to contact us with questions, comments, bug reports and feedback.

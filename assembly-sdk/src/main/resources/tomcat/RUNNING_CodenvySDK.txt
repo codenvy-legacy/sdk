@@ -75,14 +75,14 @@ Running & Stopping
 1. In order to launch a Codenvy Platform SDK, go to bin directory and start Tomcat:
 
 On *nix:
-      ./catalina.sh start
+      ./codenvy.sh start
 
 After launching, Codenvy Platform SDK application will be available at http://localhost:8080/
 
 2. To stop a Codenvy Platform SDK application, execute the following command:
 
 On *nix:
-      ./catalina.sh stop
+      ./codenvy.sh stop
       
 =========================================================
 How to configure oAuth with GitHub and SSH key management
