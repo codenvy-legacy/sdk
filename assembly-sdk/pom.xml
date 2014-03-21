@@ -23,7 +23,7 @@
     <parent>
         <artifactId>codenvy-sdk-parent</artifactId>
         <groupId>com.codenvy.sdk</groupId>
-        <version>3.0.0-M12-SNAPSHOT</version>
+        <version>3.0.0-M12</version>
     </parent>
     <artifactId>assembly-sdk</artifactId>
     <packaging>pom</packaging>
@@ -436,7 +436,7 @@
                                 </copy>
                                 <chmod dir="${project.build.directory}/tomcat-ide/bin" includes="**/*.sh" perm="+x" />
                                 <move file="${project.build.directory}/tomcat-ide/bin/catalina.sh" tofile="${project.build.directory}/tomcat-ide/bin/codenvy.sh" />
-                                <delete file="${project.build.directory}/tomcat-ide/bin/catalina.bat"/>
+                                <delete file="${project.build.directory}/tomcat-ide/bin/catalina.bat" />
                                 <!-- Copy resources to re-build Codenvy IDE with 3rd-party extensions. -->
                                 <copy overwrite="true" todir="${project.build.directory}/tomcat-ide/sdk-resources">
                                     <fileset dir="${project.build.directory}/../../assembly-ide" includes="src/**, pom.xml" />
