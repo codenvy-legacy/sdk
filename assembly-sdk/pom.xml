@@ -98,6 +98,12 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>icons-registry-api</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>new-resource-wizard-tutorial</artifactId>
             <version>${com.codenvy.ide.version}</version>
             <type>zip</type>
@@ -118,7 +124,7 @@
             <groupId>com.codenvy.ide</groupId>
             <artifactId>theme-api-tutorial</artifactId>
             <version>${com.codenvy.ide.version}</version>
-            <type>zip</type>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
@@ -280,6 +286,15 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>theme-api-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${com.codenvy.ide.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>theme-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
                                     <artifactId>new-resource-wizard-tutorial</artifactId>
                                     <type>zip</type>
                                     <version>${com.codenvy.ide.version}</version>
@@ -361,21 +376,21 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>icons-registry-api</artifactId>
+                                    <type>zip</type>
+                                    <version>${com.codenvy.ide.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>icons-registry-api-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
                                     <artifactId>wysiwyg-editor-tutorial</artifactId>
                                     <type>zip</type>
                                     <version>${com.codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>wysiwyg-editor-tutorial.zip</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>com.codenvy.ide</groupId>
-                                    <artifactId>theme-api-tutorial</artifactId>
-                                    <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
-                                    <destFileName>theme-tutorial.zip</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
@@ -445,6 +460,7 @@
                                 </copy>
                                 <chmod dir="${project.build.directory}/tomcat-ide/bin" includes="**/*.sh" perm="+x" />
                                 <move file="${project.build.directory}/tomcat-ide/bin/catalina.sh" tofile="${project.build.directory}/tomcat-ide/bin/codenvy.sh" />
+                                <delete file="${project.build.directory}/tomcat-ide/bin/catalina.bat"/>
                                 <!-- Copy resources to re-build Codenvy IDE with 3rd-party extensions. -->
                                 <copy overwrite="true" todir="${project.build.directory}/tomcat-ide/sdk-resources">
                                     <fileset dir="${project.build.directory}/../../assembly-ide" includes="src/**, pom.xml" />
