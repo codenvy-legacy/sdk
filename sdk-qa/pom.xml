@@ -86,6 +86,9 @@
                             </execution>
                         </executions>
                         <configuration>
+                            <excludes>
+                                <exclude>**/AbstractIntegrationTest.java</exclude>
+                            </excludes>
                             <systemProperties>
                                 <property>
                                     <name>concordion.output.dir</name>
