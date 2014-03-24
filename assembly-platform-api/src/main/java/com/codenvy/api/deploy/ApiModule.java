@@ -115,6 +115,7 @@ public class ApiModule extends AbstractModule {
         bind(BuildQueue.class).to(LocalBuildQueue.class);
         bind(BuilderSelectionStrategy.class).toInstance(new LastInUseBuilderSelectionStrategy());
         bind(BuilderService.class);
+        bind(com.codenvy.api.auth.AuthenticationService.class);
         bind(BuilderAdminService.class);
         bind(SlaveBuilderService.class);
         bind(RunQueue.class).to(LocalRunQueue.class);
