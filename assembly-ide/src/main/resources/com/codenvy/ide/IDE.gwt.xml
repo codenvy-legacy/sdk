@@ -41,6 +41,7 @@
     <inherits name='com.codenvy.ide.ext.java.jdi.JavaRuntimeExtension'/>
     <inherits name='com.codenvy.ide.extension.builder.Builder'/>
     <inherits name='com.codenvy.ide.extension.runner.Runner'/>
+    <inherits name='com.codenvy.ide.extension.maven.Maven'/>
     <inherits name='com.codenvy.ide.ext.git.Git'/>
     <inherits name='com.codenvy.ide.ext.github.GitHub'/>
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
