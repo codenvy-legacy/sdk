@@ -23,7 +23,7 @@
     <parent>
         <artifactId>codenvy-sdk-parent</artifactId>
         <groupId>com.codenvy.sdk</groupId>
-        <version>3.0.0-M12-SNAPSHOT</version>
+        <version>3.0.0-M14-SNAPSHOT</version>
     </parent>
     <artifactId>assembly-sdk</artifactId>
     <packaging>pom</packaging>
@@ -65,12 +65,6 @@
             <artifactId>codenvy-ide-core</artifactId>
             <version>${com.codenvy.ide.version}</version>
             <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-sdk-private-dependencies</artifactId>
-            <version>${com.codenvy.ide.version}</version>
-            <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
@@ -414,24 +408,6 @@
                             </artifactItems>
                         </configuration>
                     </execution>
-                    <execution>
-                        <id>copy-private-dependencies-for-sdk</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>com.codenvy.ide</groupId>
-                                    <artifactId>codenvy-sdk-private-dependencies</artifactId>
-                                    <type>zip</type>
-                                    <outputDirectory>${project.build.directory}</outputDirectory>
-                                    <destFileName>repo.zip</destFileName>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -476,7 +452,6 @@
                                     <fileset dir="${project.build.directory}/packager-conf/war/ide" />
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
-                                <unzip dest="${project.build.directory}/tomcat-ide" src="${project.build.directory}/repo.zip" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>

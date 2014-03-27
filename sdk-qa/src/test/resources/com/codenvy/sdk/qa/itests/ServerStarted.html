@@ -1,0 +1,22 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<body>
+<div class="md">
+
+#Codenvy SDK Tomcat startup integration test
+
+> Just test that the server has been started properly
+> and check that one of the UI item is present.
+
+## Given
+- Server url:  <span c:set="#url">http://localhost:8280</span>
+
+## When
+- The user <span c:assertEquals="access(#url)">access</span> the server url.
+
+## Then
+- The <span c:assertEquals="displayExplorerTab()">Explorer</span> tab is displayed
+- The <span c:assertEquals="displayFileMenu()">File</span> menu is displayed
+
+</div>
+</body>
+</html>

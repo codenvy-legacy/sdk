@@ -22,7 +22,7 @@ The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an
 ```sh
 git clone https://github.com/codenvy/sdk.git
 cd sdk
-git checkout 3.0.0-M11
+git checkout 3.0.0-M12
 ```
 
 If you do not perform the checkout, you will be in the master branch.  We develop directly onto this branch and you may encounter intermediate errors.  Checkout the latest stable branch before compiling.
@@ -44,8 +44,7 @@ mvn clean install
 
 ### Run the Codenvy SDK
 ```sh
-cd assembly-sdk/target/tomcat-ide/bin
-./codenvy
+./codenvy_sdk
 ```
 
 The hosted IDE will be available at ```localhost:8080```
