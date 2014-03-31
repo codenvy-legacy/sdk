@@ -45,6 +45,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-datasource-server</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
             <version>${com.codenvy.ide.version}</version>
             <exclusions>
