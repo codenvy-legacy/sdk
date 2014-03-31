@@ -67,11 +67,15 @@
         <guava.version>12.0.1</guava.version>
         <gwt.version>2.6.0</gwt.version>
         <jsch.version>0.1.44-1</jsch.version>
+        <jtds-driver.version>1.2</jtds-driver.version>
         <junit.version>4.8.1</junit.version>
         <maven.build.timestamp.format>dd.MM.yy HH:mm</maven.build.timestamp.format>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <mysql-driver.version>5.1.29</mysql-driver.version>
+        <nuodb-driver.version>2.0.3</nuodb-driver.version>
         <org.slf4j.version>1.7.5</org.slf4j.version>
+        <postgresql-driver.version>9.3-1100-jdbc41</postgresql-driver.version>
         <reflections.version>0.9.9-RC1</reflections.version>
         <release.plugin.version>2.2.1</release.plugin.version>
         <servlet-api.version>3.0.1</servlet-api.version>
