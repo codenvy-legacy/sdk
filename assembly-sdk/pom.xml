@@ -437,6 +437,13 @@
                                     <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
                                     <destFileName>mysql-connector-java-${mysql-driver.version}.jar</destFileName>
                                 </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.nuodb.jdbc</groupId>
+                                    <artifactId>nuodb-jdbc</artifactId>
+                                    <version>${nuodb-driver.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>nuodb-jdbc-${nuodb-driver.version}.jar</destFileName>
+                                </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
