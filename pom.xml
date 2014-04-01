@@ -59,7 +59,7 @@
         <concordion.ext.version>1.1.1</concordion.ext.version>
         <concordion.version>1.4.4</concordion.version>
         <enforcer.plugin.version>1.0.1</enforcer.plugin.version>
-        <everrest.version>1.1.9</everrest.version>
+        <everrest.version>1.1.10</everrest.version>
         <failsafe.plugin.version>2.6</failsafe.plugin.version>
         <gin.version>2.1.2</gin.version>
         <google.api.client.version>1.9.0-beta</google.api.client.version>
