@@ -4,7 +4,7 @@
     CODENVY CONFIDENTIAL
     __________________
 
-     [2012] - [2013] Codenvy, S.A.
+     [2012] - [2014] Codenvy, S.A.
      All Rights Reserved.
 
     NOTICE:  All information contained herein is, and remains
@@ -27,7 +27,7 @@
     </parent>
     <artifactId>assembly-sdk</artifactId>
     <packaging>pom</packaging>
-    <name>Codenvy :: Assemblies Tomcat</name>
+    <name>Codenvy SDK :: Assemblies Tomcat</name>
     <dependencies>
         <dependency>
             <groupId>ch.qos.logback</groupId>

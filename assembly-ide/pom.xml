@@ -4,7 +4,7 @@
     CODENVY CONFIDENTIAL
     __________________
 
-     [2012] - [2013] Codenvy, S.A.
+     [2012] - [2014] Codenvy, S.A.
      All Rights Reserved.
 
     NOTICE:  All information contained herein is, and remains
@@ -27,7 +27,7 @@
     </parent>
     <artifactId>assembly-ide</artifactId>
     <packaging>war</packaging>
-    <name>Codenvy :: Packaging :: Application</name>
+    <name>Codenvy SDK :: Application</name>
     <properties>
         <generated.sources.directory>${project.build.directory}/generated-sources/gen</generated.sources.directory>
         <ide.module>com.codenvy.ide.IDE</ide.module>
@@ -158,6 +158,21 @@
             <groupId>com.codenvy.platform-api-gwt-client</groupId>
             <artifactId>codenvy-gwt-client-commons</artifactId>
             <version>${codenvy.platform-api-gwt-client.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-completion-dto</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-completion-dto-gen</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-core-client</artifactId>
+            <version>${angularjs-plugin.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.gwt.inject</groupId>
