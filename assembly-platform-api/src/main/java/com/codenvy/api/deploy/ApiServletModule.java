@@ -37,8 +37,8 @@ public class ApiServletModule extends ServletModule {
         getServletContext().addListener(new WSConnectionTracker());
         bind(SingleEnvironmentFilter.class).in(Singleton.class);
         Map<String,String> params = new HashMap<>(2);
-        params.put("ws-name", "default");
-        params.put("ws-id", "1q2w3e");
+//        params.put("ws-name", "default");
+//        params.put("ws-id", "1q2w3e");
         filter("/*").through(SingleEnvironmentFilter.class, params);
         serve("/ws/*").with(CodenvyEverrestWebSocketServlet.class);
         serve("/*").with(GuiceEverrestServlet.class);
