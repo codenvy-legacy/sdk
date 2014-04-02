@@ -184,7 +184,17 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-runner-gulp</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-template-angular-seed</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-template-gulp-angularjs-starter</artifactId>
             <version>${angularjs-plugin.version}</version>
         </dependency>
         <dependency>
