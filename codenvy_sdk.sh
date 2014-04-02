@@ -11,7 +11,7 @@ echo "$(tput setaf 2)INFO: No Tomcat found for runners"$(tput sgr0)
 
 echo "$(tput setaf 2)INFO: Downloading Apache Tomcat for runners"$(tput sgr0)
 sleep 2
-tomcatVersion="7.0.52"
+tomcatVersion="7.0.53"
 tomcatDir="apache-tomcat-"${tomcatVersion}
 curl http://apache-mirror.telesys.org.ua/tomcat/tomcat-7/v${tomcatVersion}/bin/apache-tomcat-${tomcatVersion}.zip > $tomcatDir.zip
 unzip $tomcatDir
