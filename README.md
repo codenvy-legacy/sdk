@@ -44,7 +44,7 @@ mvn clean install
 
 ### Run the Codenvy SDK
 ```sh
-./codenvy_sdk
+./codenvy_sdk [start|stop]
 ```
 
 The hosted IDE will be available at ```localhost:8080```
