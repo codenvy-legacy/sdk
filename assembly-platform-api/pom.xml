@@ -124,6 +124,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-api-analytics</artifactId>
+            <version>${com.codenvy.platform-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-auth</artifactId>
             <version>${com.codenvy.platform-api.version}</version>
         </dependency>
