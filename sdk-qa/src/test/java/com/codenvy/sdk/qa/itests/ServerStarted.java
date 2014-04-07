@@ -36,14 +36,14 @@ public class ServerStarted extends AbstractIntegrationTest {
     public String displayExplorerTab() {
         return new WebDriverWait(driver, 10)
                                             .until(ExpectedConditions.presenceOfElementLocated(
-                                                                     By.xpath("//div[@id='codenvyIdeWorkspaceViewImpl']/div[2]/div/div[5]/div/div[2]/div/div[2]/div/div[3]/div/div[1]/span")
+                                                                     By.id("gwt-debug-tabButton-Explorer")
                                                                      )).getText();
     }
 
     public String displayFileMenu() {
         return new WebDriverWait(driver, 10)
                                             .until(ExpectedConditions.presenceOfElementLocated(
-                                                                     By.xpath("//div[@id='codenvyIdeWorkspaceViewImpl']/div[2]/div/div[2]/div/div[3]/div/div/table/tbody/tr/td[1]")
+                                                                     By.id("gwt-debug-MainMenu/FileGroup")
                                                                      )).getText();
     }
 
