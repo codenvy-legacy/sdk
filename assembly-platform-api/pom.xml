@@ -4,7 +4,7 @@
     CODENVY CONFIDENTIAL
     __________________
 
-     [2012] - [2013] Codenvy, S.A.
+     [2012] - [2014] Codenvy, S.A.
      All Rights Reserved.
 
     NOTICE:  All information contained herein is, and remains
@@ -27,6 +27,7 @@
     </parent>
     <artifactId>assembly-platform-api</artifactId>
     <packaging>war</packaging>
+    <name>Codenvy SDK :: Platform API</name>
     <dependencies>
         <dependency>
             <groupId>com.codenvy.commons</groupId>
@@ -41,6 +42,11 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-builder-maven</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-datasource-server</artifactId>
             <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
@@ -118,6 +124,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-api-analytics</artifactId>
+            <version>${com.codenvy.platform-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-auth</artifactId>
             <version>${com.codenvy.platform-api.version}</version>
         </dependency>
@@ -143,8 +154,58 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-api-workspace</artifactId>
+            <version>${com.codenvy.platform-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-infrastructure-local</artifactId>
             <version>${com.codenvy.platform-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-api-server</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-builder-grunt</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-builder-yeoman</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-core-server</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-runner-grunt</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-runner-gulp</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-template-angular-seed</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-template-gulp-angularjs-starter</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-template-yeoman</artifactId>
+            <version>${angularjs-plugin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.everrest</groupId>

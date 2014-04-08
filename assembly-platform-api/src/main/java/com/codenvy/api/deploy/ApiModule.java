@@ -17,6 +17,7 @@
  */
 package com.codenvy.api.deploy;
 
+import com.codenvy.api.auth.oauth.OAuthTokenProvider;
 import com.codenvy.api.builder.BuildQueue;
 import com.codenvy.api.builder.BuilderAdminService;
 import com.codenvy.api.builder.BuilderSelectionStrategy;
@@ -60,6 +61,7 @@ import com.codenvy.ide.ext.git.server.rest.MergeResultWriter;
 import com.codenvy.ide.ext.git.server.rest.RemoteListWriter;
 import com.codenvy.ide.ext.git.server.rest.StatusPageWriter;
 import com.codenvy.ide.ext.git.server.rest.TagListWriter;
+import com.codenvy.ide.ext.github.server.oauth.GitHubOAuthAuthenticatorProvider;
 import com.codenvy.ide.ext.github.server.rest.GitHubService;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
 import com.codenvy.ide.ext.java.server.RestNameEnvironment;
@@ -67,11 +69,9 @@ import com.codenvy.ide.ext.java.server.format.FormatService;
 import com.codenvy.ide.ext.ssh.server.KeyService;
 import com.codenvy.ide.ext.ssh.server.SshKeyStore;
 import com.codenvy.ide.ext.ssh.server.UserProfileSshKeyStore;
-import com.codenvy.ide.security.oauth.server.LabOAuthAuthenticatorProvider;
+import com.codenvy.ide.security.oauth.server.LocalOAuthTokenProvider;
 import com.codenvy.ide.security.oauth.server.OAuthAuthenticationService;
 import com.codenvy.ide.security.oauth.server.OAuthAuthenticatorProvider;
-import com.codenvy.ide.security.oauth.server.OAuthAuthenticatorTokenProvider;
-import com.codenvy.ide.security.oauth.server.OAuthTokenProvider;
 import com.codenvy.inject.DynaModule;
 import com.codenvy.runner.sdk.SDKRunner;
 import com.codenvy.runner.webapps.DeployToApplicationServerRunner;
@@ -82,6 +82,7 @@ import com.codenvy.vfs.impl.fs.WorkspaceHashLocalFSMountStrategy;
 import com.codenvy.vfs.impl.fs.exceptions.GitUrlResolveExceptionMapper;
 import com.codenvy.vfs.impl.fs.exceptions.LocalPathResolveExceptionMapper;
 import com.google.inject.AbstractModule;
+import com.google.inject.multibindings.Multibinder;
 import com.google.inject.util.Providers;
 
 import org.everrest.core.impl.async.AsynchronousJobPool;
@@ -116,6 +117,7 @@ public class ApiModule extends AbstractModule {
         bind(BuilderSelectionStrategy.class).toInstance(new LastInUseBuilderSelectionStrategy());
         bind(BuilderService.class);
         bind(com.codenvy.api.auth.AuthenticationService.class);
+        bind(com.codenvy.api.workspace.server.WorkspaceService.class);
         bind(BuilderAdminService.class);
         bind(SlaveBuilderService.class);
         bind(RunQueue.class).to(LocalRunQueue.class);
@@ -144,8 +146,11 @@ public class ApiModule extends AbstractModule {
         bind(KeyService.class);
         bind(SshKeyStore.class).to(UserProfileSshKeyStore.class);
         bind(OAuthAuthenticationService.class);
-        bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
-        bind(OAuthAuthenticatorProvider.class).to(LabOAuthAuthenticatorProvider.class);
+        bind(OAuthTokenProvider.class).to(LocalOAuthTokenProvider.class);
+        // Initialize empty set of OAuthAuthenticatorProvider.
+        Multibinder<OAuthAuthenticatorProvider> oAuthAuthenticatorMultibinder = Multibinder.newSetBinder(binder(), OAuthAuthenticatorProvider.class);
+        oAuthAuthenticatorMultibinder.addBinding().to(GitHubOAuthAuthenticatorProvider.class);
+        bind(OAuthAuthenticationService.class);
         bind(TokenValidator.class).to(TokenValidatorImpl.class);
     }
 }
