@@ -33,9 +33,16 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>com.googlecode.grep4j</groupId>
+            <artifactId>grep4j</artifactId>
+            <version>1.8.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.concordion</groupId>
@@ -116,6 +123,10 @@
                                 <property>
                                     <name>concordion.output.dir</name>
                                     <value>${project.build.directory}/concordion</value>
+                                </property>
+                                <property>
+                                    <name>codenvy.ide.path</name>
+                                    <value>${codenvy.ide.path}</value>
                                 </property>
                             </systemProperties>
                         </configuration>
