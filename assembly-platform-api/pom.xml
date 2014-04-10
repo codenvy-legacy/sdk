@@ -46,11 +46,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-datasource-server</artifactId>
-            <version>${com.codenvy.ide.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
             <version>${com.codenvy.ide.version}</version>
             <exclusions>
@@ -83,6 +78,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-maven</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-tutorials</artifactId>
             <version>${com.codenvy.ide.version}</version>
         </dependency>
@@ -100,6 +100,11 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ide-factory</artifactId>
             <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>
@@ -135,6 +140,11 @@
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-builder</artifactId>
+            <version>${com.codenvy.platform-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-api-factory</artifactId>
             <version>${com.codenvy.platform-api.version}</version>
         </dependency>
         <dependency>

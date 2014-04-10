@@ -47,6 +47,18 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>analytics-event-logger-extension</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-datasource-server-war</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
             <version>${com.codenvy.ide.version}</version>
         </dependency>
@@ -370,6 +382,15 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>analytics-event-logger-extension</artifactId>
+                                    <type>zip</type>
+                                    <version>${com.codenvy.ide.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>analytics-event-logger-extension.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
                                     <artifactId>icons-registry-api</artifactId>
                                     <type>zip</type>
                                     <version>${com.codenvy.ide.version}</version>
@@ -385,6 +406,15 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>wysiwyg-editor-tutorial.zip</destFileName>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>server-side-tutorial</artifactId>
+                                    <type>zip</type>
+                                    <version>${com.codenvy.ide.version}</version>
+                                    <overWrite>false</overWrite>
+                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
+                                    <destFileName>server-side-tutorial.zip</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
@@ -491,6 +521,7 @@
                                     <fileset dir="${project.build.directory}/packager-conf/war/ide" />
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
+                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-${com.codenvy.ide.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>
