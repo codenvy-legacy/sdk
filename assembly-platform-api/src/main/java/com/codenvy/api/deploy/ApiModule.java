@@ -18,19 +18,15 @@
 package com.codenvy.api.deploy;
 
 import com.codenvy.api.auth.oauth.OAuthTokenProvider;
-import com.codenvy.api.builder.BuildQueue;
 import com.codenvy.api.builder.BuilderAdminService;
 import com.codenvy.api.builder.BuilderSelectionStrategy;
 import com.codenvy.api.builder.BuilderService;
 import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
-import com.codenvy.api.builder.LocalBuildQueue;
 import com.codenvy.api.builder.internal.SlaveBuilderService;
 import com.codenvy.api.core.rest.ApiExceptionMapper;
 import com.codenvy.api.project.server.ProjectService;
 import com.codenvy.api.project.server.ProjectTypeDescriptionService;
 import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
-import com.codenvy.api.runner.LocalRunQueue;
-import com.codenvy.api.runner.RunQueue;
 import com.codenvy.api.runner.RunnerAdminService;
 import com.codenvy.api.runner.RunnerSelectionStrategy;
 import com.codenvy.api.runner.RunnerService;
@@ -146,7 +142,8 @@ public class ApiModule extends AbstractModule {
         bind(OAuthAuthenticationService.class);
         bind(OAuthTokenProvider.class).to(LocalOAuthTokenProvider.class);
         // Initialize empty set of OAuthAuthenticatorProvider.
-        Multibinder<OAuthAuthenticatorProvider> oAuthAuthenticatorMultibinder = Multibinder.newSetBinder(binder(), OAuthAuthenticatorProvider.class);
+        Multibinder<OAuthAuthenticatorProvider> oAuthAuthenticatorMultibinder =
+                Multibinder.newSetBinder(binder(), OAuthAuthenticatorProvider.class);
         oAuthAuthenticatorMultibinder.addBinding().to(GitHubOAuthAuthenticatorProvider.class);
         bind(OAuthAuthenticationService.class);
         bind(TokenValidator.class).to(TokenValidatorImpl.class);
