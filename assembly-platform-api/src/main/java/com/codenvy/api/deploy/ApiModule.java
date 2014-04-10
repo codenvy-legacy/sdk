@@ -113,14 +113,12 @@ public class ApiModule extends AbstractModule {
         bind(VirtualFileSystemRuntimeExceptionMapper.class).toInstance(new VirtualFileSystemRuntimeExceptionMapper());
         bind(VirtualFileSystemFactory.class);
         bind(ApiExceptionMapper.class).toInstance(new ApiExceptionMapper());
-        bind(BuildQueue.class).to(LocalBuildQueue.class);
         bind(BuilderSelectionStrategy.class).toInstance(new LastInUseBuilderSelectionStrategy());
         bind(BuilderService.class);
         bind(com.codenvy.api.auth.AuthenticationService.class);
         bind(com.codenvy.api.workspace.server.WorkspaceService.class);
         bind(BuilderAdminService.class);
         bind(SlaveBuilderService.class);
-        bind(RunQueue.class).to(LocalRunQueue.class);
         bind(RunnerSelectionStrategy.class).toInstance(new LastInUseRunnerSelectionStrategy());
         bind(RunnerService.class);
         bind(RunnerAdminService.class);
