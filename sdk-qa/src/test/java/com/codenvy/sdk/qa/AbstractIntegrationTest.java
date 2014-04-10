@@ -79,7 +79,7 @@ public class AbstractIntegrationTest {
                                               .filePath(serverLocation + logFileLocation)
                                               .onLocalhost()
                                               .build();
-        if (new WebDriverWait(driver, 10).until(new ExpectedCondition<Boolean>() {
+        if (new WebDriverWait(driver, 60).until(new ExpectedCondition<Boolean>() {
             @Override
             public Boolean apply(WebDriver arg0) {
                 GrepResults results = grep(constantExpression("Server startup in"), on(profile));                
