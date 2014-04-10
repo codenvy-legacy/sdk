@@ -4,7 +4,7 @@
     CODENVY CONFIDENTIAL
     __________________
 
-     [2012] - [2013] Codenvy, S.A.
+     [2012] - [2014] Codenvy, S.A.
      All Rights Reserved.
 
     NOTICE:  All information contained herein is, and remains
@@ -29,11 +29,12 @@
     <artifactId>codenvy-sdk-parent</artifactId>
     <version>3.0.0-M13-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Codenvy :: SDK :: Parent</name>
+    <name>Codenvy SDK :: Parent</name>
     <modules>
-        <module>assembly-platform-api</module>
         <module>assembly-ide</module>
+        <module>assembly-platform-api</module>
         <module>assembly-sdk</module>
+        <module>sdk-qa</module>
     </modules>
     <scm>
         <connection>scm:git:git@github.com:codenvy/sdk.git</connection>
@@ -41,21 +42,25 @@
         <tag>HEAD</tag>
     </scm>
     <properties>
+        <angularjs-plugin.version>1.0.0-M1-SNAPSHOT</angularjs-plugin.version>
         <ant.version>1.9.1</ant.version>
         <antlr.version>3.3</antlr.version>
+        <arquillian.phantom.driver.version>1.1.0.Final</arquillian.phantom.driver.version>
         <buildNumber>${maven.build.timestamp}</buildNumber>
         <buildnumber.plugin.version>1.1</buildnumber.plugin.version>
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
-        <codenvy.platform-api-gwt-client.version>0.3.0</codenvy.platform-api-gwt-client.version>
-        <com.codenvy.commons.version>0.17.0</com.codenvy.commons.version>
-        <com.codenvy.ide.version>3.0.0-M12</com.codenvy.ide.version>
-        <com.codenvy.platform-api.version>0.12.0</com.codenvy.platform-api.version>
+        <codenvy.platform-api-gwt-client.version>0.3.0-SNAPSHOT</codenvy.platform-api-gwt-client.version>
+        <com.codenvy.commons.version>0.19.0-SNAPSHOT</com.codenvy.commons.version>
+        <com.codenvy.ide.version>3.0.0-M14-SNAPSHOT</com.codenvy.ide.version>
+        <com.codenvy.platform-api.version>0.15.0-SNAPSHOT</com.codenvy.platform-api.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-fileupload.version>1.2.1</commons-fileupload.version>
         <commons-io.version>2.4</commons-io.version>
         <commons.compress.version>1.6</commons.compress.version>
+        <concordion.ext.version>1.1.1</concordion.ext.version>
+        <concordion.version>1.4.4</concordion.version>
         <enforcer.plugin.version>1.0.1</enforcer.plugin.version>
-        <everrest.version>1.1.9</everrest.version>
+        <everrest.version>1.1.10</everrest.version>
         <failsafe.plugin.version>2.6</failsafe.plugin.version>
         <gin.version>2.1.2</gin.version>
         <google.api.client.version>1.9.0-beta</google.api.client.version>
@@ -63,10 +68,15 @@
         <guava.version>12.0.1</guava.version>
         <gwt.version>2.6.0</gwt.version>
         <jsch.version>0.1.44-1</jsch.version>
+        <jtds-driver.version>1.2</jtds-driver.version>
+        <junit.version>4.8.1</junit.version>
         <maven.build.timestamp.format>dd.MM.yy HH:mm</maven.build.timestamp.format>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <mysql-driver.version>5.1.29</mysql-driver.version>
+        <nuodb-driver.version>2.0.3</nuodb-driver.version>
         <org.slf4j.version>1.7.5</org.slf4j.version>
+        <postgresql-driver.version>9.3-1100-jdbc41</postgresql-driver.version>
         <reflections.version>0.9.9-RC1</reflections.version>
         <release.plugin.version>2.2.1</release.plugin.version>
         <servlet-api.version>3.0.1</servlet-api.version>

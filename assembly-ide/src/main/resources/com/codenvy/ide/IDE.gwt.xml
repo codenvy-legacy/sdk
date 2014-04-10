@@ -41,10 +41,13 @@
     <inherits name='com.codenvy.ide.ext.java.jdi.JavaRuntimeExtension'/>
     <inherits name='com.codenvy.ide.extension.builder.Builder'/>
     <inherits name='com.codenvy.ide.extension.runner.Runner'/>
+    <inherits name='com.codenvy.ide.extension.maven.Maven'/>
     <inherits name='com.codenvy.ide.ext.git.Git'/>
     <inherits name='com.codenvy.ide.ext.github.GitHub'/>
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
     <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
+    <inherits name='com.codenvy.ide.ext.datasource.Datasource'/>
+    <inherits name='com.codenvy.api.factory.FactoryDto' />
 
     <inherits name='com.codenvy.api.Core'/>
     <inherits name='com.codenvy.api.Builder'/>
@@ -55,6 +58,11 @@
 
     <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
     <inherits name="com.codenvy.api.Project"/>
+
+    <!-- AngularJS plugin -->
+    <inherits name="com.codenvy.plugin.angularjs.completion.dto.Completion" />
+    <inherits name="com.codenvy.plugin.angularjs.core.client.AngularJS"/>
+
 
     <stylesheet src="IDE.css"/>
 
