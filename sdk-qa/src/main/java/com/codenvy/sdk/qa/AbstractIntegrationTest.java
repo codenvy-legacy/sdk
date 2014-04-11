@@ -59,6 +59,8 @@ public class AbstractIntegrationTest {
         driver = new PhantomJSDriver(
                                      ResolvingPhantomJSDriverService.createDefaultService(),
                                      DesiredCapabilities.phantomjs());
+        // use firefox for dev testing:
+        // driver = new FirefoxDriver();
         driver.manage().window().setSize(new Dimension(1024, 768));
         extension.setSeleniumDriver(driver);
     }
