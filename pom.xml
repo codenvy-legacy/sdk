@@ -27,7 +27,7 @@
     </parent>
     <groupId>com.codenvy.sdk</groupId>
     <artifactId>codenvy-sdk-parent</artifactId>
-    <version>3.0.0-M14</version>
+    <version>3.0.1-M14-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Codenvy SDK :: Parent</name>
     <modules>
@@ -39,7 +39,7 @@
     <scm>
         <connection>scm:git:git@github.com:codenvy/sdk.git</connection>
         <developerConnection>scm:git:git@github.com:codenvy/sdk.git</developerConnection>
-        <tag>3.0.0-M14</tag>
+        <tag>HEAD</tag>
     </scm>
     <properties>
         <angularjs-plugin.version>1.0.0-M1</angularjs-plugin.version>
