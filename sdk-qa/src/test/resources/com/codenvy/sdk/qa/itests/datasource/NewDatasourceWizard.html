@@ -1,0 +1,36 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<body>
+<div class="md">
+
+# New Datasource wizard page
+
+> Test new datasource wizard pages:
+>
+>  - Check that Datasource menu are present
+>  - Make sure the wizard is displayed once user clicks on the New Datasource action
+>  - Check datasource type availabilities
+
+## Given
+- Server url:  <span c:set="#url">http://localhost:8280</span>
+- The server logs in <span c:set="#logpath">/logs/catalina.out</span> say server <span c:assertEquals="serverIsStarted(#logpath)">is started</span>
+
+## When
+- The user <span c:assertEquals="access(#url)">access</span> the server url
+
+## Then
+- The <span c:assertEquals="displayDatasourceMenu()">Datasource</span> menu is displayed
+- The <span c:assertEquals="displayDatasourceNewDatasourceAction()">New Datasource Connection</span> menu action is available
+
+## When
+- The user <span c:assertEquals="clickOnNewDatasourceAction()">clicks</span> on the menu action
+
+## Then
+- The <span c:assertEquals="displayNewDatasourceWizard()">New Datasource Wizard</span> is displayed
+- The PostgreSQL datasource type <span c:assertEquals="postgresDsTypeIsAvailable()">is enabled</span>
+- The MySQL datasource type <span c:assertEquals="mySqlDsTypeIsAvailable()">is enabled</span>
+- The MsSQLServer datasource type <span c:assertEquals="msSQLServerDsTypeIsAvailable()">is enabled</span>
+- The Oracle datasource <span c:assertEquals="oracleDsTypeIsNotAvailable()">is disabled</span>
+
+</div>
+</body>
+</html>

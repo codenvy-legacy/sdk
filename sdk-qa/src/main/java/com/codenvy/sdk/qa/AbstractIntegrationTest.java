@@ -32,11 +32,15 @@ import org.jboss.arquillian.phantom.resolver.ResolvingPhantomJSDriverService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.codenvy.sdk.qa.concordion.CodenvyConcordionExtension;
@@ -84,12 +88,38 @@ public class AbstractIntegrationTest {
         if (new WebDriverWait(driver, 60).until(new ExpectedCondition<Boolean>() {
             @Override
             public Boolean apply(WebDriver arg0) {
-                GrepResults results = grep(constantExpression("Server startup in"), on(profile));                
+                GrepResults results = grep(constantExpression("Server startup in"), on(profile));
                 return !results.toString().isEmpty();
             }
         })) {
             return "is started";
         }
         return "is not started";
+    }
+
+
+    public static ExpectedCondition<WebElement> gwtToogleButtonToBeEnable(final By locator) {
+        return new ExpectedCondition<WebElement>() {
+            public ExpectedCondition<WebElement> visibilityOfElementLocated = ExpectedConditions.visibilityOfElementLocated(locator);
+
+            @Override
+            public WebElement apply(WebDriver driver) {
+                WebElement element = visibilityOfElementLocated.apply(driver);
+                try {
+                    if (element != null && !element.getAttribute("class").contains("gwt-ToggleButton-up-disabled")) {
+                        return element;
+                    } else {
+                        return null;
+                    }
+                } catch (StaleElementReferenceException e) {
+                    return null;
+                }
+            }
+
+            @Override
+            public String toString() {
+                return "gwt Toggle Button to be enabled: " + locator;
+            }
+        };
     }
 }
