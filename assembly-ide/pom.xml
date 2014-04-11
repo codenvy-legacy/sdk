@@ -23,7 +23,7 @@
     <parent>
         <artifactId>codenvy-sdk-parent</artifactId>
         <groupId>com.codenvy.sdk</groupId>
-        <version>3.0.0-M14-SNAPSHOT</version>
+        <version>3.0.0-M15-SNAPSHOT</version>
     </parent>
     <artifactId>assembly-ide</artifactId>
     <packaging>war</packaging>
@@ -137,6 +137,11 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
+            <version>${com.codenvy.ide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ide-factory</artifactId>
             <version>${com.codenvy.ide.version}</version>
         </dependency>
         <dependency>

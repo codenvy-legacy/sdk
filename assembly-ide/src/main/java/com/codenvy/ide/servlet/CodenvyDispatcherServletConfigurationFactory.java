@@ -134,6 +134,13 @@ public class CodenvyDispatcherServletConfigurationFactory extends DispatcherServ
                                                      } else {
                                                          writer.write("      var path = null;\n");
                                                      }
+
+                                                     //startup params needed for factory in local sdk env
+                                                     if (request.getQueryString() != null) {
+                                                         writer.write(String.format("      var startUpParams = \"%s\";\n", request.getQueryString()));
+                                                     } else {
+                                                         writer.write("      var startUpParams = null;\n");
+                                                     }
                                                      
                                                      writer.write("      var facebook_like_url = \"/ide/_app/facebook-like.html\";\n");
                                                      writer.write("      var google_like_url = \"/ide/_app/google-like.html\";\n");
