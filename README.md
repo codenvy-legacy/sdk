@@ -49,6 +49,19 @@ mvn clean install
 
 The hosted IDE will be available at ```localhost:8080```
 
+### AngularJS Configuration
+
+In order to be able to use this plugin, some of tools needs to be available on the system.
+
+These tools include : npm and Yeoman stack (with bower and Grunt)
+
+* npm setup guide : https://github.com/npm/npm
+npm is bundled with nodejs which can be downloaded from there : http://nodejs.org/download/
+
+
+* Yeoman (and dependencies can be installed with the command line : npm install -g yo)
+   more details on http://yeoman.io/gettingstarted.html
+
 ### Add Your Extensions (Plug-Ins) to the SDK
 
 1. Package your extension as a JAR either offline or in the IDE.  If in the IDE, go to **Project** menu and build your extension. After the build is finished you will see a link in the Output console that points to a location to download your artifacts.  
