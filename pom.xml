@@ -42,7 +42,7 @@
         <tag>HEAD</tag>
     </scm>
     <properties>
-        <angularjs-plugin.version>1.0.0-M1-SNAPSHOT</angularjs-plugin.version>
+        <angularjs-plugin.version>1.0.0-M1</angularjs-plugin.version>
         <ant.version>1.9.1</ant.version>
         <antlr.version>3.3</antlr.version>
         <arquillian.phantom.driver.version>1.1.0.Final</arquillian.phantom.driver.version>
@@ -51,7 +51,7 @@
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
         <codenvy.platform-api-gwt-client.version>0.4.0</codenvy.platform-api-gwt-client.version>
         <com.codenvy.commons.version>0.19.0</com.codenvy.commons.version>
-        <com.codenvy.ide.version>3.0.0-M14-SNAPSHOT</com.codenvy.ide.version>
+        <com.codenvy.ide.version>3.0.0-M14</com.codenvy.ide.version>
         <com.codenvy.platform-api.version>0.15.0</com.codenvy.platform-api.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-fileupload.version>1.2.1</commons-fileupload.version>
