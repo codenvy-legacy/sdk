@@ -53,8 +53,8 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-datasource-server-war</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <artifactId>codenvy-ext-datasource-server-war-sdk</artifactId>
+            <version>${datasource-plugin.version}</version>
             <type>war</type>
         </dependency>
         <dependency>
@@ -521,7 +521,7 @@
                                     <fileset dir="${project.build.directory}/packager-conf/war/ide" />
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
-                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-${com.codenvy.ide.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
+                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${com.codenvy.ide.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>
