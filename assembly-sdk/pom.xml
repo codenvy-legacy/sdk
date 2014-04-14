@@ -269,6 +269,13 @@
                                     <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
                                     <destFileName>logback-classic.jar</destFileName>
                                 </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.codenvy.ide</groupId>
+                                    <artifactId>codenvy-ssl-socket-factory</artifactId>
+                                    <version>${codenvy.plugin.datasource.version}</version>
+                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
+                                    <destFileName>codenvy-ssl-socket-factory.jar</destFileName>
+                                </artifactItem>
                             </artifactItems>
                         </configuration>
                     </execution>
