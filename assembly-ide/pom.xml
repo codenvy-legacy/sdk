@@ -353,7 +353,8 @@
                         WEB-INF/lib/codenvy-ide-env-dummy-*.jar,
                         WEB-INF/classes/com/codenvy/ide/servlet/*,
                         WEB-INF/classes/META-INF/,
-                        _app/**</packagingIncludes>
+                        _app/**,
+                        IDE.jsp</packagingIncludes>
                 </configuration>
             </plugin>
             <plugin>

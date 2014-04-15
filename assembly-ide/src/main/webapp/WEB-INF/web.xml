@@ -42,12 +42,13 @@
     </filter-mapping>
 
     <servlet>
-        <servlet-name>Dispatcher</servlet-name>
-        <servlet-class>com.codenvy.commons.servlet.DispatcherServlet</servlet-class>
+        <servlet-name>IDE</servlet-name>
+        <!--<servlet-class>com.codenvy.commons.servlet.DispatcherServlet</servlet-class>-->
+        <jsp-file>/IDE.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Dispatcher</servlet-name>
+        <servlet-name>IDE</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>

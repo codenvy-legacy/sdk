@@ -57,32 +57,23 @@ Installing
 4.2. Unpack the archive where you would like to store the binaries.
      A directory called "codenvy-sdk-[version]" will be created.
 
-5. Codenvy SDK requires some libraries in order to launch Codenvy extensions that you develop.
-   You should copy these libraries to your local Maven repository.
-
-5.1. In Tomcat root, execute the following command:
-
-On *nix:
-      ./install.sh
-
-This script will find your local Maven repository and copy libs there.
-It will also download and unpack another Tomcat which is used as runtime for apps and extensions launched in Codenvy SDK.
-
 ===================
 Running & Stopping
 ===================
 
-1. In order to launch a Codenvy Platform SDK, go to bin directory and start Tomcat:
+1. In order to launch a Codenvy Platform SDK, start Tomcat:
 
 On *nix:
-      ./codenvy.sh start
+      ./codenvy_sdk.sh start
+
+* This script will also download and unpack another Tomcat which is used as runtime for apps and extensions launched in Codenvy SDK. This step will be skipped if you already already done so.
 
 After launching, Codenvy Platform SDK application will be available at http://localhost:8080/
 
 2. To stop a Codenvy Platform SDK application, execute the following command:
 
 On *nix:
-      ./codenvy.sh stop
+      ./codenvy_sdk.sh stop
       
 =========================================================
 How to configure oAuth with GitHub and SSH key management
@@ -112,39 +103,57 @@ http://localhost:8080/api/oauth/callback
 
 * Copy those values to a file located in conf folder of the SDK Tomcat package - /conf/github_client_secrets.json
 
-* By default, values for Client ID and Client Secret are filled with "***". You need to replace those with real values obtained from GitHub application settings
+* By default, values for Client ID and Client Secret are filled with "***". You need to replace those with real values obtained from GitHub application settings.
 
-===========================
-Local Storage Configuration
-===========================
+===================================================================
+Local Storage for Projects, Preferences, GitHub Tokens and SSH keys
+===================================================================
 
-Codenvy SDK provides configuration file 'codenvy-api-configuration.properties' located at webapps/api/WEB-INF/classes/codenvy with a set of parameters having default values. To persist local configuration settings each time a new SDK version is downloaded, this file should be copied to a permanent location, and a new local environment variable should be added:
+Codenvy SDK provides configuration file codenvy-api-configuration.properties located at webapps/api/WEB-INF/classes/codenvy with a set of parameters having default values. To persist local configuration settings each time a new SDK version is downloaded, this file should be copied to a permanent location, and a new local environment variable should be added:
 
-export CODENVY_LOCAL_CONF_DIR="[path to a location where config file is stored]", for example:
+export CODENVY_LOCAL_CONF_DIR=”[path to a location where config file is stored]“, for example:
 
-export CODENVY_LOCAL_CONF_DIR="/home/eugene/.codenvy"
+export CODENVY_LOCAL_CONF_DIR=”/home/eugene/.codenvy”
 
-=================================================
-Configure local storage for projects and SSH keys
-=================================================
-
-The vast majority of values do not need any changes. In order to store projects and SSH keys in a specified location (and thus avoid their deletion each time a user receives updates) the following default paths should be changed:
-
-1. For local SSH key storage:
-
-ssh.key_store_location=${catalina.base}/temp/ssh
-
-
-2. For local projects storage:
+======================
+Local Projects Storage
+======================
+In configuration file:
 
 vfs.local.fs_root_dir=${catalina.base}/temp/fs-root
 vfs.local.fs_index_root_dir=${catalina.base}/temp/fs-root
 
-Just replace default values with your local paths. For example:
+replace with
 
-ssh.key_store_location=/home/codenvy/SDK/.ssh
-vfs.local.fs_root_dir=/home/codenvy/SDK/.projects
-vfs.local.fs_index_root_dir=/home/codenvy/SDK/.projects
+vfs.local.fs_root_dir=/home/eugene/SDK/.projects
+vfs.local.fs_index_root_dir=/home/eugene/SDK/.projects
+
+==============================================
+Local Storage for GitHub Client ID and Secrets
+==============================================
+
+In configuration file:
+
+Replace *** with real values obtained from a registered GitHub app:
+
+#security
+security.local.oauth.github-client-id=***
+security.local.oauth.github-client-secret=***
+security.local.oauth.github-auth-uri= https://github.com/login/oauth/authorize
+security.local.oauth.github-token-uri= https://github.com/login/oauth/access_token
+security.local.oauth.github-redirect-uris= http://localhost:8080/api/oauth/callback
+
+==================================================
+Local User Profile: Theme Preferences and SSH Keys
+==================================================
+
+User preferences are stored in a profile which is a JSON file ProfileStorage.json. Such preferences include but (not limited to) SSH keys and Themes. By default, the profile is stored in temp folder in Tomcat root, however, you can specify its new permanent location in codenvy-api-configuration.properties and actually move it there:
+
+profile.store_location=${catalina.base}/temp
+
+replace with
+
+profile.store_location=/your/local/path/
 
 ===============================================
 Contribute 3rd-party extensions to Codenvy IDE
@@ -165,7 +174,7 @@ On *nix:
 Update Extensions
 =================
 
-1. Launch extension at Run > Launch Codenvy Extension
+1. Launch extension at Run menu
 2. Click extension URL in the Output console
 3. Click Update Extension button in the runner instance
 4. The extension will be recompiled which may take around 1 minute
