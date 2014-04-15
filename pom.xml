@@ -42,7 +42,7 @@
         <tag>HEAD</tag>
     </scm>
     <properties>
-        <angularjs-plugin.version>1.0.0-M1-SNAPSHOT</angularjs-plugin.version>
+        <angularjs-plugin.version>1.0.0-M2-SNAPSHOT</angularjs-plugin.version>
         <ant.version>1.9.1</ant.version>
         <antlr.version>3.3</antlr.version>
         <arquillian.phantom.driver.version>1.1.0.Final</arquillian.phantom.driver.version>

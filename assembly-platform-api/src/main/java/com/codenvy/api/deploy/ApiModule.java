@@ -147,5 +147,9 @@ public class ApiModule extends AbstractModule {
         oAuthAuthenticatorMultibinder.addBinding().to(GitHubOAuthAuthenticatorProvider.class);
         bind(OAuthAuthenticationService.class);
         bind(TokenValidator.class).to(TokenValidatorImpl.class);
+        //factory
+        bind(com.codenvy.api.factory.FactoryService.class);
+        bind(com.codenvy.ide.factory.server.FactoryService.class);
+        bind(com.codenvy.api.factory.FactoryUrlValidator.class).to(com.codenvy.ide.factory.server.DummyFactoryValidator.class);
     }
 }
