@@ -47,7 +47,7 @@
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
     <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
     <inherits name='com.codenvy.ide.ext.datasource.Datasource'/>
-    <inherits name='com.codenvy.api.factory.FactoryDto' />
+    <inherits name='com.codenvy.ide.Factory' />
 
     <inherits name='com.codenvy.api.Core'/>
     <inherits name='com.codenvy.api.Builder'/>
