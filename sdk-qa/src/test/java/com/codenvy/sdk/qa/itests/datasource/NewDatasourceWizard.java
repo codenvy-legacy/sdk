@@ -20,70 +20,72 @@ package com.codenvy.sdk.qa.itests.datasource;
 import static org.junit.Assert.fail;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.codenvy.sdk.qa.AbstractIntegrationTest;
+import com.codenvy.sdk.qa.selenium.pages.IDEMainPage;
+import com.codenvy.sdk.qa.selenium.pages.datasource.NewDatasourceWizardPage;
 
 /**
  * Test datasource creation. See specs reports in src/test/resources/com/codenvy/sdk/qa/itests/datasource/NewDatasourceWizard.html
  */
 public class NewDatasourceWizard extends AbstractIntegrationTest {
 
+
+    protected IDEMainPage             mainPage;
+    protected NewDatasourceWizardPage newDatasourceWizard;
+
     public String access(String url) {
         driver.get(url);
+        mainPage = PageFactory.initElements(driver, IDEMainPage.class);
         return "access";
     }
 
 
     public String displayDatasourceMenu() {
-        return new WebDriverWait(driver, 20)
-                                            .until(ExpectedConditions.presenceOfElementLocated(
-                                                                     By.id("gwt-debug-MainMenu/DatasourceMainMenu")
-                                                                     )).getText();
+        return mainPage.getMainMenuItem("DatasourceMainMenu").getText();
     }
 
     public String displayDatasourceNewDatasourceAction() {
-        driver.findElement(By.id("gwt-debug-MainMenu/DatasourceMainMenu")).click();
-        return new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(
-                                                                     By.id("topmenu/Datasource/New Datasource Connection")
-                                                                     )).getText();
+        mainPage.getMainMenuItem("DatasourceMainMenu").click();
+        return mainPage.getMainMenuAction("Datasource/New Datasource Connection").getText();
     }
 
     public String clickOnNewDatasourceAction() {
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(
-                                                              By.id("topmenu/Datasource/New Datasource Connection")
-                                                              )).click();
+        mainPage.getMainMenuAction("Datasource/New Datasource Connection").click();
+        newDatasourceWizard = new NewDatasourceWizardPage(driver);
+        PageFactory.initElements(new AjaxElementLocatorFactory(driver, 15), newDatasourceWizard);
         return "clicks";
     }
 
 
     public String displayNewDatasourceWizard() {
-        return new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(
-                                                                     By.id("gwt-debug-file-newOther-wizardDialog-caption")
-                                                                     )).getText();
+        return newDatasourceWizard.getWizardTitle();
     }
 
     public String postgresDsTypeIsAvailable() {
-        new WebDriverWait(driver, 10).until(gwtToogleButtonToBeEnable(
-                                                              By.cssSelector("#gwt-debug-datasource-wizard-ds-type-postgres")
-                                                              ));
-        return "is enabled";
+        if (newDatasourceWizard.isDatasourceTypeAvailable("postgres")) {
+            return "is enabled";
+        }
+        return "is not enabled";
     }
 
 
     public String mySqlDsTypeIsAvailable() {
-        new WebDriverWait(driver, 10).until(gwtToogleButtonToBeEnable(
-                                                              By.cssSelector("#gwt-debug-datasource-wizard-ds-type-mysql")
-                                                              ));
-        return "is enabled";
+        if (newDatasourceWizard.isDatasourceTypeAvailable("mysql")) {
+            return "is enabled";
+        }
+        return "is not enabled";
     }
 
     public String msSQLServerDsTypeIsAvailable() {
-        new WebDriverWait(driver, 10).until(gwtToogleButtonToBeEnable(
-                                                              By.cssSelector("#gwt-debug-datasource-wizard-ds-type-sqlserver")
-                                                              ));
-        return "is enabled";
+        if (newDatasourceWizard.isDatasourceTypeAvailable("sqlserver")) {
+            return "is enabled";
+        }
+        return "is not enabled";
     }
 
     public String oracleDsTypeIsNotAvailable() {
