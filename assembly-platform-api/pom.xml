@@ -179,7 +179,17 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-builder-bower</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-builder-grunt</artifactId>
+            <version>${angularjs-plugin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-builder-npm</artifactId>
             <version>${angularjs-plugin.version}</version>
         </dependency>
         <dependency>
