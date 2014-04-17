@@ -54,6 +54,7 @@
     <inherits name='com.codenvy.api.Runner'/>
     <inherits name='com.codenvy.api.User'/>
     <inherits name='com.codenvy.api.VFS'/>
+    <inherits name='com.codenvy.api.Analytics'/>
 
     <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
 
