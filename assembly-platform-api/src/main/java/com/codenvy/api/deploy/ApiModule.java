@@ -24,6 +24,7 @@ import com.codenvy.api.builder.BuilderService;
 import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
 import com.codenvy.api.builder.internal.SlaveBuilderService;
 import com.codenvy.api.core.rest.ApiExceptionMapper;
+import com.codenvy.api.project.server.ProjectImporter;
 import com.codenvy.api.project.server.ProjectService;
 import com.codenvy.api.project.server.ProjectTypeDescriptionService;
 import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
@@ -92,6 +93,7 @@ public class ApiModule extends AbstractModule {
     protected void configure() {
         bind(ProjectService.class);
         bind(ProjectTypeDescriptionService.class);
+        bind(com.codenvy.api.project.server.ProjectImportersService.class);
         bind(LocalFileSystemRegistryPlugin.class);
         bind(LocalFSMountStrategy.class).to(WorkspaceHashLocalFSMountStrategy.class);
         bind(SearcherProvider.class).to(CleanableSearcherProvider.class);
