@@ -27,7 +27,7 @@
     </parent>
     <groupId>com.codenvy.sdk</groupId>
     <artifactId>codenvy-sdk-parent</artifactId>
-    <version>3.0.0-M15-SNAPSHOT</version>
+    <version>3.0.0-M16-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Codenvy SDK :: Parent</name>
     <modules>
@@ -42,26 +42,26 @@
         <tag>HEAD</tag>
     </scm>
     <properties>
-        <angularjs-plugin.version>1.0.0-M2-SNAPSHOT</angularjs-plugin.version>
+        <angularjs-plugin.version>1.0.0-M3-SNAPSHOT</angularjs-plugin.version>
         <ant.version>1.9.1</ant.version>
         <antlr.version>3.3</antlr.version>
         <arquillian.phantom.driver.version>1.1.0.Final</arquillian.phantom.driver.version>
         <buildNumber>${maven.build.timestamp}</buildNumber>
         <buildnumber.plugin.version>1.1</buildnumber.plugin.version>
         <ch.qos.logback.version>1.0.13</ch.qos.logback.version>
-        <codenvy.platform-api-gwt-client.version>0.5.0-SNAPSHOT</codenvy.platform-api-gwt-client.version>
-        <com.codenvy.commons.version>0.20.0-SNAPSHOT</com.codenvy.commons.version>
-        <com.codenvy.ide.version>3.0.0-M15-SNAPSHOT</com.codenvy.ide.version>
-        <com.codenvy.platform-api.version>0.16.0-SNAPSHOT</com.codenvy.platform-api.version>
+        <codenvy.platform-api-gwt-client.version>0.6.0-SNAPSHOT</codenvy.platform-api-gwt-client.version>
+        <com.codenvy.commons.version>0.21.0-SNAPSHOT</com.codenvy.commons.version>
+        <com.codenvy.ide.version>3.0.0-M16-SNAPSHOT</com.codenvy.ide.version>
+        <com.codenvy.platform-api.version>0.17.0-SNAPSHOT</com.codenvy.platform-api.version>
         <commons-codec.version>1.6</commons-codec.version>
         <commons-fileupload.version>1.2.1</commons-fileupload.version>
         <commons-io.version>2.4</commons-io.version>
         <commons.compress.version>1.6</commons.compress.version>
         <concordion.ext.version>1.1.1</concordion.ext.version>
         <concordion.version>1.4.4</concordion.version>
-        <datasource-plugin.version>3.0.0-M15-SNAPSHOT</datasource-plugin.version>
+        <datasource-plugin.version>3.0.0-M16-SNAPSHOT</datasource-plugin.version>
         <enforcer.plugin.version>1.0.1</enforcer.plugin.version>
-        <everrest.version>1.1.11-SNAPSHOT</everrest.version>
+        <everrest.version>1.1.11</everrest.version>
         <failsafe.plugin.version>2.6</failsafe.plugin.version>
         <gin.version>2.1.2</gin.version>
         <google.api.client.version>1.9.0-beta</google.api.client.version>
