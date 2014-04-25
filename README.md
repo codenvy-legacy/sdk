@@ -22,7 +22,7 @@ The Codenvy SDK is licensed on a proprietary Codenvy license. We will provide an
 ```sh
 git clone https://github.com/codenvy/sdk.git
 cd sdk
-git checkout 3.0.0-M12
+git checkout 3.0.0-M14
 ```
 
 If you do not perform the checkout, you will be in the master branch.  We develop directly onto this branch and you may encounter intermediate errors.  Checkout the latest stable branch before compiling.
@@ -48,6 +48,19 @@ mvn clean install
 ```
 
 The hosted IDE will be available at ```localhost:8080```
+
+### AngularJS Configuration
+
+In order to be able to use this plugin, some of tools needs to be available on the system.
+
+These tools include : npm and Yeoman stack (with bower and Grunt)
+
+* npm setup guide : https://github.com/npm/npm
+npm is bundled with nodejs which can be downloaded from there : http://nodejs.org/download/
+
+
+* Yeoman (and dependencies can be installed with the command line : npm install -g yo)
+   more details on http://yeoman.io/gettingstarted.html
 
 ### Add Your Extensions (Plug-Ins) to the SDK
 
