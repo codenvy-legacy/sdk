@@ -36,31 +36,27 @@
             <groupId>com.googlecode.grep4j</groupId>
             <artifactId>grep4j</artifactId>
             <version>1.8.7</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.concordion</groupId>
             <artifactId>concordion</artifactId>
             <version>${concordion.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.concordion</groupId>
             <artifactId>concordion-extensions</artifactId>
             <version>${concordion.ext.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.arquillian.extension</groupId>
             <artifactId>arquillian-phantom-driver</artifactId>
             <version>${arquillian.phantom.driver.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>

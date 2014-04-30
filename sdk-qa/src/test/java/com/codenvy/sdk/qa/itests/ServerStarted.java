@@ -17,34 +17,32 @@
  */
 package com.codenvy.sdk.qa.itests;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.codenvy.sdk.qa.AbstractIntegrationTest;
+import com.codenvy.sdk.qa.selenium.pages.IDEMainPage;
 
 /**
  * Codenvy SDK basic integration test, see specs reports in src/test/resources/com/codenvy/sdk/qa/itests/ServerStarted.html
  */
 public class ServerStarted extends AbstractIntegrationTest {
 
+    protected IDEMainPage mainPage;
+
     public String access(String url) {
         driver.get(url);
+        mainPage = PageFactory.initElements(driver, IDEMainPage.class);
         return "access";
     }
 
     public String displayExplorerTab() {
-        return new WebDriverWait(driver, 10)
-                                            .until(ExpectedConditions.presenceOfElementLocated(
-                                                                     By.id("gwt-debug-tabButton-Explorer")
-                                                                     )).getText();
+        return mainPage.getTab("Explorer").getText();
     }
 
     public String displayFileMenu() {
-        return new WebDriverWait(driver, 10)
-                                            .until(ExpectedConditions.presenceOfElementLocated(
-                                                                     By.id("gwt-debug-MainMenu/FileGroup")
-                                                                     )).getText();
+        return mainPage.getMainMenuItem("FileGroup").getText();
     }
 
 }
