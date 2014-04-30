@@ -32,7 +32,7 @@ public class NewDatasourceWizardPage {
 
     protected WebDriver driver;
 
-    @FindBy(id = "gwt-debug-file-newOther-wizardDialog-caption")
+    @FindBy(id = "gwt-debug-wizardDialog-headerLabel")
     WebElement          title;
 
     public NewDatasourceWizardPage(WebDriver driver) {
