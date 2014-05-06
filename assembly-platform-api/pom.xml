@@ -32,22 +32,22 @@
         <dependency>
             <groupId>com.codenvy.commons</groupId>
             <artifactId>codenvy-commons-inject</artifactId>
-            <version>${com.codenvy.commons.version}</version>
+            <version>${codenvy.commons.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-builder-ant</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-builder-maven</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>tools</artifactId>
@@ -58,17 +58,17 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-java</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>org.eclipse.jdt.core</artifactId>
@@ -79,17 +79,17 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-maven</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-tutorials</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-core</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>servlet-api</artifactId>
@@ -100,17 +100,17 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-factory</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-vfs-fs</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <!--dependency>
             <groupId>com.codenvy.ide</groupId>
@@ -120,122 +120,122 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-runner-sdk</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-runner-webapps</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-analytics</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-auth</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-builder</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-factory</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-project</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-runner</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-user</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-workspace</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-infrastructure-local</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-api-server</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-builder-bower</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-builder-grunt</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-builder-npm</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-builder-yeoman</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-core-server</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-runner-grunt</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-runner-gulp</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-template-angular-seed</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-template-gulp-angularjs-starter</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-template-yeoman</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>org.everrest</groupId>
             <artifactId>everrest-core</artifactId>
-            <version>${everrest.version}</version>
+            <version>${org.everrest.version}</version>
         </dependency>
         <dependency>
             <groupId>org.everrest</groupId>
             <artifactId>everrest-websockets</artifactId>
-            <version>${everrest.version}</version>
+            <version>${org.everrest.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -245,19 +245,19 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet-api.version}</version>
+            <version>${javax.servlet.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina</artifactId>
-            <version>${tomcat.version}</version>
+            <version>${org.apache.tomcat.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-coyote</artifactId>
-            <version>${tomcat.version}</version>
+            <version>${org.apache.tomcat.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

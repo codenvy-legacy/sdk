@@ -37,22 +37,22 @@
         <dependency>
             <groupId>com.codenvy.commons</groupId>
             <artifactId>codenvy-commons-servlet</artifactId>
-            <version>${com.codenvy.commons.version}</version>
+            <version>${codenvy.commons.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-builder</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-datasource-client</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>tools</artifactId>
@@ -63,17 +63,17 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-java</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>org.eclipse.core.jobs</artifactId>
@@ -112,42 +112,42 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-maven</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-runner</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-tutorials</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-web</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-core</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-factory</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-user</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api-gwt-client</groupId>
@@ -172,51 +172,51 @@
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-completion-dto</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-completion-dto-gen</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-core-client</artifactId>
-            <version>${angularjs-plugin.version}</version>
+            <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.gwt.inject</groupId>
             <artifactId>gin</artifactId>
-            <version>${gin.version}</version>
+            <version>${com.google.gwt.gin.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-client</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-project</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-vfs</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
-            <version>${gwt.version}</version>
+            <version>${com.google.gwt.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-servlet</artifactId>
-            <version>${gwt.version}</version>
+            <version>${com.google.gwt.version}</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
@@ -289,17 +289,17 @@
                     <dependency>
                         <groupId>com.google.gwt</groupId>
                         <artifactId>gwt-codeserver</artifactId>
-                        <version>${gwt.version}</version>
+                        <version>${com.google.gwt.version}</version>
                     </dependency>
                     <dependency>
                         <groupId>com.google.gwt</groupId>
                         <artifactId>gwt-dev</artifactId>
-                        <version>${gwt.version}</version>
+                        <version>${com.google.gwt.version}</version>
                     </dependency>
                     <dependency>
                         <groupId>com.google.gwt</groupId>
                         <artifactId>gwt-user</artifactId>
-                        <version>${gwt.version}</version>
+                        <version>${com.google.gwt.version}</version>
                     </dependency>
                 </dependencies>
                 <configuration>

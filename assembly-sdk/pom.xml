@@ -42,106 +42,106 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>action-api-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>analytics-event-logger-extension</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-datasource-server-war-sdk</artifactId>
-            <version>${datasource-plugin.version}</version>
+            <version>${codenvy.plugin.datasource.version}</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-ssh</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-core</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>empty-extension</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>gin-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>gist-extension</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>helloworld-extension</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>icons-registry-api</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>new-resource-wizard-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>notification-api-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>parts-api-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>theme-api-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>wizard-api-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>wysiwyg-editor-tutorial</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
@@ -159,7 +159,7 @@
         <dependency>
             <groupId>com.jcraft</groupId>
             <artifactId>jsch</artifactId>
-            <version>${jsch.version}</version>
+            <version>${com.jcraft.jsch.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -179,13 +179,13 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-vfs-fs</artifactId>
-            <version>${com.codenvy.ide.version}</version>
+            <version>${codenvy.ide.version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-vfs</artifactId>
-            <version>${com.codenvy.platform-api.version}</version>
+            <version>${codenvy.platform-api.version}</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
@@ -207,7 +207,7 @@
                                     <groupId>org.apache.tomcat</groupId>
                                     <artifactId>tomcat</artifactId>
                                     <type>zip</type>
-                                    <version>${tomcat.version}</version>
+                                    <version>${org.apache.tomcat.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip</outputDirectory>
                                     <destFileName>tomcat.zip</destFileName>
@@ -285,7 +285,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>action-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>action-api-tutorial.zip</destFileName>
@@ -294,7 +294,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>theme-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>theme-api-tutorial.zip</destFileName>
@@ -303,7 +303,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>new-resource-wizard-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>new-resource-wizard-tutorial.zip</destFileName>
@@ -312,7 +312,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>notification-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>notification-api-tutorial.zip</destFileName>
@@ -321,7 +321,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>parts-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>parts-api-tutorial.zip</destFileName>
@@ -330,7 +330,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>wizard-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>wizard-api-tutorial.zip</destFileName>
@@ -339,7 +339,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>editor-api-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>editor-api-tutorial.zip</destFileName>
@@ -348,7 +348,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>gin-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>gin-tutorial.zip</destFileName>
@@ -357,7 +357,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>gist-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>gist-extension.zip</destFileName>
@@ -366,7 +366,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>empty-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>empty-extension.zip</destFileName>
@@ -375,7 +375,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>helloworld-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>helloworld-extension.zip</destFileName>
@@ -384,7 +384,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>analytics-event-logger-extension</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>analytics-event-logger-extension.zip</destFileName>
@@ -393,7 +393,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>icons-registry-api</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>icons-registry-api-tutorial.zip</destFileName>
@@ -402,7 +402,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>wysiwyg-editor-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>wysiwyg-editor-tutorial.zip</destFileName>
@@ -411,7 +411,7 @@
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>server-side-tutorial</artifactId>
                                     <type>zip</type>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>server-side-tutorial.zip</destFileName>
@@ -430,49 +430,10 @@
                                 <artifactItem>
                                     <groupId>com.codenvy.ide</groupId>
                                     <artifactId>codenvy-sdk-tools</artifactId>
-                                    <version>${com.codenvy.ide.version}</version>
+                                    <version>${codenvy.ide.version}</version>
                                     <classifier>jar-with-dependencies</classifier>
                                     <outputDirectory>${project.build.directory}/tomcat-ide/sdk-tools</outputDirectory>
                                     <destFileName>codenvy-sdk-tools.jar</destFileName>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-jdbc-drivers</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>org.postgresql</groupId>
-                                    <artifactId>postgresql</artifactId>
-                                    <version>${postgresql-driver.version}</version>
-                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
-                                    <destFileName>postgresql-${postgresql-driver.version}.jar</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>net.sourceforge.jtds</groupId>
-                                    <artifactId>jtds</artifactId>
-                                    <version>${jtds-driver.version}</version>
-                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
-                                    <destFileName>jtds-${jtds-driver.version}.jar</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>mysql</groupId>
-                                    <artifactId>mysql-connector-java</artifactId>
-                                    <version>${mysql-driver.version}</version>
-                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
-                                    <destFileName>mysql-connector-java-${mysql-driver.version}.jar</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>com.nuodb.jdbc</groupId>
-                                    <artifactId>nuodb-jdbc</artifactId>
-                                    <version>${nuodb-driver.version}</version>
-                                    <outputDirectory>${project.build.directory}/tomcat-ide/lib</outputDirectory>
-                                    <destFileName>nuodb-jdbc-${nuodb-driver.version}.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
@@ -499,7 +460,7 @@
                                         <exclude name="**/host-manager/**" />
                                     </patternset>
                                 </unzip>
-                                <move file="${project.build.directory}/apache-tomcat-${tomcat.version}" tofile="${project.build.directory}/tomcat-ide" />
+                                <move file="${project.build.directory}/apache-tomcat-${org.apache.tomcat.version}" tofile="${project.build.directory}/tomcat-ide" />
                                 <copy overwrite="true" todir="${project.build.directory}/tomcat-ide">
                                     <fileset dir="${basedir}/src/main/resources/tomcat" />
                                 </copy>
@@ -521,7 +482,7 @@
                                     <fileset dir="${project.build.directory}/packager-conf/war/ide" />
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
-                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${com.codenvy.ide.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
+                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${codenvy.ide.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>

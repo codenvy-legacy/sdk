@@ -46,17 +46,17 @@
         <dependency>
             <groupId>org.concordion</groupId>
             <artifactId>concordion</artifactId>
-            <version>${concordion.version}</version>
+            <version>${org.concordion.version}</version>
         </dependency>
         <dependency>
             <groupId>org.concordion</groupId>
             <artifactId>concordion-extensions</artifactId>
-            <version>${concordion.ext.version}</version>
+            <version>${org.concordion.ext.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.arquillian.extension</groupId>
             <artifactId>arquillian-phantom-driver</artifactId>
-            <version>${arquillian.phantom.driver.version}</version>
+            <version>${org.jboss.arquillian.version}</version>
         </dependency>
     </dependencies>
     <build>
