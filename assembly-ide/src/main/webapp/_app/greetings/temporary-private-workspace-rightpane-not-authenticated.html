@@ -1,0 +1,180 @@
+<!--
+
+    CODENVY CONFIDENTIAL
+    __________________
+
+    [2012] - [2013] Codenvy, S.A.
+    All Rights Reserved.
+
+    NOTICE:  All information contained herein is, and remains
+    the property of Codenvy S.A. and its suppliers,
+    if any.  The intellectual and technical concepts contained
+    herein are proprietary to Codenvy S.A.
+    and its suppliers and may be covered by U.S. and Foreign Patents,
+    patents in process, and are protected by trade secret or copyright law.
+    Dissemination of this information or reproduction of this material
+    is strictly forbidden unless prior written permission is obtained
+    from Codenvy S.A..
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Welcome</title>
+
+<!--
+		We have a lot of problems with using icons which are addressed by URL:
+			<meta name="icon" url="/images/greeting/info.png">
+			
+		So, we decided to use base64-encoded images and embed them into HTML page directly.
+		There are many methods and resources that help us encode images to base64.
+		
+		Try to use online-based tool http://webcodertools.com/imagetobase64converter to receive
+		base64 representation of your image.
+-->
+		<meta name="icon" url="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGRkNDMzNCNUZEQjQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGRkNDMzNCNkZEQjQxMUUyOTg3RkRBRjg4MUI4NDg1RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE1ODhBMEYwRkRBRDExRTI5ODdGREFGODgxQjg0ODVGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZGQ0MzM0I0RkRCNDExRTI5ODdGREFGODgxQjg0ODVGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+iUg2LgAAAVpJREFUeNqE008oBVEUx/GZFysW/sbiZeNv2VlYKplZePSsWImUhZ3YsBIbKUXsKb0USXkhZQrFVllYUZaeQihWFN9TZ2pMc++79WmmOXN/c2fmXNfzPCc2yjGGAXSgEm+4wQE28RneHASBk4oFDOEe6+jRAEeP3VjDA0aik6Ihs9hBvWMftdjCQjxEVrAIN2HSD3J4jF2fC1ckIWW6TNfw5DO9eSmhtur7fkUJJ+NFXqELK8gm1KowmtK/YBryRwbxi0bDPVkJaTYUr3GKIxxbHtQuITWGYh3Sep6xhFRLyIuhKAGHet5nCXmVkDtD8RsnaEWbJeRWQvKG4hU+0I99S0heQjZQSHqCHi/RYHoVaUTpky9MYjfWcBNoQqd8PEPIFBvwPWz7PcxoP4SjFL2WgHndDv824LI2VqHIBnzCcNIGDId8wBZZJs7xrNfleIFpbc7t6KQ/AQYASSZCekUgRBAAAAAASUVORK5CYII=">
+
+<!-- 
+		<meta name="notification" 
+			content="<b>Welcome to Codenvy!</b> This is a temporary workspace. It will be deleted if you are inactive or close the browser. <b>Login</b> or <b>Create your account</b> to save your work.">
+ -->
+
+		<style type="text/css">
+
+		body {
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+			background-color: #FFFFFF;
+		}
+
+		.container {
+			position: absolute;
+	    		overflow-x: hidden;
+	    		overflow-y: auto;
+
+	    		left:0px;
+	    		right:0px;
+	    		top:0px;
+	    		bottom:0px;
+
+	    		background-color: #FFFFFF;
+	    		padding: 15px;
+	    		font-family: Verdana,Bitstream Vera Sans,sans-serif;
+	    		font-size: 12px;
+	    		font-color: #464646;    	
+		}
+
+		.content {
+	    		position: relative;
+	    	}
+	    	
+	    	hr.style-gradient {
+              border: 0;
+              height: 1px;
+              background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+              background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+              background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+              background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+          }
+
+	    	.features {
+	    		width:100%;
+	    		border-collapse:collapse;
+	    	}
+	    	
+	    	.features a:link {
+	    	     font-family: Verdana,Bitstream Vera Sans,sans-serif;
+	    	     font-size: 12px;
+	    		font-weight:bold;
+	    		color: #334248;
+          }
+          
+          .features a:visited {
+	    	     font-family: Verdana,Bitstream Vera Sans,sans-serif;
+	    	     font-size: 12px;
+	    		font-weight:bold;
+	    		color: #334248;
+          }
+
+	    	.features-cell1 {
+	    		overflow:hidden;
+	    		width:50px;
+	    		height:30px;
+	    		vertical-align:middle;
+	    		text-align:center;
+	    	}
+
+	    	.features-cell1-inner {
+	    		width:15px;
+	    		height:15px;
+	    		background:#AAAAFF;
+	    		margin-left: auto;
+	    		margin-right: auto;
+	    		border:none;
+	    		border-radius:5px;
+	    	}
+
+	    	.features-cell2 {
+	    		font-family: Verdana,Bitstream Vera Sans,sans-serif;
+	    		font-size: 12px;
+	    		font-weight:bold;
+	    		color: #334248;
+	    	}
+
+		</style>
+
+	</head>
+
+<body>
+	<div class="container">
+		<div class="content">
+            This project has been factory-created into a secured private temporary workspace on Codenvy. Your code is private and this temporary workspace will remain only accessible by you.<br />
+			<br />
+			Codenvy is your complete cloud environment to:<br />
+			<br />
+			<table border="0" class="features">
+				<tr>
+					<!-- <td class="features-cell1"><img src="../images/greeting/feature-code.png" alt="Code"></td> -->
+					<td class="features-cell1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAOCAYAAADXJMcHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTA3RURBMUU0MjA2ODExODA4M0IwMEYxRkQ4MjlFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNTg4QTBFRkZEQUQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNTg4QTBFRUZEQUQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4NZ6plAAACNklEQVR42pzUS0hVQRzH8XsttKASK6lFZmAqRImUQbSJCntQEnlFxFqY4MKFiLgSgmphCPYAI0JpI1Qg2EIXQkEPkiLyiUWlZGWRhpXRE8swv3/4XRkOJ+49DXyYc2bm3v/M/8xMOD9yJBSg7EAtdmIJpnADp2+2X3kSClgSAow9ibvYh3u4jMcoQf+eoqOlQYMv9Lwn44vzHsZmHMAJDOAwxpwxW9CBViawnLqTLLzxC0Z/DtUw/b/cladhEL3O2P14rrZT+ImDnsAh/qiPqlgLuYBXBGnCAp/4l/CSvg1u8GrYrLbpvQJdWI167EYexp0/KtNnsAk8oMpWhuy5yvYCQaqQ6i4eq1DpBl+Jr/iEjZrha03oOG7jmWcV67QBoxkYQZcm2qO6CaNMoEhjflB9x1I3uH3rv3qugaWs3Jtinw0Y9jYS4LcyuBgW1AJeYwJ5GvIHqdENV4i96FbndkzgTug/CxOYpZrGdYLa5nuEOkRwy2raq23l7UhCo35rKfkcR4z5bx5jIvYJhrFVTa3KWL0Fz8JHnFXnCNYjJc5LJ56ySJmwcg7vsNaCv1CK09V5FYna5bHKWKwBpHeX/vuhmuwEdZORqeiGm3bGW1ru6zi06CT4FbsXcmMEtnuhDbYJG5yLa8a94T5ox9us3uOQfmTn/RiG8O0fAfya7bRk6kzbjRlhpU8Zm8HzMrx1g5/XLrfbbI3Oez4KYHf2JqwIsOFntMkuopnAk2rv1KLO2MucAAMAeZqfT/y9xUIAAAAASUVORK5CYII=" alt="Code"></td>
+
+					<td class="features-cell2"><a href="http://docs.codenvy.com/docs/editor/" target="_blank">Code</a>, <a href="http://docs.codenvy.com/docs/regular-git-operations/" target="_blank">Commit</a></td>
+				</tr>
+				<tr>
+					<!-- <td class="features-cell1"><img src="../images/greeting/feature-build.png" alt="Build"></td> -->
+					<td class="features-cell1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAOCAYAAADXJMcHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTA3RURBMUU0MjA2ODExODA4M0IwMEYxRkQ4MjlFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNTg4QTBFQkZEQUQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNTg4QTBFQUZEQUQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7nWu3MAAACZ0lEQVR42pSUS0hVURSGrxWVoEWavdWBlRBZUAbRJEpMRSPyakQ5MSpwIBKNgqAaGEFloFQUToQSAkN0ICj0QEmizKK3UuaDsqyULJ83rG/BL2wuR+Es+NhnP87+11p77R2RHjwc8GE74STsgigYhEY431Rz63XAp83xsfYsPIRMaIZKeAUHoX1PXsEhv+LzwvqL4ZfTj4AtkA1n4Dnshx5nzVaogyociKGtJwu9XmLMb6LpYH7CjTweXkCbszYL3mvsHIxCTphwgI2e0RxQIBXwCZFymOuhfx26mNvgipeAebVd/WPQACugFNIgFb7I0ZUQgmVsFI8DrXwnK0P2XWy1wFwxxLnBw3IocsWXwjD8hI3ysFsOnYb78A7WaPwlDMEbRboaBzqhQY4+VVsOH5nPU5ZGaP5AtCtuZ/1P3yfAUnYkPMXYlESPWtRwXA5POccwqQxGgomaYDUOpGrJX4ibLrhcyIAWTe6AfnjgcWY9Eq9Tv9YKTdlY4DhgzozDXUSt+J7AKQjCPWsZL7HIa/TjRf0bLQEvW6UbkKt+PozpODwNR+wIOmCbhqq0R6mJr4cfcFmTnbAWlnjsFanxazo7O9MYHdNstlCZMCuDz5Bg4h+U4kRN3ob5qvJw61W1b5agtQlE93UmVdK7W3s/1pDdoBb+GZwuuHFnvaXlka7DTd0E16wevikLA2zSP4uwvQt3wIrwgvNwhdwX7rsq3ryyKPbpJ7vvhbpav2cQ8Bq2rKzTnbYXM4iTb1mbxPci6HPFr6jK21Q8dn3SYS/Ym50CsT6e7ZCK7CrcQHhA4/UK6pJ1/gswADozuZ8CIpX1AAAAAElFTkSuQmCC" alt="Build"></td>
+					<td class="features-cell2"><a href="http://docs.codenvy.com/docs/build/#about-codenvy-build" target="_blank">Build</a>, <a href="http://docs.codenvy.com/docs/build/#getting-started-with-maven" target="_blank">Package</a>, <a href="http://docs.codenvy.com/docs/build/#surefire-reports" target="_blank">Test</a></td>
+				</tr>
+				<tr>
+					<!-- <td class="features-cell1"><img src="../images/greeting/feature-run.png" alt="Run"></td> -->
+					<td class="features-cell1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAOCAYAAADXJMcHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTA3RURBMUU0MjA2ODExODA4M0IwMEYxRkQ4MjlFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNTg4QTBFN0ZEQUQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNTg4QTBFNkZEQUQxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4+3bzZAAACVklEQVR42pSUa2iOYRjH36GhsBwWHzDlVHKoNSVfhOYQS7wvaXww5YOylvmkFD5MyilDIh8sh1LzZR9WFNMWOYUQtpzlkMPk2Jjw+9f/qbunPVvPXb/u576v+73/13W913XnlWZXZVKMWbAJZsMAaIdzsON8/cn7mZSjV4qz2+ASLIBmOAb3YCXcmpdbXZ5WvE9sXQBfgnUeFMMi2Aq3YSm8sH0ITIMTUIcDWjeQhZddiWGfytSK/VcY+Si4AzeDswvhkfe2w09YHAhr5LioiXmFAzkAzxCphd5d6B+Gp9gmheJVIK9meL0OGmEE1MBcKIE3wUVrIkdw4ArTRGdI35WqBUQqoTAMHobD+lB8GHyFTzDZHj63Q1vgIjwMLhkDG6QbbeBAGzTa0Ruea+EJDuR85gfTdxgYiuu//ufvjaCUrY2lOBqyHVf6lHYuLguNCPx2BvvLDhI8zbkSH/kDhVHBLYP50GLjTHgLTQlFWu2W01judSbmwF+mDjiLqIrvOmyGLFzQzH6VIq+HvrDLv1VKPnfTIdeg1NHLwf3dtROO6C9oheneqnMX1Uh8AnyEPTa2wTgYnHBfs71XbVQ4yp5GP2dCYy+8htESf+wIimw8Bfmu8qShqj2YUBPx3p7ju696Sx3UgtPtUcF1BOeVlstuh6PuhPgo8rmehPUunAEV4c7g4eoMX7gPrnh59Q6W+Efq9wq4C9+CapfT5RbIJHTEePe0XswskT7g7Fi+B8GrUHyfq1yv2Uj3u4qqzCJTYGiKZ7vTRXYIjiD83vsNDmq3Fv8FGAB+M6xYAQ/6AwAAAABJRU5ErkJggg==" alt="Run"></td>
+					<td class="features-cell2"><a href="http://docs.codenvy.com/docs/running-applications/" target="_blank">Run</a>, <a href="http://docs.codenvy.com/docs/how-to-debug-a-java-application/" target="_blank">Debug</a></td>
+				</tr>
+				<tr>
+					<!-- <td class="features-cell1"><img src="../images/greeting/feature-paas.png" alt="PaaS"></td> -->
+					<td class="features-cell1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAOCAYAAADXJMcHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTA3RURBMUU0MjA2ODExODA4M0IwMEYxRkQ4MjlFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MUE2MDVBNkZEQTgxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MUE2MDVBNUZEQTgxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7iQvxKAAACUElEQVR42qyUS0iUURTHx4oeUEZTQ7PIWvSCaCJqimhRpkwPKqI+iVA3Bi1aDBKtgqBaGIFWMCFitBEqCKaFBoIxPVCM6E1FPjArowdlRk+skep34C9cPmaIj7rw43z33nO//73nnnMLEl5FKEBbC/thHUyGIWiDo5fTZx+HArYxAXwPw3XYCO1wBh7BLri3vqyyPKj4OF9/Knxy+gWwDDbDIbgP2+GF47McmqGJDYSxLURhIJcY80swPcz/cE9eBA/gjuO7Cbo1dgS+wxafcIgf3cXs1EFOwTNEUjA2h34D9DO3yBWvBtvVKvX3QCtEoQZKIQ6vNR9TFGLawA3MQkXIvpOWC4gkIeIeHmbCXld8BnyGD7BYO3yuDR2Eq9Al37jufqlZfr5SG+iFVm30tmwKnuJTJp9vmK8wxRW3u/6t731gIdvtDzFtDVyBsPpmM/y82LmGn4rgJDBREzyPT1wuIxAZTbgdsAE6NLka3sC1HHdmCz04ACU62SXI+vLgF2YYLiJqyXdLazxt3mO82k6ehglQq7UWko95qsPuMwNv1e9GKAOd+cqJObuCHlihoSZVUY2JL4BBOK7JXpgH00L/r01UJKydgFcw28T7FOI5mjwH45Xl/9wIb4n+fVNDVkEdRGRoNOGGHX8LS6fK4bQqwd8qFLqGvwjbu3ABLAmPOQ9X1n3h3ivjo7rPbVpk9V4FD+FLHoFcw1Yt81XT9mJ6nPQJvnP5LoSXrvhJZbm9ZrNU7wnYCuV6TKYHiHZWSVYPjQi/03iLDlVnnT8CDABu2q9tDKiFYQAAAABJRU5ErkJggg==" alt="PaaS"></td>
+					<td class="features-cell2"><a href="http://docs.codenvy.com/docs/google-app-engine/" target="_blank">PaaS Deploy</a></td>
+				</tr>
+				<tr>
+					<!-- <td class="features-cell1"><img src="../images/greeting/feature-collaborate.png" alt="Collaborate"></td> -->
+					<td class="features-cell1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAOCAYAAADXJMcHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowNTA3RURBMUU0MjA2ODExODA4M0IwMEYxRkQ4MjlFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MUE2MDVBMkZEQTgxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MUE2MDVBMUZEQTgxMUUyOTg3RkRBRjg4MUI4NDg1RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDUwN0VEQTFFNDIwNjgxMTgwODNCMDBGMUZEODI5RUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4If7vjAAACcElEQVR42pSUWUhVURSGjxpk0ECDGFQEzUWDNJDoQ5SYRoPUlQoboMCHFBHpqQisB0WwAayQIChpgMCohAKDLIqCMitMLKVJIxIrm8O6YX0LfmGzuffhHPjY49n/2muvtRKyI1uCEN8y2A3LYTj0QSNUXq8/2xaE/BJD7N0PtyAXbsNJeAqb4dHK/K0FYcWHeONR8NUZJ8BCWA3l8BjWQ5ezZxFcgToMGEPbgBe6Y4mxPp+mg/Xf7s0nwRN46OxdBc81dwB+wRpPOOCgFpqNushReI1IDSTF0K+FV6zNccVLwaxK17gQrsF4qIAsWAoReAZ/4T0c46AJMnKmPHQPSiwWWCuBFPfykAq7XPFx8A0+wVxZ+EYG7YMmKIYamAVJMqxYcXAZquGBDG1Wa/tfYkC+vPST5geMcMXtrf+pX6bDd3ou3hYnbqaZAKyD0wj8kQeHgYma4HkMWKz95rWUwYDbADlwR4sZculNT6RNrvc/E4uqn6UbDtD0w0VEu+WRPXq2G9YyX2o3r4ehclsgl3yOIWIFodOb+wLHYZPGTf5PGGJP0AFLNFWnLKqwm8+Au3AIFkggE0Z7RnQpDi4ov+fBbAWXnXMftsd5mmR5wr7D8A7S7KcXcnGuFs+pglmUF3k5b+k3oPElmAJVCsIcpaOf2ytoJsMZTVmgXsUjfYNFpt/Zb27ZoXSw9b3w0XnXwAmcTg6xfouM9oWtLpxSXFQ5l4i6Fe6DIt6s6oE8ubdQhrTC9zhVK9a0Zct05bRVzAhGtrN3Kv2R8NYVP6Iot2o2UfmeDWuhQO87NkTZjirILBhPINyr+QZd6qAN/gswAPiItMaBdcRhAAAAAElFTkSuQmCC" alt="Collaborate"></td>
+					<td class="features-cell2"><a href="http://docs.codenvy.com/user/chat-and-real-time-collaboration" target="_blank">Collaborate</a>, <a href="http://docs.codenvy.com/user/inviting-developers-to-your-workspace" target="_blank">Share</a></td>
+				</tr>
+			</table>
+			<br />
+			<a href="http://www.codenvy.com" target="_blank">Home Page</a> | <a href="http://docs.codenvy.com" target="_blank">Docs</a> | <a href="https://codenvy.uservoice.com/knowledgebase" target="_blank">Support</a> | <a href="https://codenvy.uservoice.com" target="_blank">Feature Vote</a><br />
+			<br />
+			<hr class="style-gradient"></hr>
+			<br />
+			A temporary workspace will be deleted if you are inactive or close the browser.<br />
+			<br />
+			To save your work, Login or Create your free Account.<br />
+            <br />
+            <a href="http://codenvy.com/tos" target="_blank">Terms of Service</a>
+		</div>
+	</div>
+</body>
+
+</html>
