@@ -26,37 +26,62 @@
     <link rel="shortcut icon" href="/ide/_app/favicon.ico"/>
 
     <script type="text/javascript" language="javascript">
-        var hiddenFiles = ".*";
-        var wsName =<%= EnvironmentContext.getCurrent().getWorkspaceName() == null
-                ? null : "\"" + EnvironmentContext.getCurrent().getWorkspaceName() + "\"" %>;
-        var wsId =<%= EnvironmentContext.getCurrent().getWorkspaceId() == null
-                ? null : "\"" + EnvironmentContext.getCurrent().getWorkspaceId() + "\"" %>;
-        var project = null;
-        var facebook_like_url = "/ide/_app/facebook-like.html";
-        var google_like_url = "/ide/_app/google-like.html";
 
-        var startUpParams = null;
-        if(location.search) {
-            startUpParams = location.search.substring(1);
-        }
+        /**
+         * Base IDE object
+         */
 
-        path = window.location.pathname;
-        path = path.substring(("/ide/" + wsName).length);
-        if (path.substring(0,1) == "/") {
-            path = path.substring(1);
-        }
-        if (path.indexOf("/") != -1) {
-            project = path.substring(0, path.indexOf('/'));
-        } else if (path != "") {
-            project = path;
-        }
-        newPath = location.pathname;
-        if (project != null) {
-            newPath = newPath.substring(0, newPath.indexOf("/" +project));
-            window.history.pushState("", "Codenvy", newPath);
-        }
+        window.IDE = {}
+
+        /**
+         * Initial configuration
+         */
+
+        window.IDE.config = {
+
+            "workspaceName": <%= EnvironmentContext.getCurrent().getWorkspaceName() == null ? null : "\"" + EnvironmentContext.getCurrent().getWorkspaceName() + "\"" %>,
+
+            "workspaceId": <%= EnvironmentContext.getCurrent().getWorkspaceId() == null ? null : "\"" + EnvironmentContext.getCurrent().getWorkspaceId() + "\"" %>,
+
+            "projectName": window.location.pathname.split("/")[3] ? window.location.pathname.split("/")[3] : null,
+
+            "startupParams": location.search ? location.search.substring(1) : null,
+
+            "hiddenFiles": ".*",
+
+            "facebookLikeURL": "/ide/_app/facebook-like.html",
+
+            "googleLikeURL": "/ide/_app/google-like.html"
+
+        };
+
+        /**
+         * Event handlers
+         */
+
+        window.IDE.eventHandlers = {};
+
+        window.IDE.eventHandlers.switchToDashboard = function() {
+            window.location.href="/dashboard";
+        };
+
+        window.IDE.eventHandlers.initializationFailed = function(message) {
+            if (message) {
+                window.alert(message);
+            } else {
+                window.alert("Unable to initialize IDE");
+            }
+        };
+
+        /**
+         * Make URL pretty
+         */
+
+        window.history.pushState("", window.document.title, "/ide/" + window.IDE.config.workspaceName);
+
     </script>
 
+    <script type="text/javascript" src="/ide/_app/greetings/greetings.js"></script>
     <script type="text/javascript" language="javascript" src="/ide/_app/browserNotSupported.js"></script>
     <script type="text/javascript" language="javascript" src="/ide/_app/_app.nocache.js"></script>
 </head>
