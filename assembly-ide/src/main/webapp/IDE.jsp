@@ -31,7 +31,7 @@
          * Base IDE object
          */
 
-        window.IDE = {}
+        window.IDE = {};
 
         /**
          * Initial configuration
@@ -65,6 +65,7 @@
             window.location.href="/dashboard";
         };
 
+        /*
         window.IDE.eventHandlers.initializationFailed = function(message) {
             if (message) {
                 window.alert(message);
@@ -72,6 +73,7 @@
                 window.alert("Unable to initialize IDE");
             }
         };
+        */
 
         /**
          * Make URL pretty

@@ -15,7 +15,7 @@ body {
     right:0px;
     top:0px;
     bottom:0px;
-    padding: 15px;
+    padding: 10px;
     font-family: Verdana,Bitstream Vera Sans,sans-serif;
     font-size: 12px;
     color: #D8D8D8;
@@ -45,6 +45,7 @@ hr.style-gradient {
 .features {
     width:100%;
     border-collapse:collapse;
+    color: #A2ABAE;
 }
 
 .features a:link {
@@ -69,15 +70,8 @@ hr.style-gradient {
     text-align:center;
 }
 
-.features-cell1 img {
-    -webkit-filter: invert(100%);
-    -moz-filter: invert(100%);
-    filter: invert(100%);
-}
-
 .features-cell2 {
     font-family: Verdana,Bitstream Vera Sans,sans-serif;
     font-size: 12px;
     font-weight:bold;
-    color: #334248;
 }
