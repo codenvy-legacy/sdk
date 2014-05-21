@@ -18,6 +18,7 @@
 package com.codenvy.sdk.qa.selenium.pages.datasource;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,11 +44,15 @@ public class NewDatasourceWizardPage {
         return title.getText();
     }
 
-    public boolean isDatasourceTypeAvailable(String dbType) {
-        new WebDriverWait(driver, 10).until(AbstractIntegrationTest.gwtToogleButtonToBeEnable(
-                                                                   By.id("gwt-debug-datasource-wizard-ds-type-" + dbType)
-                                                                   ));
-        return true;
+    public boolean checkDatasourceTypeAvailable(String dbType) {
+        try {
+            new WebDriverWait(driver, 10).until(AbstractIntegrationTest.gwtToogleButtonToBeEnable(
+                                                                       By.id("gwt-debug-datasource-wizard-ds-type-" + dbType)
+                                                                       ));
+            return true;
+        } catch (final TimeoutException e) {
+            return false;
+        }
     }
 
 }
