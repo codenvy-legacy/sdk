@@ -17,8 +17,6 @@
  */
 package com.codenvy.sdk.qa.itests.datasource;
 
-import static org.junit.Assert.fail;
-
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
@@ -63,33 +61,9 @@ public class NewDatasourceWizard extends AbstractIntegrationTest {
         return newDatasourceWizard.getWizardTitle();
     }
 
-    public String postgresDsTypeIsAvailable() {
-        return dsTypeIsAvailable("postgres");
-    }
-
-
-    public String mySqlDsTypeIsAvailable() {
-        return dsTypeIsAvailable("mysql");
-    }
-
-    public String msSQLServerDsTypeIsAvailable() {
-        return dsTypeIsAvailable("sqlserver");
-    }
-
-    public String googleCloudSqlDsTypeIsAvailable() {
-        return dsTypeIsAvailable("googleCloudSql");
-    }
-
     public String dsTypeIsAvailable(String serverType) {
         if (newDatasourceWizard.checkDatasourceTypeAvailable(serverType)) {
             return "is enabled";
-        }
-        return "is not enabled";
-    }
-
-    public String oracleDsTypeIsNotAvailable() {
-        if (newDatasourceWizard.checkDatasourceTypeAvailable("oracle")) {
-            fail("Oracle shouldn't be enabled by default");
         }
         return "is not enabled";
     }
