@@ -161,12 +161,12 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api-gwt-client</groupId>
-            <artifactId>codenvy-api-workspace-gwt-client</artifactId>
+            <artifactId>codenvy-api-user-gwt-client</artifactId>
             <version>${codenvy.platform-api-gwt-client.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api-gwt-client</groupId>
-            <artifactId>codenvy-api-user-gwt-client</artifactId>
+            <artifactId>codenvy-api-workspace-gwt-client</artifactId>
             <version>${codenvy.platform-api-gwt-client.version}</version>
         </dependency>
         <dependency>

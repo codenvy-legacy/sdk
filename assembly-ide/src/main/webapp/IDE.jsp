@@ -61,9 +61,11 @@
 
         window.IDE.eventHandlers = {};
 
+        /*
         window.IDE.eventHandlers.switchToDashboard = function() {
             window.location.href="/dashboard";
         };
+        */
 
         /*
         window.IDE.eventHandlers.initializationFailed = function(message) {
