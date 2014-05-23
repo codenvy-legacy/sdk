@@ -85,7 +85,6 @@
 
     </script>
 
-    <script type="text/javascript" src="/ide/_app/greetings/greetings.js"></script>
     <script type="text/javascript" language="javascript" src="/ide/_app/browserNotSupported.js"></script>
     <script type="text/javascript" language="javascript" src="/ide/_app/_app.nocache.js"></script>
 </head>
