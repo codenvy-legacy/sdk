@@ -17,13 +17,8 @@
  */
 package com.codenvy.sdk.qa.itests.datasource;
 
-import static org.junit.Assert.fail;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.codenvy.sdk.qa.AbstractIntegrationTest;
 import com.codenvy.sdk.qa.selenium.pages.IDEMainPage;
@@ -41,7 +36,7 @@ public class NewDatasourceWizard extends AbstractIntegrationTest {
     public String access(String url) {
         driver.get(url);
         mainPage = PageFactory.initElements(driver, IDEMainPage.class);
-        return "access";
+        return "accesses";
     }
 
 
@@ -66,38 +61,11 @@ public class NewDatasourceWizard extends AbstractIntegrationTest {
         return newDatasourceWizard.getWizardTitle();
     }
 
-    public String postgresDsTypeIsAvailable() {
-        if (newDatasourceWizard.isDatasourceTypeAvailable("postgres")) {
+    public String dsTypeIsAvailable(String serverType) {
+        if (newDatasourceWizard.checkDatasourceTypeAvailable(serverType)) {
             return "is enabled";
         }
         return "is not enabled";
-    }
-
-
-    public String mySqlDsTypeIsAvailable() {
-        if (newDatasourceWizard.isDatasourceTypeAvailable("mysql")) {
-            return "is enabled";
-        }
-        return "is not enabled";
-    }
-
-    public String msSQLServerDsTypeIsAvailable() {
-        if (newDatasourceWizard.isDatasourceTypeAvailable("sqlserver")) {
-            return "is enabled";
-        }
-        return "is not enabled";
-    }
-
-    public String oracleDsTypeIsNotAvailable() {
-        try {
-            new WebDriverWait(driver, 3).until(gwtToogleButtonToBeEnable(
-                                                                  By.cssSelector("#gwt-debug-datasource-wizard-ds-type-oracle")
-                                                                  ));
-            fail("Oracle shouldn't be enabled by default");
-        } catch (Exception e) {
-            // success
-        }
-        return "is disabled";
     }
 
 }

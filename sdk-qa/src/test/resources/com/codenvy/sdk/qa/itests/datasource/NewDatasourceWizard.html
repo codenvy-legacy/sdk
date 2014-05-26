@@ -15,7 +15,7 @@
 - The server logs in <span c:set="#logpath">/logs/catalina.out</span> say server <span c:assertEquals="serverIsStarted(#logpath)">is started</span>
 
 ## When
-- The user <span c:assertEquals="access(#url)">access</span> the server url
+- The user <span c:assertEquals="access(#url)">accesses</span> the server url
 
 ## Then
 - The <span c:assertEquals="displayDatasourceMenu()">Datasource</span> menu is displayed
@@ -26,10 +26,34 @@
 
 ## Then
 - The <span c:assertEquals="displayNewDatasourceWizard()">New Datasource</span> Wizard is displayed
-- The PostgreSQL datasource type <span c:assertEquals="postgresDsTypeIsAvailable()">is enabled</span>
-- The MySQL datasource type <span c:assertEquals="mySqlDsTypeIsAvailable()">is enabled</span>
-- The MsSQLServer datasource type <span c:assertEquals="msSQLServerDsTypeIsAvailable()">is enabled</span>
-- The Oracle datasource <span c:assertEquals="oracleDsTypeIsNotAvailable()">is disabled</span>
+- The PostgreSQL datasource type
+            <span style="display: none;" c:set="#postgresId">postgres</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#postgresId)">is enabled</span>
+- The MySQL datasource type
+            <span style="display: none;" c:set="#mysqlId">mysql</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#mysqlId)">is enabled</span>
+- The MsSQLServer datasource type
+            <span style="display: none;" c:set="#sqlserverId">sqlserver</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#sqlserverId)">is enabled</span>
+- The Oracle datasource type
+            <span style="display: none;" c:set="#oracleId">oracle</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#oracleId)">is not enabled</span>
+
+- The Google Cloud SQL datasource type
+            <span style="display: none;" c:set="#googleCloudSqlId">googleCloudSql</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#googleCloudSqlId)">is enabled</span>
+- The Amazon RDS PostgreSQL datasource type
+            <span style="display: none;" c:set="#awsPostgresId">awsPostgres</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#awsPostgresId)">is enabled</span>
+- The Amazon RDS MySQL datasource type
+            <span style="display: none;" c:set="#awsMysqlId">awsMysql</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#awsMysqlId)">is enabled</span>
+- The Amazon RDS SqlServer datasource type
+            <span style="display: none;" c:set="#awsSqlServerId">awsSqlserver</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#awsSqlServerId)">is enabled</span>
+- The Amazon RDS Oracle datasource type
+            <span style="display: none;" c:set="#awsOracleId">awsOracle</span>
+                        <span c:assertEquals="dsTypeIsAvailable(#awsOracleId)">is not enabled</span>
 
 </div>
 </body>
