@@ -33,6 +33,21 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-datasource-itests</artifactId>
+            <version>${codenvy.plugin.datasource.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-angularjs</groupId>
+            <artifactId>angularjs-itests</artifactId>
+            <version>${codenvy.plugin.angularjs.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.test-framework</groupId>
+            <artifactId>codenvy-test-framework</artifactId>
+            <version>${codenvy.test-framework.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.googlecode.grep4j</groupId>
             <artifactId>grep4j</artifactId>
             <version>1.8.7</version>
