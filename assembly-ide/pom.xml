@@ -47,7 +47,7 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-datasource-client</artifactId>
-            <version>${codenvy.ide.version}</version>
+            <version>${codenvy.plugin.datasource.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
