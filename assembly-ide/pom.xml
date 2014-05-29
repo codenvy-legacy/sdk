@@ -185,6 +185,11 @@
             <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-hosted</groupId>
+            <artifactId>codenvy-ide-factory</artifactId>
+            <version>${codenvy.plugin.hosted.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.google.gwt.inject</groupId>
             <artifactId>gin</artifactId>
             <version>${com.google.gwt.gin.version}</version>
