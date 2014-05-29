@@ -467,7 +467,7 @@
                                     <fileset dir="${project.build.directory}/packager-conf/war/ide" />
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
-                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${codenvy.ide.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
+                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${codenvy.plugin.datasource.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>
