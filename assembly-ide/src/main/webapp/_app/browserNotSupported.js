@@ -1,21 +1,13 @@
 /*
- * CODENVY CONFIDENTIAL
- * __________________
+ * Copyright (c) 2012-2014 Codenvy, S.A.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * [2012] - [2014] Codenvy, S.A.
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains
- * the property of Codenvy S.A. and its suppliers,
- * if any.  The intellectual and technical concepts contained
- * herein are proprietary to Codenvy S.A.
- * and its suppliers and may be covered by U.S. and Foreign Patents,
- * patents in process, and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from Codenvy S.A..
+ * Contributors:
+ *   Codenvy, S.A. - initial API and implementation
  */
-
 var USER_AGENT = navigator.userAgent.toLowerCase();
 var IS_WS_SUPPORTED = ("WebSocket" in window);
 if (!IS_WS_SUPPORTED || (USER_AGENT.indexOf("chrome") == -1 && USER_AGENT.indexOf("firefox") == -1 && USER_AGENT.indexOf("safari") == -1)) {
