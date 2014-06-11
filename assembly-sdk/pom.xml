@@ -53,12 +53,12 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
-            <version>${codenvy.ide.version}</version>
+            <version>${codenvy.plugin.git.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
-            <version>${codenvy.ide.version}</version>
+            <version>${codenvy.plugin.git.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
