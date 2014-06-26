@@ -1,0 +1,154 @@
+[
+    {
+        "displayName": "Java Web Application",
+        "description": "Simple JSP project",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-jsp-java-basic.git"
+        }
+    },
+    {
+        "displayName": "Java Spring Application",
+        "description": "Simple Spring project that uses Maven build system",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-spring-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Maven Jar Project",
+        "description": "Simple Java library that uses Maven build system",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/desktop-jar-java.git"
+        }
+    },
+    {
+        "displayName": "Java Console App",
+        "description": "Simple Java application that writes 'Hello World!' in a console",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/desktop-console-java.git"
+        }
+    },
+    {
+        "displayName": "Swing GUI App",
+        "description": "Simple GUI application built with Swing components",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/desktop-swing-java-basic.git"
+        }
+    },
+    {
+        "displayName": "GWT Web App",
+        "description": "Simple GWT Application",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-gwt-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Play 1 Web App",
+        "description": "Simple Application that uses Play v1 framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-play1-java-simple"
+        }
+    },
+    {
+        "displayName": "Play 2 Web App",
+        "description": "Simple Application that uses Play v2 framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-play2-java-simple"
+        }
+    },
+    {
+        "displayName": "Grails App",
+        "description": "Simple Grails application",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-grails-java-simple.git"
+        }
+    },
+    {
+        "displayName": "JavaServer Faces App",
+        "description": "Simple JavaServer Faces application",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-jsf-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Lift App",
+        "description": "Simple application that uses Lift framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-lift-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Struts App",
+        "description": "Simple application that uses Apache Struts framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-struts-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Vaadin App",
+        "description": "Simple Vaadin application",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-vaadin-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Android App",
+        "description": "Simple Android Application built with Maven and run natively in Android Emulator",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/mobile-android-java-basic.git"
+        }
+    },
+    {
+        "displayName": "Tapestry App",
+        "description": "Simple application that uses Apache Tapestry web framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-tapestry-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Wicket App",
+        "description": "Simple application that uses Apache Wicket web framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-wicket-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Groovy App",
+        "description": "Simple Groovy web application",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/web-groovy-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Clojure App",
+        "description": "Sample app using Clojure framework",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/desktop-clojure-java-simple.git"
+        }
+    },
+    {
+        "displayName": "Scala App",
+        "description": "Simple app using Scala object-oriented language",
+        "sources": {
+            "type": "git",
+            "location": "https://github.com/codenvy-templates/desktop-scala-java-simple.git"
+        }
+    }
+]
