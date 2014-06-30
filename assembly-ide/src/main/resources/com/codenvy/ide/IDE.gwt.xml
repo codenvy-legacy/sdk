@@ -54,10 +54,12 @@
     <inherits name="com.codenvy.api.Project"/>
     <inherits name="com.codenvy.api.Workspace"/>
 
-    <!-- AngularJS plugin -->
+    <!-- Javascript & AngularJS plugins -->
     <inherits name="com.codenvy.plugin.angularjs.completion.dto.Completion" />
     <inherits name="com.codenvy.plugin.angularjs.core.client.AngularJS"/>
-
+    <inherits name="com.codenvy.plugin.bower.client.Bower"/>
+    <inherits name="com.codenvy.plugin.npm.client.Npm"/>
+    <inherits name="com.codenvy.plugin.yeoman.client.Yeoman"/>
 
     <stylesheet src="IDE.css"/>
 
