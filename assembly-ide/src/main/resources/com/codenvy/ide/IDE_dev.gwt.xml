@@ -35,11 +35,14 @@
     <inherits name='com.codenvy.ide.ext.java.jdi.JavaRuntimeExtension'/>
     <inherits name='com.codenvy.ide.extension.builder.Builder'/>
     <inherits name='com.codenvy.ide.extension.runner.Runner'/>
+    <inherits name='com.codenvy.ide.extension.maven.Maven'/>
     <inherits name='com.codenvy.ide.ext.git.Git'/>
     <inherits name='com.codenvy.ide.ext.github.GitHub'/>
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
     <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
     <inherits name='com.codenvy.ide.ext.datasource.Datasource'/>
+    <inherits name='com.codenvy.ide.editor.codemirror.CodeMirrorEditor'/>
+    <inherits name='com.codenvy.ide.editor.orion.OrionEditor'/>
 
     <inherits name='com.codenvy.api.Core'/>
     <inherits name='com.codenvy.api.Builder'/>
@@ -50,7 +53,8 @@
     <inherits name='com.codenvy.api.Analytics'/>
 
     <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
-	<inherits name="com.codenvy.api.Workspace"/>
+    <inherits name="com.codenvy.api.Project"/>
+    <inherits name="com.codenvy.api.Workspace"/>
 
     <!-- Javascript & AngularJS plugins -->
     <inherits name="com.codenvy.plugin.angularjs.completion.dto.Completion" />
