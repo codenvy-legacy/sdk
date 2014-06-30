@@ -64,7 +64,9 @@
 
             "facebookLikeURL": "/ide/_app/facebook-like.html",
 
-            "googleLikeURL": "/ide/_app/google-like.html"
+            "googleLikeURL": "/ide/_app/google-like.html",
+
+            "javaCodeAssistant": "/java-ca"
 
         };
 

@@ -16,6 +16,7 @@ import com.codenvy.api.builder.BuilderSelectionStrategy;
 import com.codenvy.api.builder.BuilderService;
 import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
 import com.codenvy.api.builder.internal.SlaveBuilderService;
+import com.codenvy.api.core.notification.EventOrigin;
 import com.codenvy.api.core.rest.ApiExceptionMapper;
 import com.codenvy.api.project.server.ProjectService;
 import com.codenvy.api.project.server.ProjectTypeDescriptionService;
@@ -53,7 +54,6 @@ import com.codenvy.ide.ext.git.server.rest.TagListWriter;
 import com.codenvy.ide.ext.github.server.oauth.GitHubOAuthAuthenticatorProvider;
 import com.codenvy.ide.ext.github.server.rest.GitHubService;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
-import com.codenvy.ide.ext.java.server.RestNameEnvironment;
 import com.codenvy.ide.ext.java.server.format.FormatService;
 import com.codenvy.ide.ext.ssh.server.KeyService;
 import com.codenvy.ide.ext.ssh.server.SshKeyStore;
@@ -113,7 +113,6 @@ public class ApiModule extends AbstractModule {
         bind(SlaveRunnerService.class);
         bind(UserService.class);
         bind(UserProfileService.class);
-        bind(RestNameEnvironment.class);
         bind(DebuggerService.class);
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
@@ -137,5 +136,15 @@ public class ApiModule extends AbstractModule {
         oAuthAuthenticatorMultibinder.addBinding().to(GitHubOAuthAuthenticatorProvider.class);
         bind(OAuthAuthenticationService.class);
         bind(TokenValidator.class).to(TokenValidatorImpl.class);
+
+        bind(com.codenvy.api.core.notification.WSocketEventBusServer.class);
+        bind(com.codenvy.api.core.notification.EventPropagationPolicy.class)
+                .toInstance(new com.codenvy.api.core.notification.EventPropagationPolicy() {
+                    @Override
+                    public boolean shouldPropagated(Object o) {
+                        final EventOrigin eventOrigin = o.getClass().getAnnotation(EventOrigin.class);
+                        return eventOrigin != null && ("vfs".equals(eventOrigin.value()));
+                    }
+                });
     }
 }
