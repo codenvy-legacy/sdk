@@ -26,6 +26,7 @@
     <modules>
         <module>assembly-ide</module>
         <module>assembly-platform-api</module>
+        <module>assembly-java-codeassistant</module>
         <module>assembly-sdk</module>
         <module>sdk-qa</module>
     </modules>

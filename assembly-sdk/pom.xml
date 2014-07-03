@@ -62,12 +62,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-java-codeassistant</artifactId>
-            <version>${project.version}</version>
-            <type>war</type>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-ssh</artifactId>
             <version>${codenvy.ide.version}</version>
         </dependency>
@@ -146,6 +140,12 @@
         <dependency>
             <groupId>com.codenvy.sdk</groupId>
             <artifactId>assembly-platform-api</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.sdk</groupId>
+            <artifactId>assemby-java-codeassistant</artifactId>
             <version>${project.version}</version>
             <type>war</type>
         </dependency>
@@ -467,7 +467,7 @@
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
                                 <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${codenvy.plugin.datasource.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
-                                <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-java-codeassistant-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/java-ca.war" />
+                                <copy file="${project.build.directory}/packager-conf/war/assemby-java-codeassistant-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/java-ca.war" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>
