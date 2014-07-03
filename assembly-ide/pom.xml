@@ -144,6 +144,21 @@
             <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-bower</groupId>
+            <artifactId>bower-client</artifactId>
+            <version>${codenvy.plugin.bower.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-npm</groupId>
+            <artifactId>npm-client</artifactId>
+            <version>${codenvy.plugin.npm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-yeoman</groupId>
+            <artifactId>yeoman-client</artifactId>
+            <version>${codenvy.plugin.yeoman.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.google.gwt.inject</groupId>
             <artifactId>gin</artifactId>
             <version>${com.google.gwt.gin.version}</version>

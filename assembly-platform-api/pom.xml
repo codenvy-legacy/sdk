@@ -167,37 +167,7 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-builder-bower</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-builder-grunt</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-builder-npm</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-builder-yeoman</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-core-server</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-runner-grunt</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-runner-gulp</artifactId>
             <version>${codenvy.plugin.angularjs.version}</version>
         </dependency>
         <dependency>
@@ -214,6 +184,36 @@
             <groupId>com.codenvy.plugin-angularjs</groupId>
             <artifactId>angularjs-template-yeoman</artifactId>
             <version>${codenvy.plugin.angularjs.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-bower</groupId>
+            <artifactId>bower-builder</artifactId>
+            <version>${codenvy.plugin.bower.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-grunt</groupId>
+            <artifactId>grunt-builder</artifactId>
+            <version>${codenvy.plugin.grunt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-grunt</groupId>
+            <artifactId>grunt-runner</artifactId>
+            <version>${codenvy.plugin.grunt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-gulp</groupId>
+            <artifactId>gulp-runner</artifactId>
+            <version>${codenvy.plugin.gulp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-npm</groupId>
+            <artifactId>npm-builder</artifactId>
+            <version>${codenvy.plugin.npm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-yeoman</groupId>
+            <artifactId>yeoman-builder</artifactId>
+            <version>${codenvy.plugin.yeoman.version}</version>
         </dependency>
         <dependency>
             <groupId>org.everrest</groupId>
