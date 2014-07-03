@@ -24,23 +24,23 @@
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-java-codeassistant</artifactId>
-            <version>${project.version}</version>
+            <version>${codenvy.ide.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-api</artifactId>
-            <version>${project.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-core</artifactId>
-            <version>${project.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${project.version}</version>
+            <version>${codenvy.ide.version}</version>
         </dependency>
     </dependencies>
 </project>
