@@ -13,7 +13,6 @@ package com.codenvy.ide.ext.java.server;
 import com.codenvy.ide.everrest.CodenvyAsynchronousJobPool;
 import com.codenvy.inject.DynaModule;
 import com.google.inject.AbstractModule;
-import com.google.inject.name.Names;
 
 import org.everrest.core.impl.async.AsynchronousJobPool;
 import org.everrest.core.impl.async.AsynchronousJobService;
@@ -27,7 +26,7 @@ public class JavaCodeAssistantModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(RestNameEnvironment.class);
-        bindConstant().annotatedWith(Names.named("project.temp")).to(System.getProperty("java.io.tmpdir"));
+//        bindConstant().annotatedWith(Names.named("")).to(System.getProperty("java.io.tmpdir"));
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
         bind(com.codenvy.api.core.notification.WSocketEventBusClient.class).asEagerSingleton();
