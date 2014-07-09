@@ -16,7 +16,6 @@ import com.codenvy.api.builder.BuilderSelectionStrategy;
 import com.codenvy.api.builder.BuilderService;
 import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
 import com.codenvy.api.builder.internal.SlaveBuilderService;
-import com.codenvy.api.core.notification.EventOrigin;
 import com.codenvy.api.core.rest.ApiExceptionMapper;
 import com.codenvy.api.project.server.ProjectService;
 import com.codenvy.api.project.server.ProjectTypeDescriptionService;
@@ -138,13 +137,5 @@ public class ApiModule extends AbstractModule {
         bind(TokenValidator.class).to(TokenValidatorImpl.class);
 
         bind(com.codenvy.api.core.notification.WSocketEventBusServer.class);
-        bind(com.codenvy.api.core.notification.EventPropagationPolicy.class)
-                .toInstance(new com.codenvy.api.core.notification.EventPropagationPolicy() {
-                    @Override
-                    public boolean shouldPropagated(Object o) {
-                        final EventOrigin eventOrigin = o.getClass().getAnnotation(EventOrigin.class);
-                        return eventOrigin != null && ("vfs".equals(eventOrigin.value()));
-                    }
-                });
     }
 }
