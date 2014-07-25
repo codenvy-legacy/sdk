@@ -16,7 +16,7 @@
     <parent>
         <artifactId>maven-depmgt-pom</artifactId>
         <groupId>com.codenvy</groupId>
-        <version>1.8.7</version>
+        <version>1.8.8-SNAPSHOT</version>
     </parent>
     <groupId>com.codenvy.sdk</groupId>
     <artifactId>codenvy-sdk-parent</artifactId>
