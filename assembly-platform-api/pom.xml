@@ -76,7 +76,7 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-tutorials</artifactId>
+            <artifactId>codenvy-ext-plugins</artifactId>
             <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
