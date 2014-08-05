@@ -156,12 +156,12 @@
         <dependency>
             <groupId>com.codenvy.plugin-editor-codemirror</groupId>
             <artifactId>plugin-editor-codemirror</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${codenvy.plugin-editor-codemirror.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-editor-orion</groupId>
             <artifactId>plugin-editor-orion</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${codenvy.plugin-editor-orion.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-npm</groupId>
