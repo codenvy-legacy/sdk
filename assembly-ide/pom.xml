@@ -99,6 +99,11 @@
             <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ide-jseditor</artifactId>
+            <version>${codenvy.ide.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-user</artifactId>
             <version>${codenvy.platform-api.version}</version>
@@ -147,6 +152,16 @@
             <groupId>com.codenvy.plugin-bower</groupId>
             <artifactId>bower-client</artifactId>
             <version>${codenvy.plugin.bower.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-editor-codemirror</groupId>
+            <artifactId>plugin-editor-codemirror</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-editor-orion</groupId>
+            <artifactId>plugin-editor-orion</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-npm</groupId>
