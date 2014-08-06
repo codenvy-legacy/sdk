@@ -132,6 +132,12 @@
             <type>zip</type>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-api-docs-ui</artifactId>
+            <version>${codenvy.api-docs-ui.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.sdk</groupId>
             <artifactId>assembly-ide</artifactId>
             <version>${project.version}</version>
@@ -468,6 +474,7 @@
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
                                 <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${codenvy.plugin.datasource.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
                                 <copy file="${project.build.directory}/packager-conf/war/assemby-java-codeassistant-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/java-ca.war" />
+                                <copy file="${project.build.directory}/packager-conf/war/codenvy-api-docs-ui-${codenvy.api-docs-ui.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api-docs-ui.war" />
                                 <chmod dir="${project.build.directory}/tomcat-ide" includes="*.sh" perm="+x" />
                             </target>
                         </configuration>
