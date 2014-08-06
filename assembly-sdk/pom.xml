@@ -455,15 +455,15 @@
                                 <copy overwrite="true" todir="${project.build.directory}/tomcat-ide/sdk-resources">
                                     <fileset dir="${project.build.directory}/../../assembly-ide" includes="src/**, pom.xml" />
                                 </copy>
-                                <unwar dest="${project.build.directory}/packager-conf/war/ide" src="${project.build.directory}/packager-conf/war/assembly-ide-${project.version}.war" />
-                                <move todir="${project.build.directory}/packager-conf/war/ide/_app">
-                                    <fileset dir="${project.build.directory}/packager-conf/war/ide/_app/" />
+                                <unwar dest="${project.build.directory}/packager-conf/war/ws" src="${project.build.directory}/packager-conf/war/assembly-ide-${project.version}.war" />
+                                <move todir="${project.build.directory}/packager-conf/war/ws/_app">
+                                    <fileset dir="${project.build.directory}/packager-conf/war/ws/_app/" />
                                 </move>
                                 <move todir="${project.build.directory}/tomcat-ide/tutorials">
                                     <fileset dir="${project.build.directory}/packager-conf/zip/tutorials" />
                                 </move>
-                                <war destfile="${project.build.directory}/tomcat-ide/webapps/ide.war" needxmlfile="false">
-                                    <fileset dir="${project.build.directory}/packager-conf/war/ide" />
+                                <war destfile="${project.build.directory}/tomcat-ide/webapps/ws.war" needxmlfile="false">
+                                    <fileset dir="${project.build.directory}/packager-conf/war/ws" />
                                 </war>
                                 <copy file="${project.build.directory}/packager-conf/war/assembly-platform-api-${project.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/api.war" />
                                 <copy file="${project.build.directory}/packager-conf/war/codenvy-ext-datasource-server-war-sdk-${codenvy.plugin.datasource.version}.war" overwrite="true" tofile="${project.build.directory}/tomcat-ide/webapps/datasource.war" />
