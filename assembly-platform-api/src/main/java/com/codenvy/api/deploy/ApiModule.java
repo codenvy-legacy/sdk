@@ -117,5 +117,7 @@ public class ApiModule extends AbstractModule {
         bind(TokenValidator.class).to(TokenValidatorImpl.class);
 
         bind(com.codenvy.api.core.notification.WSocketEventBusServer.class);
+
+        install(new com.codenvy.docs.DocsModule());
     }
 }
