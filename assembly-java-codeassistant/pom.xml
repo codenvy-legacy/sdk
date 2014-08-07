@@ -22,9 +22,9 @@
     <packaging>war</packaging>
     <dependencies>
         <dependency>
-            <groupId>com.codenvy.ide</groupId>
+            <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-java-codeassistant</artifactId>
-            <version>${codenvy.ide.version}</version>
+            <version>${codenvy.plugin-java.version}</version>
             <type>jar</type>
         </dependency>
         <dependency>
@@ -38,9 +38,9 @@
             <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.ide</groupId>
+            <groupId>com.codenvy.plugin-sdk</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${codenvy.ide.version}</version>
+            <version>${codenvy.plugin-sdk.version}</version>
         </dependency>
     </dependencies>
 </project>
