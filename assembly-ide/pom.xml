@@ -75,11 +75,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-plugins</artifactId>
-            <version>${codenvy.ide.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-runner</artifactId>
             <version>${codenvy.ide.version}</version>
         </dependency>
@@ -167,6 +162,11 @@
             <groupId>com.codenvy.plugin-npm</groupId>
             <artifactId>npm-client</artifactId>
             <version>${codenvy.plugin.npm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-sdk</groupId>
+            <artifactId>codenvy-ext-plugins</artifactId>
+            <version>${codenvy.plugin-sdk.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-yeoman</groupId>
