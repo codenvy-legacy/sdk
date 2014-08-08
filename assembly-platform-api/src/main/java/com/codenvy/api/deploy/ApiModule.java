@@ -17,6 +17,7 @@ import com.codenvy.api.builder.BuilderService;
 import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
 import com.codenvy.api.builder.internal.SlaveBuilderService;
 import com.codenvy.api.core.rest.ApiExceptionMapper;
+import com.codenvy.api.core.rest.ApiInfoService;
 import com.codenvy.api.project.server.ProjectService;
 import com.codenvy.api.project.server.ProjectTypeDescriptionService;
 import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
@@ -70,6 +71,7 @@ import org.everrest.guice.PathKey;
 public class ApiModule extends AbstractModule {
     @Override
     protected void configure() {
+        bind(ApiInfoService.class);
         bind(ProjectService.class);
         bind(ProjectTypeDescriptionService.class);
         bind(com.codenvy.api.project.server.ProjectImportersService.class);
@@ -96,12 +98,12 @@ public class ApiModule extends AbstractModule {
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
         bind(GitService.class);
-        bind(BranchListWriter.class).toInstance(new BranchListWriter());
-        bind(CommitMessageWriter.class).toInstance(new CommitMessageWriter());
-        bind(MergeResultWriter.class).toInstance(new MergeResultWriter());
-        bind(RemoteListWriter.class).toInstance(new RemoteListWriter());
-        bind(StatusPageWriter.class).toInstance(new StatusPageWriter());
-        bind(TagListWriter.class).toInstance(new TagListWriter());
+        bind(BranchListWriter.class);
+        bind(CommitMessageWriter.class);
+        bind(MergeResultWriter.class);
+        bind(RemoteListWriter.class);
+        bind(StatusPageWriter.class);
+        bind(TagListWriter.class);
         bind(FormatService.class);
         bind(GitHubService.class);
         bind(GitConnectionFactory.class).to(NativeGitConnectionFactory.class);
