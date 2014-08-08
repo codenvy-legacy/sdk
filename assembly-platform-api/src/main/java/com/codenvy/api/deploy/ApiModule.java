@@ -120,6 +120,11 @@ public class ApiModule extends AbstractModule {
 
         bind(com.codenvy.api.core.notification.WSocketEventBusServer.class);
 
+        install(new com.codenvy.api.analytics.AnalyticsModule());
+        install(new com.codenvy.api.project.server.BaseProjectModule());
+        install(new com.codenvy.api.builder.internal.BuilderModule());
+        install(new com.codenvy.api.runner.internal.RunnerModule());
+        install(new com.codenvy.api.vfs.server.VirtualFileSystemModule());
         install(new com.codenvy.docs.DocsModule());
     }
 }
