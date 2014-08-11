@@ -39,17 +39,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-debugger-java</artifactId>
-            <version>${codenvy.ide.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tools</artifactId>
-                    <groupId>sun.jdt</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
             <version>${codenvy.plugin.git.version}</version>
         </dependency>
@@ -57,22 +46,6 @@
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
             <version>${codenvy.plugin.git.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-java</artifactId>
-            <version>${codenvy.ide.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>org.eclipse.jdt.core</artifactId>
-                    <groupId>org.eclipse.tycho</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-maven</artifactId>
-            <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
@@ -194,6 +167,33 @@
             <groupId>com.codenvy.plugin-gulp</groupId>
             <artifactId>gulp-runner</artifactId>
             <version>${codenvy.plugin.gulp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-ext-debugger-java</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>tools</artifactId>
+                    <groupId>sun.jdt</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-ext-java</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>org.eclipse.jdt.core</artifactId>
+                    <groupId>org.eclipse.tycho</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-ext-maven</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-npm</groupId>
