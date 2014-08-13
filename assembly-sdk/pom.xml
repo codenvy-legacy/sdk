@@ -60,12 +60,6 @@
             <type>jar</type>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>wizard-api-tutorial</artifactId>
-            <version>${codenvy.ide.version}</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-docs-ui</artifactId>
             <version>${codenvy.api-docs-ui.version}</version>
@@ -130,6 +124,12 @@
             <artifactId>theme-api-tutorial</artifactId>
             <version>${codenvy.plugin-sdk.version}</version>
             <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-sdk</groupId>
+            <artifactId>wizard-api-tutorial</artifactId>
+            <version>${codenvy.plugin-sdk.version}</version>
+            <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
