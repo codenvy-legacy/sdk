@@ -126,6 +126,5 @@ public class ApiModule extends AbstractModule {
         install(new com.codenvy.api.runner.internal.RunnerModule());
         install(new com.codenvy.api.vfs.server.VirtualFileSystemModule());
         install(new com.codenvy.docs.DocsModule());
-        install(new com.codenvy.ide.server.CoreModule());
     }
 }
