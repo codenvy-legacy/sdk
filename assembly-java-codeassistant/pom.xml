@@ -18,7 +18,7 @@
         <groupId>com.codenvy.sdk</groupId>
         <version>3.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>assemby-java-codeassistant</artifactId>
+    <artifactId>assembly-java-codeassistant</artifactId>
     <packaging>war</packaging>
     <dependencies>
         <dependency>
