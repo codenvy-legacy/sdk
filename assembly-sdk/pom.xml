@@ -156,6 +156,11 @@
             <type>war</type>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.vfs</groupId>
+            <artifactId>codenvy-vfs-impl</artifactId>
+            <version>${codenvy.vfs.impl.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.jcraft</groupId>
             <artifactId>jsch</artifactId>
             <version>${com.jcraft.jsch.version}</version>
@@ -174,12 +179,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>log4j-over-slf4j</artifactId>
             <version>${org.slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ide-vfs-fs</artifactId>
-            <version>${codenvy.ide.version}</version>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.codenvy.platform-api</groupId>

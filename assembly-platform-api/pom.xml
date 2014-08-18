@@ -49,11 +49,6 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ide-vfs-fs</artifactId>
-            <version>${codenvy.ide.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-analytics</artifactId>
             <version>${codenvy.platform-api.version}</version>
@@ -214,6 +209,11 @@
             <groupId>com.codenvy.plugin-yeoman</groupId>
             <artifactId>yeoman-builder</artifactId>
             <version>${codenvy.plugin.yeoman.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.vfs</groupId>
+            <artifactId>codenvy-vfs-impl</artifactId>
+            <version>${codenvy.vfs.impl.version}</version>
         </dependency>
         <dependency>
             <groupId>org.everrest</groupId>
