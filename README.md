@@ -31,22 +31,35 @@ If you do not perform the checkout, you will be in the master branch.  We develo
 
 GitHub projects for each of the sub-projects:
 * **CLI**:                     [CLI for accessing APIs] (http://github.com/codenvy/cli)
+* **CMF**                      [Framework for creating diagram editors] (http://github.com/codenvy/cmf)
+* **Commons**:                 [Shared libraries] (http://github.com/codenvy/commons)
+* **Eclipse Plug-In**          [An Eclipse plug-in for running Che projects] (http://github.com/codenvy/eclipse-plugin)
+* **Everrest**:                [A shell and command abstraction for Web services] (http://github.com/codenvy/everrest)
 * **IDE**:                     [IDE] (http://github.com/codenvy/ide)
+* **Maven Dep POM**            [Maven dependencies] (http://github.com/codenvy/maven-depmgt-pom)
+* **Maven Parent POM**         [Mane parent] (http://github.com/codenvy/maven-parent-pom)
 * **Platform API**:            [REST APIs for platform services] (http://github.com/codenvy/platform-api)
 * **Platform API GWT Client**: [Java client for APIs] (http://github.com/codenvy/platform-api-client-gwt)
-* **Commons**:                 [Shared libraries] (http://github.com/codenvy/commons)
-* **Everrest**:                [A shell and command abstraction for Web services] (http://github.com/codenvy/everrest)
-* **Plugin Datasource**:       [Schema browser and SQL editor plugin] (http://github.com/codenvy/plugin-datasource)
+* **AngularJS Plugin**:        [AngularJS autocomplete and editor] (http://github.com/codenvy/plugin-angularjs)
+* **Bower Plugin**:            [Bower package management] (http://github.com/codenvy/plugin-bower)
+* **Database Plugin**:         [Schema browser and SQL editor plugin] (http://github.com/codenvy/plugin-datasource)
+* **CodeMirror Plugin**:       [Embeds CodeMirror editor] (http://github.com/codenvy/plugin-editor-codemirror)
+* **Orion Plugin**:            [Embeds Orion editor] (http://github.com/codenvy/plugin-editor-orion)
+* **Git Plugin**:              [User interface for git client] (http://github.com/codenvy/plugin-git)
+* **Grunt Plugin**:            [Grunt server integrated into IDE] (http://github.com/codenvy/plugin-grunt)
+* **Gulp Plugin**:             [Gulp builder] (http://github.com/codenvy/plugin-gulp)
+* **Java Plugin**:             [Ant, maven, debugger, and code assistant] (http://github.com/codenvy/plugin-java)
+* **NPM Plugin**:              [Manage npm packages within the IDE] (http://github.com/codenvy/plugin-npm)
+* **Subversion Plugin**:       [User interface for subversion client] (http://github.com/codenvy/plugin-svn)
 
 
-
-### Build the Project
+### Build the SDK and IDE
 ```sh
 cd /sdk
 mvn clean install
 ```
 
-### Run the Codenvy SDK
+### Run Eclipse Che
 ```sh
 ./codenvy_sdk [start|stop]
 ```
@@ -78,11 +91,11 @@ npm is bundled with nodejs which can be downloaded from there : http://nodejs.or
 
 You may need to empty browser’s cache (if you haven’t set appropriate HTTP headers) to see the extension.
 
-### Helping Codenvy
+### Helping Eclipse Che
 
-**Contribute**: Codenvy accepts pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
+**Contribute**: We accept pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
 
-**Report Bugs**: Our JIRA is private at the moment but we are working to open it up. In the mean time we accept bug and enhancement requests by posting on our Google Group. 
+**Report Bugs**: You can report bugs, contribute, and post on the Eclipse Che forums at [https://www.eclipse.org/forums/index.php/t/787421/] (https://www.eclipse.org/forums/index.php/t/787421/). 
 
 ### Documentation & Tutorials
 * **SDK Binaries** [docs.codenvy.com/sdk/download] (http://docs.codenvy.com/sdk/download/)
