@@ -1,3 +1,5 @@
+![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
+
 The Codenvy SDK (now Eclipse Che and an incubation project from the Eclipse Foundation!) is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. An IDE is included with Eclipse Che, packaged as a GWT Java application that compiles to optimized JavaScript with support for most modern browsers.
 
 The SDK contains:
@@ -16,8 +18,6 @@ The IDE is a browser client application that contains a variety of plug-ins, mak
 The SDK can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been extensively tested on Ubuntu, Linux, MacOS and Windows.  Java, GWT, GIN and Javascript are the core technologies used to build the SDK.
 
 The SDK is licensed with the Eclipse Public License 1.0.
-
-![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
 
 ### Clone the Repository & Checkout Latest Stable Branch
 
