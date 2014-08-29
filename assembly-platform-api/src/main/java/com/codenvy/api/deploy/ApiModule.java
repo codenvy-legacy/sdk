@@ -20,6 +20,7 @@ import com.codenvy.api.core.rest.ApiExceptionMapper;
 import com.codenvy.api.core.rest.ApiInfoService;
 import com.codenvy.api.project.server.ProjectService;
 import com.codenvy.api.project.server.ProjectTypeDescriptionService;
+import com.codenvy.api.project.server.ProjectTypeService;
 import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
 import com.codenvy.api.runner.RunnerAdminService;
 import com.codenvy.api.runner.RunnerSelectionStrategy;
@@ -73,7 +74,7 @@ public class ApiModule extends AbstractModule {
     protected void configure() {
         bind(ApiInfoService.class);
         bind(ProjectService.class);
-        bind(ProjectTypeDescriptionService.class);
+        bind(ProjectTypeService.class);
         bind(com.codenvy.api.project.server.ProjectImportersService.class);
         bind(LocalFileSystemRegistryPlugin.class);
         bind(LocalFSMountStrategy.class).to(WorkspaceHashLocalFSMountStrategy.class);
