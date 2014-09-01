@@ -35,9 +35,9 @@ java -cp "sdk-tools/codenvy-sdk-tools.jar" com.codenvy.ide.sdk.tools.InstallExte
 
 # Re-build Codenvy IDE
 cd $EXT_RES_WORK_DIR_REL_PATH
-mvn clean package
+mvn clean package -Dskip-validate-sources=true
 cd ../..
-cp $EXT_RES_WORK_DIR_REL_PATH/target/*.war webapps/ide.war
-rm -rf webapps/ide
+cp $EXT_RES_WORK_DIR_REL_PATH/target/*.war webapps/ws.war
+rm -rf webapps/ws
 
 echo Restart Codenvy IDE if it is currently running
