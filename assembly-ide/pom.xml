@@ -133,6 +133,12 @@
             <version>${codenvy.plugin-editor-orion.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-grunt</groupId>
+            <artifactId>grunt-client</artifactId>
+            <version>${codenvy.plugin.grunt.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
             <version>${codenvy.plugin-java.version}</version>
