@@ -28,6 +28,7 @@ public class ApiServletModule extends ServletModule {
     @Override
     protected void configureServlets() {
         getServletContext().addListener(new WSConnectionTracker());
+        getServletContext().addListener(ProjectWatcherSessionCleaner.class);
         bind(SingleEnvironmentFilter.class).in(Singleton.class);
         Map<String,String> params = new HashMap<>(2);
         params.put("ws-name", "default");
