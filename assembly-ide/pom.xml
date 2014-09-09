@@ -28,11 +28,6 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.codenvy.commons</groupId>
-            <artifactId>codenvy-commons-servlet</artifactId>
-            <version>${codenvy.commons.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-builder</artifactId>
             <version>${codenvy.ide.version}</version>
@@ -132,6 +127,12 @@
             <artifactId>plugin-editor-orion</artifactId>
             <version>${codenvy.plugin-editor-orion.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-grunt</groupId>
+            <artifactId>grunt-client</artifactId>
+            <version>${codenvy.plugin.grunt.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
@@ -340,9 +341,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                    <packagingIncludes>WEB-INF/lib/codenvy-commons-servlet-*.jar,
-                        WEB-INF/lib/codenvy-commons-env-*.jar,
-                        WEB-INF/lib/codenvy-commons-servlet-*.jar,
+                    <packagingIncludes>WEB-INF/lib/codenvy-commons-env-*.jar,
                         WEB-INF/lib/codenvy-commons-lang-*.jar,
                         WEB-INF/lib/codenvy-ide-env-dummy-*.jar,
                         WEB-INF/classes/com/codenvy/ide/servlet/*,

@@ -24,7 +24,7 @@ The SDK is licensed with the Eclipse Public License 1.0.
 ```sh
 git clone https://github.com/codenvy/sdk.git
 cd sdk
-git checkout 3.0.0-M20
+git checkout 3.0.0
 ```
 
 If you do not perform the checkout, you will be in the master branch.  We develop directly onto this branch and you may encounter intermediate errors.  Checkout the latest stable branch before compiling.
