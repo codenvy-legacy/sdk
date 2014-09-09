@@ -18,27 +18,17 @@
          metadata-complete="true">
 
     <display-name>Codenvy IDE</display-name>
-    <filter>
-        <filter-name>Env</filter-name>
-        <filter-class>com.codenvy.ide.env.SingleEnvironmentFilter</filter-class>
-        <init-param>
-            <param-name>ws-name</param-name>
-            <param-value>default</param-value>
-        </init-param>
-        <init-param>
-            <param-name>ws-id</param-name>
-            <param-value>1q2w3e</param-value>
-        </init-param>
-    </filter>
-
-    <filter-mapping>
-        <filter-name>Env</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <context-param>
+        <param-name>ws-name</param-name>
+        <param-value>default</param-value>
+    </context-param>
+    <context-param>
+        <param-name>ws-id</param-name>
+        <param-value>1q2w3e</param-value>
+    </context-param>
 
     <servlet>
         <servlet-name>IDE</servlet-name>
-        <!--<servlet-class>com.codenvy.commons.servlet.DispatcherServlet</servlet-class>-->
         <jsp-file>/IDE.jsp</jsp-file>
     </servlet>
 
@@ -50,28 +40,4 @@
         <servlet-name>default</servlet-name>
         <url-pattern>/_app/*</url-pattern>
     </servlet-mapping>
-
-    <security-constraint>
-        <web-resource-collection>
-            <web-resource-name>app</web-resource-name>
-            <url-pattern>/login</url-pattern>
-        </web-resource-collection>
-        <auth-constraint>
-            <role-name>developer</role-name>
-        </auth-constraint>
-        <user-data-constraint>
-            <transport-guarantee>NONE</transport-guarantee>
-        </user-data-constraint>
-    </security-constraint>
-
-    <login-config>
-        <auth-method>BASIC</auth-method>
-        <realm-name>codenvy</realm-name>
-    </login-config>
-
-    <security-role>
-        <description>the user role</description>
-        <role-name>developer</role-name>
-    </security-role>
-
 </web-app>

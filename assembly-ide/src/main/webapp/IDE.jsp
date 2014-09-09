@@ -28,8 +28,6 @@
     from Codenvy S.A..
 -->
 
-<%@ page import="com.codenvy.commons.env.EnvironmentContext" %>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,9 +52,9 @@
 
             "context": "/ws",
 
-            "workspaceName": <%= EnvironmentContext.getCurrent().getWorkspaceName() == null ? null : "\"" + EnvironmentContext.getCurrent().getWorkspaceName() + "\"" %>,
+            "workspaceName": "<%= pageContext.getServletContext().getInitParameter("ws-name") %>",
 
-            "workspaceId": <%= EnvironmentContext.getCurrent().getWorkspaceId() == null ? null : "\"" + EnvironmentContext.getCurrent().getWorkspaceId() + "\"" %>,
+            "workspaceId": "<%= pageContext.getServletContext().getInitParameter("ws-id") %>",
 
             "projectName": window.location.pathname.split("/")[3] ? window.location.pathname.split("/")[3] : null,
 
@@ -98,7 +96,7 @@
          * Make URL pretty
          */
 
-        window.history.pushState("", window.document.title, "/ws/" + window.IDE.config.workspaceName);
+        window.history.pushState("", window.document.title, window.IDE.config.context + "/" + window.IDE.config.workspaceName);
 
     </script>
 
