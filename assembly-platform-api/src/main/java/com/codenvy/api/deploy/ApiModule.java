@@ -19,7 +19,6 @@ import com.codenvy.api.builder.internal.SlaveBuilderService;
 import com.codenvy.api.core.rest.ApiExceptionMapper;
 import com.codenvy.api.core.rest.ApiInfoService;
 import com.codenvy.api.project.server.ProjectService;
-import com.codenvy.api.project.server.ProjectTypeDescriptionService;
 import com.codenvy.api.project.server.ProjectTypeService;
 import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
 import com.codenvy.api.runner.RunnerAdminService;
@@ -126,6 +125,7 @@ public class ApiModule extends AbstractModule {
         install(new com.codenvy.api.builder.internal.BuilderModule());
         install(new com.codenvy.api.runner.internal.RunnerModule());
         install(new com.codenvy.api.vfs.server.VirtualFileSystemModule());
+        install(new com.codenvy.api.factory.FactoryModule());
         install(new com.codenvy.docs.DocsModule());
     }
 }
