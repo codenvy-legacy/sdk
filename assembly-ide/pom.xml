@@ -23,7 +23,6 @@
     <name>Codenvy SDK :: Application</name>
     <properties>
         <generated.sources.directory>${project.build.directory}/generated-sources/gen</generated.sources.directory>
-        <ide.module>com.codenvy.ide.IDE</ide.module>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
@@ -295,7 +294,7 @@
                 <configuration>
                     <extraJvmArgs>-Xss512m -Xmx2048m -XX:MaxPermSize=1024m</extraJvmArgs>
                     <modules>
-                        <module>${ide.module}</module>
+                        <module>com.codenvy.ide.IDE</module>
                         <module>com.codenvy.ide.ext.java.JavaParserWorker</module>
                     </modules>
                     <logLevel>INFO</logLevel>
@@ -385,13 +384,4 @@
             </plugin>
         </plugins>
     </build>
-    <profiles>
-        <!-- Used for GWT SuperDevMode. -->
-        <profile>
-            <id>dev</id>
-            <properties>
-                <ide.module>com.codenvy.ide.IDE_dev</ide.module>
-            </properties>
-        </profile>
-    </profiles>
 </project>

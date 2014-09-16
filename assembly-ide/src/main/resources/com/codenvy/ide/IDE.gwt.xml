@@ -27,9 +27,13 @@
     <inherits name='com.google.gwt.user.theme.standard.Standard'/>
     <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
     <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
-    <!-- Other module inherits                                      -->
+
+    <!-- Core module inherits                                       -->
     <inherits name='com.codenvy.ide.Api'/>
     <inherits name="com.codenvy.ide.Core"/>
+    <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
+
+    <!-- Extensions                                                 -->
     <inherits name='com.codenvy.ide.ext.web.Web'/>
     <inherits name='com.codenvy.ide.ext.java.Java'/>
     <inherits name='com.codenvy.ide.ext.java.jdi.JavaRuntimeExtension'/>
@@ -44,19 +48,17 @@
     <inherits name='com.codenvy.ide.editor.codemirror.CodeMirrorEditor'/>
     <inherits name='com.codenvy.ide.editor.orion.OrionEditor'/>
 
-    <inherits name='com.codenvy.api.Core'/>
+    <!-- Platform API GWT client dependencies                       -->
+    <inherits name='com.codenvy.api.Analytics'/>
     <inherits name='com.codenvy.api.Builder'/>
+    <inherits name='com.codenvy.api.Core'/>
     <inherits name='com.codenvy.api.Project'/>
     <inherits name='com.codenvy.api.Runner'/>
     <inherits name='com.codenvy.api.User'/>
     <inherits name='com.codenvy.api.VFS'/>
-    <inherits name='com.codenvy.api.Analytics'/>
-
-    <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
-    <inherits name="com.codenvy.api.Project"/>
     <inherits name="com.codenvy.api.Workspace"/>
 
-    <!-- Javascript & AngularJS plugins -->
+    <!-- Javascript & AngularJS plugins                             -->
     <inherits name="com.codenvy.plugin.angularjs.completion.dto.Completion" />
     <inherits name="com.codenvy.plugin.angularjs.core.client.AngularJS"/>
     <inherits name="com.codenvy.plugin.grunt.client.Grunt"/>
@@ -72,9 +74,6 @@
     <!-- Specify the paths for translatable code                    -->
     <source path='client'/>
     <source path='shared'/>
-    <!--
-            Cross-site iframe linker is needed to generate compilation-mappings.txt.
-            The file is used to determine JavaScript file to be loaded.
-        -->
+
     <add-linker name="xsiframe"/>
 </module>
