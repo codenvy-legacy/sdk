@@ -163,6 +163,11 @@
             <version>${codenvy.plugin-java.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-plugin-java-jseditor</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-npm</groupId>
             <artifactId>npm-client</artifactId>
             <version>${codenvy.plugin.npm.version}</version>
