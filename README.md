@@ -109,3 +109,5 @@ You may need to empty browser’s cache (if you haven’t set appropriate HTTP h
 * **Twitter:** [@CodenvyHQ](https://twitter.com/CodenvyHQ)
 * **Blog:** [blog.codenvy.com](http://blog.codenvy.com)
 * **Google Group:** [helpdesk.codenvy.com] (https://groups.google.com/a/codenvy.com/forum/#!forum/codenvy)
+
+* Unofficial QQ group 264052237 Codenvy 中文交流 (Codenvy Chinese QQ group)
