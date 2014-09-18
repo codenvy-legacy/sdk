@@ -191,11 +191,6 @@
             <version>${codenvy.plugin.npm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.plugin-php</groupId>
-            <artifactId>codenvy-ext-php</artifactId>
-            <version>${codenvy.plugin-php.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
             <artifactId>codenvy-ext-plugins</artifactId>
             <version>${codenvy.plugin-sdk.version}</version>
