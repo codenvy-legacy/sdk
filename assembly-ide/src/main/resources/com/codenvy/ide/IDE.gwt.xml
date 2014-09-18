@@ -65,6 +65,7 @@
     <inherits name="com.codenvy.plugin.bower.client.Bower"/>
     <inherits name="com.codenvy.plugin.npm.client.Npm"/>
     <inherits name="com.codenvy.plugin.yeoman.client.Yeoman"/>
+    <inherits name="com.codenvy.ide.ext.php.client.PHP"/>
 
     <stylesheet src="IDE.css"/>
 
