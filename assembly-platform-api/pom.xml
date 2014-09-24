@@ -128,11 +128,11 @@
             <artifactId>bower-builder</artifactId>
             <version>${codenvy.plugin.bower.version}</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.codenvy.plugin-cpp</groupId>
             <artifactId>codenvy-ext-cpp</artifactId>
             <version>${codenvy.plugin-cpp.version}</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.codenvy.plugin-grunt</groupId>
             <artifactId>grunt-builder</artifactId>
