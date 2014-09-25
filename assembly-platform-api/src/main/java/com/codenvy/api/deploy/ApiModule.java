@@ -39,6 +39,7 @@ import com.codenvy.ide.security.oauth.server.LocalOAuthTokenProvider;
 import com.codenvy.ide.security.oauth.server.OAuthAuthenticationService;
 import com.codenvy.ide.security.oauth.server.OAuthAuthenticatorProvider;
 import com.codenvy.inject.DynaModule;
+import com.codenvy.vfs.impl.fs.LocalFileSystemRegistryPlugin;
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
 
@@ -57,6 +58,8 @@ public class ApiModule extends AbstractModule {
         bind(WorkspaceService.class);
         bind(UserService.class);
         bind(UserProfileService.class);
+
+        bind(LocalFileSystemRegistryPlugin.class);
 
         bind(BuilderSelectionStrategy.class).to(LastInUseBuilderSelectionStrategy.class);
         bind(BuilderService.class);
