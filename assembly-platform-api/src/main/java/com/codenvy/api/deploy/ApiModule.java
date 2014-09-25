@@ -17,6 +17,7 @@ import com.codenvy.api.builder.BuilderSelectionStrategy;
 import com.codenvy.api.builder.BuilderService;
 import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
 import com.codenvy.api.builder.internal.SlaveBuilderService;
+import com.codenvy.api.core.notification.WSocketEventBusServer;
 import com.codenvy.api.core.rest.ApiInfoService;
 import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
 import com.codenvy.api.runner.RunnerAdminService;
@@ -27,7 +28,6 @@ import com.codenvy.api.user.server.TokenValidator;
 import com.codenvy.api.user.server.UserProfileService;
 import com.codenvy.api.user.server.UserService;
 import com.codenvy.api.workspace.server.WorkspaceService;
-import com.codenvy.ide.env.TokenValidatorImpl;
 import com.codenvy.ide.everrest.CodenvyAsynchronousJobPool;
 import com.codenvy.ide.ext.github.server.oauth.GitHubOAuthAuthenticatorProvider;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
@@ -80,12 +80,11 @@ public class ApiModule extends AbstractModule {
         Multibinder<OAuthAuthenticatorProvider> oAuthMultibinder = Multibinder.newSetBinder(binder(), OAuthAuthenticatorProvider.class);
         oAuthMultibinder.addBinding().to(GitHubOAuthAuthenticatorProvider.class);
         bind(OAuthAuthenticationService.class);
-        bind(TokenValidator.class).to(TokenValidatorImpl.class);
 
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
 
-        bind(com.codenvy.api.core.notification.WSocketEventBusServer.class);
+        bind(WSocketEventBusServer.class);
 
         install(new com.codenvy.api.core.rest.CoreRestModule());
         install(new com.codenvy.api.analytics.AnalyticsModule());
