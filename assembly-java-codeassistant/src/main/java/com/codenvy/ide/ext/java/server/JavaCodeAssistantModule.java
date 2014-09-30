@@ -10,7 +10,7 @@
  *******************************************************************************/
 package com.codenvy.ide.ext.java.server;
 
-import com.codenvy.ide.everrest.CodenvyAsynchronousJobPool;
+import com.codenvy.everrest.CodenvyAsynchronousJobPool;
 import com.codenvy.inject.DynaModule;
 import com.google.inject.AbstractModule;
 
