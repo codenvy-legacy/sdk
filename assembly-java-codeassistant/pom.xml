@@ -36,12 +36,6 @@
             <artifactId>codenvy-ext-java-codeassistant</artifactId>
             <version>${codenvy.plugin-java.version}</version>
             <type>jar</type>
-            <exclusions>
-                <exclusion>
-                    <artifactId>org.eclipse.jdt.core</artifactId>
-                    <groupId>org.eclipse.tycho</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
@@ -49,66 +43,4 @@
             <version>${codenvy.plugin-sdk.version}</version>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <webResources>
-                        <resource>
-                            <directory>${project.build.directory}/packager-conf/jar-repack</directory>
-                            <targetPath>WEB-INF/lib</targetPath>
-                        </resource>
-                    </webResources>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-clear-tomcat</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>org.eclipse.tycho</groupId>
-                                    <artifactId>org.eclipse.jdt.core</artifactId>
-                                    <version>3.9.0.v20130604-1421</version>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/packager-conf/jar</outputDirectory>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>Prepare Tomcat</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <target>
-                                <unzip dest="${project.build.directory}/packager-conf/jar/org.eclipse.jdt.core" src="${project.build.directory}/packager-conf/jar/org.eclipse.jdt.core-3.9.0.v20130604-1421.jar">
-                                    <patternset>
-                                        <exclude name="**/META-INF/**" />
-                                    </patternset>
-                                </unzip>
-                                <jar basedir="${project.build.directory}/packager-conf/jar/org.eclipse.jdt.core" destfile="${project.build.directory}/packager-conf/jar-repack/org.eclipse.jdt.core-3.9.0.v20130604-1421.jar" />
-                            </target>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>

@@ -173,12 +173,6 @@
             <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-java</artifactId>
             <version>${codenvy.plugin-java.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>org.eclipse.jdt.core</artifactId>
-                    <groupId>org.eclipse.tycho</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
