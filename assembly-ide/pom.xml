@@ -119,7 +119,7 @@
         <dependency>
             <groupId>com.codenvy.plugin-codenvy-cli</groupId>
             <artifactId>codenvy-ext-cli</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${codenvy.plugin-codenvy-cli.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-cpp</groupId>
@@ -175,12 +175,12 @@
         <dependency>
             <groupId>com.codenvy.plugin-python</groupId>
             <artifactId>codenvy-ext-python</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${codenvy.plugin-python.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-ruby</groupId>
             <artifactId>codenvy-ext-ruby</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${codenvy.plugin-ruby.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
