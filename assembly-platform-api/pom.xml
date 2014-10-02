@@ -38,17 +38,6 @@
             <version>${codenvy.plugin.git.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ide-core</artifactId>
-            <version>${codenvy.ide.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>servlet-api</artifactId>
-                    <groupId>javax.servlet</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.platform-api</groupId>
             <artifactId>codenvy-api-analytics</artifactId>
             <version>${codenvy.platform-api.version}</version>
