@@ -128,11 +128,16 @@
             <artifactId>bower-builder</artifactId>
             <version>${codenvy.plugin.bower.version}</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-codenvy-cli</groupId>
+            <artifactId>codenvy-ext-cli</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-cpp</groupId>
             <artifactId>codenvy-ext-cpp</artifactId>
             <version>${codenvy.plugin-cpp.version}</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-grunt</groupId>
             <artifactId>grunt-builder</artifactId>
@@ -193,6 +198,16 @@
             <groupId>com.codenvy.plugin-php</groupId>
             <artifactId>codenvy-ext-php</artifactId>
             <version>${codenvy.plugin-php.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-python</groupId>
+            <artifactId>codenvy-ext-python</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-ruby</groupId>
+            <artifactId>codenvy-ext-ruby</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
