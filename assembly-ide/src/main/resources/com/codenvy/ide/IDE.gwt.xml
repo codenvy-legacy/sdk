@@ -67,7 +67,9 @@
     <inherits name="com.codenvy.plugin.yeoman.client.Yeoman"/>
 
     <inherits name="com.codenvy.ide.ext.php.PHP"/>
-    <!--inherits name="com.codenvy.ide.ext.cpp.CPP"/-->
+    <inherits name="com.codenvy.ide.ext.cpp.CPP"/>
+    <inherits name="com.codenvy.ide.ext.ruby.Ruby"/>
+    <inherits name="com.codenvy.ide.ext.python.Python"/>
 
     <stylesheet src="IDE.css"/>
 
