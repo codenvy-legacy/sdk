@@ -116,11 +116,16 @@
             <artifactId>bower-client</artifactId>
             <version>${codenvy.plugin.bower.version}</version>
         </dependency>
-        <!--<dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-codenvy-cli</groupId>
+            <artifactId>codenvy-ext-cli</artifactId>
+            <version>${codenvy.plugin-codenvy-cli.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-cpp</groupId>
             <artifactId>codenvy-ext-cpp</artifactId>
             <version>${codenvy.plugin-cpp.version}</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-editor-codemirror</groupId>
             <artifactId>plugin-editor-codemirror</artifactId>
@@ -166,6 +171,16 @@
             <groupId>com.codenvy.plugin-php</groupId>
             <artifactId>codenvy-ext-php</artifactId>
             <version>${codenvy.plugin-php.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-python</groupId>
+            <artifactId>codenvy-ext-python</artifactId>
+            <version>${codenvy.plugin-python.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-ruby</groupId>
+            <artifactId>codenvy-ext-ruby</artifactId>
+            <version>${codenvy.plugin-ruby.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
