@@ -1,4 +1,4 @@
-![image] (http://docs.codenvy.com/wp-content/uploads/editor1.png)
+![image] (http://cenext.wpengine.com/wp-content/uploads/2014/07/cdec-slide-1.png)
 
 Eclispe Che (formerly the Codenvy SDK) is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. Che creates cross-browser applications by combining extensions into a single compiled and optimized application. Extensions are provided by Che and authored by you as Java classes that use GWT libraries. Your extensions are compiled with Che and translated to JavaScript with support for most modern browsers.
 
@@ -97,5 +97,5 @@ npm is bundled with nodejs which can be downloaded from: http://nodejs.org/downl
 ### Contact Information
 * **Che Mail List:** [che-dev@eclipse.org](email:che-dev@eclipse.org)
 * **Che Forums:** [https://www.eclipse.org/forums/index.php/t/787421/](https://www.eclipse.org/forums/index.php/t/787421/)
-* **Website:**: [eclipse.org/che](https://eclipse.org/che)
+* **Website:** [eclipse.org/che](https://eclipse.org/che)
 * **Che Project Management Page:** [https://projects.eclipse.org/projects/technology.che](https://projects.eclipse.org/projects/technology.che)
