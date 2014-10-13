@@ -39,12 +39,12 @@ mvn clean install
 Che will be available at ```localhost:8080```
 
 ### Che Sub-Projects:
-* **CLI**:                     [CLI for accessing APIs] (http://github.com/codenvy/cli)
-* **CMF**                      [Framework for creating diagram editors] (http://github.com/codenvy/cmf)
+* *CLI*:                       [CLI for accessing APIs] (http://github.com/codenvy/cli)
+* **CMF**:                     [Framework for creating diagram editors] (http://github.com/codenvy/cmf)
 * **Commons**:                 [Shared libraries] (http://github.com/codenvy/commons)
 * **Everrest**:                [A shell and command abstraction for Web services] (http://github.com/codenvy/everrest)
 * **IDE**:                     [IDE] (http://github.com/codenvy/ide)
-* **Maven Dep POM**            [Maven dependencies] (http://github.com/codenvy/maven-depmgt-pom)
+* **Maven Dep POM**:           [Maven dependencies] (http://github.com/codenvy/maven-depmgt-pom)
 * **Maven Parent POM**         [Mane parent] (http://github.com/codenvy/maven-parent-pom)
 * **Platform API**:            [REST APIs for platform services] (http://github.com/codenvy/platform-api)
 * **Platform API GWT Client**: [Java client for APIs] (http://github.com/codenvy/platform-api-client-gwt)
@@ -59,7 +59,7 @@ Che will be available at ```localhost:8080```
 * **Java Plugin**:             [Ant, maven, debugger, and code assistant] (http://github.com/codenvy/plugin-java)
 * **NPM Plugin**:              [Manage npm packages within the IDE] (http://github.com/codenvy/plugin-npm)
 * **Subversion Plugin**:       [User interface for subversion client] (http://github.com/codenvy/plugin-svn)
-* **Eclipse Plug-In**          [An Eclipse plug-in for running Che projects] (http://github.com/codenvy/eclipse-plugin)
+* **Eclipse Plug-In**:         [An Eclipse plug-in for running Che projects] (http://github.com/codenvy/eclipse-plugin)
 
 
 
@@ -83,19 +83,19 @@ npm is bundled with nodejs which can be downloaded from: http://nodejs.org/downl
 
 ### Helping Eclipse Che
 
-**Contribute**: We accept pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
+**Contribute:**: We accept pull requests, so if you feel like contributing to the project, you are definitely welcome to do so.
 
-**Report Bugs**: You can report bugs, contribute, and post on the Eclipse Che forums at [https://www.eclipse.org/forums/index.php/t/787421/] (https://www.eclipse.org/forums/index.php/t/787421/). 
+**Report Bugs:** You can report bugs, contribute, and post on the Eclipse Che forums at [https://www.eclipse.org/forums/index.php/t/787421/] (https://www.eclipse.org/forums/index.php/t/787421/). 
 
 ### Documentation & Tutorials
-* **Che Binaries** [http://docs.codenvy.com/download] (http://docs.codenvy.com/download/)
-* **Che Getting Started** [http://docs.codenvy.com/che/] (http://docs.codenvy.com/che/)
-* **Che JavaDoc** [docs.codenvy.com/che/javadoc/] (http://docs.codenvy.com/che/javadoc/)
-* **Che Extension Tutorials** [http://docs.codenvy.com/che/creating-extensions/#creating-che-apps] (http://docs.codenvy.com/che/creating-extensions/#creating-che-apps)
+* **Che Binaries:** [http://docs.codenvy.com/download] (http://docs.codenvy.com/download/)
+* **Che Getting Started:** [http://docs.codenvy.com/che/] (http://docs.codenvy.com/che/)
+* **Che JavaDoc:** [docs.codenvy.com/che/javadoc/] (http://docs.codenvy.com/che/javadoc/)
+* **Che Extension Tutorials:** [http://docs.codenvy.com/che/creating-extensions/#creating-che-apps] (http://docs.codenvy.com/che/creating-extensions/#creating-che-apps)
 
 
 ### Contact Information
-* **Che Mail List** [che-dev@eclipse.org](email:che-dev@eclipse.org)
-* **Che Forums** [https://www.eclipse.org/forums/index.php/t/787421/](https://www.eclipse.org/forums/index.php/t/787421/)
-* **Website:** [eclipse.org/che](https://eclipse.org/che)
+* **Che Mail List:** [che-dev@eclipse.org](email:che-dev@eclipse.org)
+* **Che Forums:** [https://www.eclipse.org/forums/index.php/t/787421/](https://www.eclipse.org/forums/index.php/t/787421/)
+* **Website:**: [eclipse.org/che](https://eclipse.org/che)
 * **Che Project Management Page:** [https://projects.eclipse.org/projects/technology.che](https://projects.eclipse.org/projects/technology.che)
