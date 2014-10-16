@@ -17,7 +17,8 @@ The IDE is a browser application that has a extensions packaged into it. Extensi
 
 Che can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been tested on Ubuntu, Linux, MacOS and Windows. Java, GWT, GIN and Javascript are the core technologies used to build Che. Che currently has Runner issues on Windows. You will be able to build extensions and launch the IDE, but you will not be able to launch projects into a Runner due to way Java on Windows forks processes.
 
-Che is licensed with the Eclipse Public License 1.0.
+### License
+Che is open sourced under the Eclipse Public License 1.0.
 
 ### Clone the Repository & Checkout Latest Stable Branch
 
