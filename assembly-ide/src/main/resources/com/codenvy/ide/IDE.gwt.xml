@@ -37,6 +37,7 @@
     <inherits name='com.codenvy.ide.ext.web.Web'/>
     <inherits name='com.codenvy.ide.ext.java.Java'/>
     <inherits name='com.codenvy.ide.jseditor.java.JsJavaEditor'/>
+    <inherits name='com.codenvy.ide.extension.ant.Ant'/>
     <inherits name='com.codenvy.ide.ext.java.jdi.JavaRuntimeExtension'/>
     <inherits name='com.codenvy.ide.extension.builder.Builder'/>
     <inherits name='com.codenvy.ide.extension.runner.Runner'/>

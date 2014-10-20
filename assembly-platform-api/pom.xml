@@ -149,6 +149,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-ext-ant</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-debugger-java</artifactId>
             <version>${codenvy.plugin-java.version}</version>
             <exclusions>
