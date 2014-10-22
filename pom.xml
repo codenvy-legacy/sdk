@@ -16,11 +16,11 @@
     <parent>
         <artifactId>maven-depmgt-pom</artifactId>
         <groupId>com.codenvy</groupId>
-        <version>1.8.18</version>
+        <version>1.8.18.2-SNAPSHOT</version>
     </parent>
     <groupId>com.codenvy.sdk</groupId>
     <artifactId>codenvy-sdk-parent</artifactId>
-    <version>3.1.0</version>
+    <version>3.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Codenvy SDK :: Parent</name>
     <modules>

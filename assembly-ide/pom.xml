@@ -16,7 +16,7 @@
     <parent>
         <artifactId>codenvy-sdk-parent</artifactId>
         <groupId>com.codenvy.sdk</groupId>
-        <version>3.1.0</version>
+        <version>3.1.1-SNAPSHOT</version>
     </parent>
     <artifactId>assembly-ide</artifactId>
     <packaging>war</packaging>
