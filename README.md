@@ -25,7 +25,7 @@ Che is open sourced under the Eclipse Public License 1.0.
 ```sh
 git clone https://github.com/codenvy/sdk.git
 cd sdk
-git checkout 3.1.0
+git checkout 3.1.1
 ```
 
 We advise against building the master branch as you may encounter intermediate errors. 
