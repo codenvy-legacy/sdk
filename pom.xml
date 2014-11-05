@@ -20,7 +20,7 @@
     </parent>
     <groupId>com.codenvy.sdk</groupId>
     <artifactId>codenvy-sdk-parent</artifactId>
-    <version>3.2.0</version>
+    <version>3.3.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Codenvy SDK :: Parent</name>
     <modules>
@@ -33,7 +33,7 @@
     <scm>
         <connection>scm:git:git@github.com:codenvy/sdk.git</connection>
         <developerConnection>scm:git:git@github.com:codenvy/sdk.git</developerConnection>
-        <tag>3.2.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <properties>
         <org.apache.tomcat.version>7.0.50</org.apache.tomcat.version>
