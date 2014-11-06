@@ -23,7 +23,7 @@ then
 
   sleep 2
 
-  tomcatVersion="7.0.53"
+  tomcatVersion="7.0.56"
   tomcatDir="apache-tomcat-"${tomcatVersion}
   tomcatBinUrl="http://archive.apache.org/dist/tomcat/tomcat-7/v${tomcatVersion}/bin/apache-tomcat-${tomcatVersion}.zip"
 
