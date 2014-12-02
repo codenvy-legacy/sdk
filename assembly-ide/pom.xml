@@ -213,6 +213,26 @@
             <version>${codenvy.plugin-sdk.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-tour</groupId>
+            <artifactId>gwt-tour</artifactId>
+            <version>${codenvy.plugin.tour.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-tour</groupId>
+            <artifactId>tour-client</artifactId>
+            <version>${codenvy.plugin.tour.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-tour</groupId>
+            <artifactId>tour-dto</artifactId>
+            <version>${codenvy.plugin.tour.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-tour</groupId>
+            <artifactId>tour-dto-gen</artifactId>
+            <version>${codenvy.plugin.tour.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-yeoman</groupId>
             <artifactId>yeoman-client</artifactId>
             <version>${codenvy.plugin.yeoman.version}</version>
