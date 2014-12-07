@@ -40,7 +40,7 @@ mvn clean install
 Che will be available at ```localhost:8080```
 
 ### Che Sub-Projects:
-* *CLI*:                       [CLI for accessing APIs] (http://github.com/codenvy/cli)
+* **CLI**:                     [CLI for accessing APIs] (http://github.com/codenvy/cli)
 * **CMF**:                     [Framework for creating diagram editors] (http://github.com/codenvy/cmf)
 * **Commons**:                 [Shared libraries] (http://github.com/codenvy/commons)
 * **Everrest**:                [A shell and command abstraction for Web services] (http://github.com/codenvy/everrest)
@@ -70,7 +70,7 @@ This plugin requires npm, Yeoman, bower and Grunt to be installed.
 * npm setup guide : https://github.com/npm/npm
 npm is bundled with nodejs which can be downloaded from: http://nodejs.org/download/
 
-* Yeoman (and bower / Grun dependencies can be installed with: npm install -g yo)
+* Yeoman (and bower / Grunt dependencies can be installed with: npm install -g yo)
    more details on http://yeoman.io/gettingstarted.html
 
 ### Add Your Extensions to Che
