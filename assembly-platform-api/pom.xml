@@ -175,6 +175,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-generator-archetype</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-runner-webapps</artifactId>
             <version>${codenvy.plugin-java.version}</version>
         </dependency>
