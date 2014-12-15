@@ -35,6 +35,8 @@ import com.codenvy.ide.ext.ssh.server.SshKeyStore;
 import com.codenvy.ide.ext.ssh.server.UserProfileSshKeyStore;
 import com.codenvy.inject.DynaModule;
 import com.codenvy.security.oauth.OAuthAuthenticationService;
+import com.codenvy.security.oauth.OAuthAuthenticatorProvider;
+import com.codenvy.security.oauth.OAuthAuthenticatorProviderImpl;
 import com.codenvy.security.oauth.OAuthAuthenticatorTokenProvider;
 import com.codenvy.vfs.impl.fs.LocalFileSystemRegistryPlugin;
 import com.google.inject.AbstractModule;
@@ -75,6 +77,7 @@ public class ApiModule extends AbstractModule {
 
         bind(OAuthAuthenticationService.class);
         bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
+        bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
 
 
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
