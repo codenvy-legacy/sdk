@@ -34,6 +34,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-git-provider-github</artifactId>
+            <version>${codenvy.plugin.git.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-github</artifactId>
             <version>${codenvy.plugin.git.version}</version>
         </dependency>
@@ -222,6 +227,11 @@
             <groupId>com.codenvy.plugin-yeoman</groupId>
             <artifactId>yeoman-builder</artifactId>
             <version>${codenvy.plugin.yeoman.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.security</groupId>
+            <artifactId>codenvy-security-oauth2</artifactId>
+            <version>${codenvy.security.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.vfs</groupId>
