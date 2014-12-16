@@ -27,6 +27,7 @@ public class JavaCodeAssistantModule extends AbstractModule {
     protected void configure() {
         bind(RestNameEnvironment.class);
         bind(JavadocService.class);
+        bind(JavaNavigationService.class);
         bind(JavaProjectWatcherService.class);
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
