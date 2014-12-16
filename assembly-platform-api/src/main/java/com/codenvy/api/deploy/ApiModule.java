@@ -28,19 +28,18 @@ import com.codenvy.api.user.server.UserProfileService;
 import com.codenvy.api.user.server.UserService;
 import com.codenvy.api.workspace.server.WorkspaceService;
 import com.codenvy.everrest.CodenvyAsynchronousJobPool;
-import com.codenvy.ide.ext.github.server.oauth.GitHubOAuthAuthenticatorProvider;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
 import com.codenvy.ide.ext.java.server.format.FormatService;
 import com.codenvy.ide.ext.ssh.server.KeyService;
 import com.codenvy.ide.ext.ssh.server.SshKeyStore;
 import com.codenvy.ide.ext.ssh.server.UserProfileSshKeyStore;
-import com.codenvy.ide.security.oauth.server.LocalOAuthTokenProvider;
-import com.codenvy.ide.security.oauth.server.OAuthAuthenticationService;
-import com.codenvy.ide.security.oauth.server.OAuthAuthenticatorProvider;
 import com.codenvy.inject.DynaModule;
+import com.codenvy.security.oauth.OAuthAuthenticationService;
+import com.codenvy.security.oauth.OAuthAuthenticatorProvider;
+import com.codenvy.security.oauth.OAuthAuthenticatorProviderImpl;
+import com.codenvy.security.oauth.OAuthAuthenticatorTokenProvider;
 import com.codenvy.vfs.impl.fs.LocalFileSystemRegistryPlugin;
 import com.google.inject.AbstractModule;
-import com.google.inject.multibindings.Multibinder;
 
 import org.everrest.core.impl.async.AsynchronousJobPool;
 import org.everrest.core.impl.async.AsynchronousJobService;
@@ -77,11 +76,9 @@ public class ApiModule extends AbstractModule {
         bind(SshKeyStore.class).to(UserProfileSshKeyStore.class);
 
         bind(OAuthAuthenticationService.class);
-        bind(OAuthTokenProvider.class).to(LocalOAuthTokenProvider.class);
-        // Initialize empty set of OAuthAuthenticatorProvider.
-        Multibinder<OAuthAuthenticatorProvider> oAuthMultibinder = Multibinder.newSetBinder(binder(), OAuthAuthenticatorProvider.class);
-        oAuthMultibinder.addBinding().to(GitHubOAuthAuthenticatorProvider.class);
-        bind(OAuthAuthenticationService.class);
+        bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
+        bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
+
 
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);

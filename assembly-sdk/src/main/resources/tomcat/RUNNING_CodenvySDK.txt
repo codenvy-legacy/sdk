@@ -137,11 +137,11 @@ In configuration file:
 Replace *** with real values obtained from a registered GitHub app:
 
 #security
-security.local.oauth.github-client-id=***
-security.local.oauth.github-client-secret=***
-security.local.oauth.github-auth-uri= https://github.com/login/oauth/authorize
-security.local.oauth.github-token-uri= https://github.com/login/oauth/access_token
-security.local.oauth.github-redirect-uris= http://localhost:8080/api/oauth/callback
+oauth.github.clientid=***
+oauth.github.clientsecret=***
+oauth.github.authuri= https://github.com/login/oauth/authorize
+oauth.github.tokenuri= https://github.com/login/oauth/access_token
+oauth.github.redirecturis= http://localhost:8080/api/oauth/callback
 
 ==================================================
 Local User Profile: Theme Preferences and SSH Keys
