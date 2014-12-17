@@ -77,6 +77,7 @@
     <inherits name="com.codenvy.ide.ext.cpp.CPP"/>
     <inherits name="com.codenvy.ide.ext.ruby.Ruby"/>
     <inherits name="com.codenvy.ide.ext.python.Python"/>
+    <inherits name="com.codenvy.ide.ext.go.Go"/>
 
     <stylesheet src="IDE.css"/>
 

@@ -128,6 +128,11 @@
             <version>${codenvy.plugin-cpp.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-go</groupId>
+            <artifactId>codenvy-ext-go</artifactId>
+            <version>${codenvy.plugin-go.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-grunt</groupId>
             <artifactId>grunt-builder</artifactId>
             <version>${codenvy.plugin.grunt.version}</version>
