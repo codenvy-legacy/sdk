@@ -16,7 +16,7 @@
     <parent>
         <artifactId>codenvy-sdk-parent</artifactId>
         <groupId>com.codenvy.sdk</groupId>
-        <version>3.4.0-SNAPSHOT</version>
+        <version>3.5.0-SNAPSHOT</version>
     </parent>
     <artifactId>assembly-ide</artifactId>
     <packaging>war</packaging>
@@ -155,6 +155,11 @@
             <groupId>com.codenvy.plugin-editor-orion</groupId>
             <artifactId>plugin-editor-orion</artifactId>
             <version>${codenvy.plugin-editor-orion.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-go</groupId>
+            <artifactId>codenvy-ext-go</artifactId>
+            <version>${codenvy.plugin-go.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-grunt</groupId>

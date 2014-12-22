@@ -85,6 +85,8 @@ public class ApiModule extends AbstractModule {
 
         bind(WSocketEventBusServer.class);
 
+        install(new com.codenvy.generator.archetype.ArchetypeGeneratorModule());
+
         install(new com.codenvy.api.core.rest.CoreRestModule());
         install(new com.codenvy.api.analytics.AnalyticsModule());
         install(new com.codenvy.api.project.server.BaseProjectModule());
