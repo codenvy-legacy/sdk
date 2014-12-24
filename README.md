@@ -1,5 +1,3 @@
-![image] (http://cenext.wpengine.com/wp-content/uploads/2014/07/cdec-slide-1.png)
-
 Eclipse Che (formerly the Codenvy SDK) is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. Che creates cross-browser applications by combining extensions into a single compiled and optimized application. Extensions are provided by Che and authored by you as Java classes that use GWT libraries. Your extensions are compiled with Che and translated to JavaScript with support for most modern browsers.
 
 Che contains:
@@ -25,7 +23,7 @@ Che is open sourced under the Eclipse Public License 1.0.
 ```sh
 git clone https://github.com/codenvy/sdk.git
 cd sdk
-git checkout 3.2.0
+git checkout 3.4.0
 ```
 
 We advise against building the master branch as you may encounter intermediate errors. 
