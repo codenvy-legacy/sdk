@@ -64,7 +64,7 @@ Running & Stopping
 1. In order to launch a Codenvy Platform SDK, start Tomcat:
 
 On *nix:
-      ./codenvy_sdk.sh start
+      ./che_sdk.sh start
 
 * This script will also download and unpack another Tomcat which is used as runtime for apps and extensions launched in Codenvy SDK. This step will be skipped if you already already done so.
 
@@ -73,7 +73,7 @@ After launching, Codenvy Platform SDK application will be available at http://lo
 2. To stop a Codenvy Platform SDK application, execute the following command:
 
 On *nix:
-      ./codenvy_sdk.sh stop
+      ./che_sdk.sh stop
       
 =========================================================
 How to configure oAuth with GitHub and SSH key management
