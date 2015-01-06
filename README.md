@@ -32,7 +32,7 @@ We advise against building the master branch as you may encounter intermediate e
 ```sh
 cd /sdk
 mvn clean install
-./codenvy_sdk [ start | stop ]
+./che [ start | stop ]
 ```
 
 Che will be available at ```localhost:8080```
