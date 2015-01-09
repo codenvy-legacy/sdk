@@ -148,12 +148,12 @@
                                 <configuration>
                                     <target>
                                         <replace file="${codenvy.ide.path}/bin/setenv.sh" token="8080" value="8280" />
-                                        <replace file="${codenvy.ide.path}/bin/codenvy.sh" token="CATALINA_PID" value="CODENVY_PID" />
+                                        <replace file="${codenvy.ide.path}/bin/che.sh" token="CATALINA_PID" value="CODENVY_PID" />
                                         <replace file="${codenvy.ide.path}/conf/server.xml" token="8080" value="8280" />
                                         <replace file="${codenvy.ide.path}/conf/server.xml" token="8009" value="8209" />
                                         <replace file="${codenvy.ide.path}/conf/server.xml" token="8005" value="8205" />
                                         <exec executable="sh" spawn="false">
-                                            <arg value="${codenvy.ide.path}/bin/codenvy.sh" />
+                                            <arg value="${codenvy.ide.path}/bin/che.sh" />
                                             <arg value="start" />
                                         </exec>
                                     </target>
@@ -168,10 +168,10 @@
                                 <configuration>
                                     <target>
                                         <exec executable="sh" spawn="false">
-                                            <arg value="${codenvy.ide.path}/bin/codenvy.sh" />
+                                            <arg value="${codenvy.ide.path}/bin/che.sh" />
                                             <arg value="stop" />
                                         </exec>
-                                        <replace file="${codenvy.ide.path}/bin/codenvy.sh" token="CODENVY_PID" value="CATALINA_PID" />
+                                        <replace file="${codenvy.ide.path}/bin/che.sh" token="CODENVY_PID" value="CATALINA_PID" />
                                         <replace file="${codenvy.ide.path}/bin/setenv.sh" token="8280" value="8080" />
                                         <replace file="${codenvy.ide.path}/conf/server.xml" token="8280" value="8080" />
                                         <replace file="${codenvy.ide.path}/conf/server.xml" token="8209" value="8009" />
