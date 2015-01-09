@@ -1,3 +1,14 @@
+@REM
+@REM Copyright (c) 2012-2014 Codenvy, S.A.
+@REM All rights reserved. This program and the accompanying materials
+@REM are made available under the terms of the Eclipse Public License v1.0
+@REM which accompanies this distribution, and is available at
+@REM http://www.eclipse.org/legal/epl-v10.html
+@REM
+@REM Contributors:
+@REM   Codenvy, S.A. - initial API and implementation
+@REM
+
 @echo off
 rem Licensed to the Apache Software Foundation (ASF) under one or more
 rem contributor license agreements.  See the NOTICE file distributed with
