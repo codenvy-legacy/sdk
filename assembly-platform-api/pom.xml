@@ -154,6 +154,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-builder-gradle</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-builder-maven</artifactId>
             <version>${codenvy.plugin-java.version}</version>
         </dependency>
@@ -172,6 +177,11 @@
                     <groupId>sun.jdt</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-ext-gradle</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>

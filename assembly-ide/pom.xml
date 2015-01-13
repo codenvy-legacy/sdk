@@ -184,6 +184,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
+            <artifactId>codenvy-ext-gradle</artifactId>
+            <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-java</artifactId>
             <version>${codenvy.plugin-java.version}</version>
         </dependency>
