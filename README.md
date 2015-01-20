@@ -31,6 +31,8 @@ git checkout 3.4.0
 
 We advise against building the master branch as you may encounter intermediate errors. 
 
+This builds just the SDK.  If you want to build Che and all of its dependent repositories together into an all-in-one assembly, instructions to do so are at [github.com/codenvy/assembly-che] (https://github.com/codenvy/assembly-che).
+
 ### Build and Run Che
 ```sh
 cd /sdk
