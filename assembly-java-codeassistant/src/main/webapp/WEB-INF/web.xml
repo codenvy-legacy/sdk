@@ -17,10 +17,6 @@
          version="3.0"
          metadata-complete="true">
     <display-name>Codenvy API</display-name>
-    <context-param>
-        <param-name>org.everrest.asynchronous</param-name>
-        <param-value>0</param-value>
-    </context-param>
     <listener>
         <listener-class>com.codenvy.inject.CodenvyBootstrap</listener-class>
     </listener>
