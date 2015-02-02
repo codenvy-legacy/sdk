@@ -43,7 +43,13 @@
         <dependency>
             <groupId>com.googlecode.grep4j</groupId>
             <artifactId>grep4j</artifactId>
-            <version>1.8.7</version>
+            <version>${com.googlecode.grep4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>lombok</artifactId>
+                    <groupId>org.projectlombok</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -65,6 +71,12 @@
             <groupId>org.jboss.arquillian.extension</groupId>
             <artifactId>arquillian-phantom-driver</artifactId>
             <version>${org.jboss.arquillian.version}</version>
+        </dependency>
+        <dependency>
+            <!-- Use JDK8 compliant -->
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${org.projectlombok.lombok.version}</version>
         </dependency>
     </dependencies>
     <build>
