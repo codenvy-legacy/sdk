@@ -32,6 +32,7 @@
     <inherits name='com.codenvy.ide.Api'/>
     <inherits name="com.codenvy.ide.Core"/>
     <inherits name="com.codenvy.ide.ui.CodenvyUI"/>
+    <inherits name="Locale"/>
 
     <!-- Extensions                                                 -->
     <inherits name='com.codenvy.ide.ext.web.Web'/>
