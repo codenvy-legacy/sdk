@@ -11,4 +11,7 @@
       Codenvy, S.A. - initial API and implementation
 
 -->
-<Context allowCasualMultipartParsing="true" />
+
+<Context allowCasualMultipartParsing="true">
+<JarScanner scanBootstrapClassPath="true" scanAllDirectories="true" scanClassPath="true"/>
+</Context>
