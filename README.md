@@ -16,7 +16,7 @@ Che contains:
 
 The IDE is a browser application that has a extensions packaged into it. Extensions make use of the platform APIs and run on the Eclipse Che kernel. The kernel is a servlet-based framework that loads and manages extensions.  The kernel can be run in any servlet container. Tomcat bundling is provided within Che. Tomcat is also included to make startup configuration simpler. 
 
-Che can be installed on any operating system that supports Java 1.7 - desktop, server or cloud. It has been tested on Ubuntu, Linux, MacOS and Windows. Java, GWT, GIN and Javascript are the core technologies used to build Che.
+Che can be installed on any operating system that supports Java 1.7 - desktop, server or cloud, and Maven 3.0.5 or higher. It has been tested on Ubuntu, Linux, MacOS and Windows. Java, GWT, GIN and Javascript are the core technologies used to build Che.
 
 ### License
 Che is open sourced under the Eclipse Public License 1.0.
@@ -26,7 +26,7 @@ Che is open sourced under the Eclipse Public License 1.0.
 ```sh
 git clone https://github.com/codenvy/sdk.git
 cd sdk
-git checkout 3.6.0
+git checkout 3.6.1
 ```
 
 We advise against building the master branch as you may encounter intermediate errors. 
