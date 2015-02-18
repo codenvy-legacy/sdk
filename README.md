@@ -37,7 +37,7 @@ This builds just the SDK.  If you want to build Che and all of its dependent rep
 ```sh
 cd /sdk
 mvn clean install
-./che [ start | stop ]
+./che.sh [ start | stop ]
 ```
 
 Che will be available at ```localhost:8080```
