@@ -228,6 +228,11 @@
             <version>${codenvy.plugin-sdk.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.plugin-sdk</groupId>
+            <artifactId>codenvy-importer-sdk</artifactId>
+            <version>${codenvy.plugin-sdk.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-tour</groupId>
             <artifactId>gwt-tour</artifactId>
             <version>${codenvy.plugin.tour.version}</version>

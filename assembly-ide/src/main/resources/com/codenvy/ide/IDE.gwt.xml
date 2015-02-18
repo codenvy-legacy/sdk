@@ -46,6 +46,7 @@
     <inherits name='com.codenvy.ide.ext.github.GitHub'/>
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
     <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
+    <inherits name='com.codenvy.ide.ext.localimporter.LocalImporter'/>
     <inherits name='com.codenvy.ide.ext.datasource.Datasource'/>
     <inherits name='com.codenvy.ide.editor.codemirror.CodeMirrorEditor'/>
     <inherits name='com.codenvy.ide.editor.orion.OrionEditor'/>
