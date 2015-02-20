@@ -148,7 +148,7 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-editor-codemirror</groupId>
-            <artifactId>plugin-editor-codemirror</artifactId>
+            <artifactId>codemirror-editorwidget</artifactId>
             <version>${codenvy.plugin-editor-codemirror.version}</version>
         </dependency>
         <dependency>
