@@ -31,7 +31,6 @@ public class JavaCodeAssistantModule extends AbstractModule {
         bind(LocalFSMountStrategy.class).to(WorkspaceHashLocalFSMountStrategy.class);
         bind(JavadocService.class);
         bind(JavaNavigationService.class);
-        bind(JavaProjectWatcherService.class);
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
         bind(com.codenvy.api.core.notification.WSocketEventBusClient.class).asEagerSingleton();
