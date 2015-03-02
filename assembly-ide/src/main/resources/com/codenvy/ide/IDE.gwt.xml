@@ -45,8 +45,6 @@
     <inherits name='com.codenvy.ide.ext.git.Git'/>
     <inherits name='com.codenvy.ide.ext.github.GitHub'/>
     <inherits name='com.codenvy.ide.ext.ssh.Ssh'/>
-    <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
-    <inherits name='com.codenvy.ide.ext.datasource.Datasource'/>
     <inherits name='com.codenvy.ide.editor.codemirror.CodeMirrorEditor'/>
     <inherits name='com.codenvy.ide.editor.orion.OrionEditor'/>
 
@@ -61,23 +59,6 @@
     <inherits name='com.codenvy.api.Factory'/>
     <inherits name='com.codenvy.api.VFS'/>
     <inherits name="com.codenvy.api.Workspace"/>
-
-    <!-- Javascript & AngularJS plugins                             -->
-    <inherits name="com.codenvy.plugin.angularjs.completion.dto.Completion" />
-    <inherits name="com.codenvy.plugin.angularjs.core.client.AngularJS"/>
-    <inherits name="com.codenvy.plugin.grunt.client.Grunt"/>
-    <inherits name="com.codenvy.plugin.bower.client.Bower"/>
-    <inherits name="com.codenvy.plugin.npm.client.Npm"/>
-    <inherits name="com.codenvy.plugin.yeoman.client.Yeoman"/>
-
-    <!-- Guided Tour plugin -->
-    <inherits name="com.codenvy.plugin.tour.client.Tour" />
-
-    <inherits name="com.codenvy.ide.ext.php.PHP"/>
-    <inherits name="com.codenvy.ide.ext.cpp.CPP"/>
-    <inherits name="com.codenvy.ide.ext.ruby.Ruby"/>
-    <inherits name="com.codenvy.ide.ext.python.Python"/>
-    <inherits name="com.codenvy.ide.ext.go.Go"/>
 
     <stylesheet src="IDE.css"/>
 

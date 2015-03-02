@@ -33,11 +33,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-datasource-client</artifactId>
-            <version>${codenvy.plugin.datasource.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
             <version>${codenvy.plugin.git.version}</version>
         </dependency>
@@ -122,31 +117,6 @@
             <version>${codenvy.platform-api-gwt-client.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-completion-dto</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-completion-dto-gen</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-angularjs</groupId>
-            <artifactId>angularjs-core-client</artifactId>
-            <version>${codenvy.plugin.angularjs.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-bower</groupId>
-            <artifactId>bower-client</artifactId>
-            <version>${codenvy.plugin.bower.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-cpp</groupId>
-            <artifactId>codenvy-ext-cpp</artifactId>
-            <version>${codenvy.plugin-cpp.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.plugin-editor-codemirror</groupId>
             <artifactId>plugin-editor-codemirror</artifactId>
             <version>${codenvy.plugin-editor-codemirror.version}</version>
@@ -155,16 +125,6 @@
             <groupId>com.codenvy.plugin-editor-orion</groupId>
             <artifactId>plugin-editor-orion</artifactId>
             <version>${codenvy.plugin-editor-orion.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-go</groupId>
-            <artifactId>codenvy-ext-go</artifactId>
-            <version>${codenvy.plugin-go.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-grunt</groupId>
-            <artifactId>grunt-client</artifactId>
-            <version>${codenvy.plugin.grunt.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
@@ -198,59 +158,9 @@
             <version>${codenvy.plugin-java.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codenvy.plugin-npm</groupId>
-            <artifactId>npm-client</artifactId>
-            <version>${codenvy.plugin.npm.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-php</groupId>
-            <artifactId>codenvy-ext-php</artifactId>
-            <version>${codenvy.plugin-php.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-python</groupId>
-            <artifactId>codenvy-ext-python</artifactId>
-            <version>${codenvy.plugin-python.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-ruby</groupId>
-            <artifactId>codenvy-ext-ruby</artifactId>
-            <version>${codenvy.plugin-ruby.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-sdk</groupId>
-            <artifactId>codenvy-ext-plugins</artifactId>
-            <version>${codenvy.plugin-sdk.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
             <version>${codenvy.plugin-sdk.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-tour</groupId>
-            <artifactId>gwt-tour</artifactId>
-            <version>${codenvy.plugin.tour.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-tour</groupId>
-            <artifactId>tour-client</artifactId>
-            <version>${codenvy.plugin.tour.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-tour</groupId>
-            <artifactId>tour-dto</artifactId>
-            <version>${codenvy.plugin.tour.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-tour</groupId>
-            <artifactId>tour-dto-gen</artifactId>
-            <version>${codenvy.plugin.tour.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-yeoman</groupId>
-            <artifactId>yeoman-client</artifactId>
-            <version>${codenvy.plugin.yeoman.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.gwt.inject</groupId>
