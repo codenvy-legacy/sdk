@@ -10,6 +10,7 @@
  *******************************************************************************/
 package com.codenvy.api.deploy;
 
+import com.codenvy.api.auth.LoginFilter;
 import com.codenvy.ide.env.SingleEnvironmentFilter;
 import com.codenvy.everrest.CodenvyEverrestWebSocketServlet;
 import com.codenvy.inject.DynaModule;
@@ -32,7 +33,9 @@ public class ApiServletModule extends ServletModule {
         Map<String,String> params = new HashMap<>(2);
         params.put("ws-name", "default");
         params.put("ws-id", "1q2w3e");
+        params.put("account-id", "account1234567890");
         filter("/*").through(SingleEnvironmentFilter.class, params);
+        filter("/*").through(LoginFilter.class);
         serve("/ws/*").with(CodenvyEverrestWebSocketServlet.class);
         serve("/*").with(GuiceEverrestServlet.class);
     }

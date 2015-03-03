@@ -11,6 +11,11 @@
 package com.codenvy.api.deploy;
 
 import com.codenvy.api.auth.AuthenticationService;
+import com.codenvy.api.auth.SecureRandomTokenGenerator;
+import com.codenvy.api.auth.TokenExtractor;
+import com.codenvy.api.auth.TokenGenerator;
+import com.codenvy.api.auth.TokenManager;
+import com.codenvy.api.auth.UserProvider;
 import com.codenvy.api.auth.oauth.OAuthTokenProvider;
 import com.codenvy.api.builder.BuilderAdminService;
 import com.codenvy.api.builder.BuilderSelectionStrategy;
@@ -29,6 +34,8 @@ import com.codenvy.api.user.server.UserService;
 import com.codenvy.api.workspace.server.WorkspaceService;
 import com.codenvy.everrest.CodenvyAsynchronousJobPool;
 import com.codenvy.everrest.ETagResponseFilter;
+import com.codenvy.ide.env.DummyUserProvider;
+import com.codenvy.ide.env.DymmyHttpSessionTokenExtractor;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
 import com.codenvy.ide.ext.java.server.format.FormatService;
 import com.codenvy.ide.ext.ssh.server.KeyService;
@@ -53,7 +60,6 @@ public class ApiModule extends AbstractModule {
     protected void configure() {
         bind(ApiInfoService.class);
 
-        bind(AuthenticationService.class);
         bind(WorkspaceService.class);
         bind(ETagResponseFilter.class);
 
@@ -81,6 +87,12 @@ public class ApiModule extends AbstractModule {
         bind(OAuthAuthenticationService.class);
         bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
         bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
+
+        bind(UserProvider.class).to(DummyUserProvider.class);
+        bind(TokenExtractor.class).to(DymmyHttpSessionTokenExtractor.class);
+        bind(AuthenticationService.class);
+        bind(TokenManager.class);
+        bind(TokenGenerator.class).to(SecureRandomTokenGenerator.class);
 
 
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
