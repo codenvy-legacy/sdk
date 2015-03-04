@@ -34,8 +34,8 @@ import com.codenvy.api.user.server.UserService;
 import com.codenvy.api.workspace.server.WorkspaceService;
 import com.codenvy.everrest.CodenvyAsynchronousJobPool;
 import com.codenvy.everrest.ETagResponseFilter;
-import com.codenvy.ide.env.DummyUserProvider;
-import com.codenvy.ide.env.DymmyHttpSessionTokenExtractor;
+import com.codenvy.ide.env.SessionUserProvider;
+import com.codenvy.ide.env.SingleUserTokenExtractor;
 import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
 import com.codenvy.ide.ext.java.server.format.FormatService;
 import com.codenvy.ide.ext.ssh.server.KeyService;
@@ -88,8 +88,8 @@ public class ApiModule extends AbstractModule {
         bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
         bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
 
-        bind(UserProvider.class).to(DummyUserProvider.class);
-        bind(TokenExtractor.class).to(DymmyHttpSessionTokenExtractor.class);
+        bind(UserProvider.class).to(SessionUserProvider.class);
+        bind(TokenExtractor.class).to(SingleUserTokenExtractor.class);
         bind(AuthenticationService.class);
         bind(TokenManager.class);
         bind(TokenGenerator.class).to(SecureRandomTokenGenerator.class);
