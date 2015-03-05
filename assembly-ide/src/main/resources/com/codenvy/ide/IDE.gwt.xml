@@ -48,6 +48,8 @@
     <inherits name='com.codenvy.ide.editor.codemirror.CodeMirrorEditor'/>
     <inherits name='com.codenvy.ide.editor.orion.OrionEditor'/>
 
+    <inherits name='com.codenvy.ide.ext.tutorials.Tutorials'/>
+
     <!-- Platform API GWT client dependencies                       -->
     <inherits name='com.codenvy.api.Analytics'/>
     <inherits name='com.codenvy.api.Builder'/>
