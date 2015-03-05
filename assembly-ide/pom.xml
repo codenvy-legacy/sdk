@@ -159,6 +159,11 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
+            <artifactId>codenvy-ext-plugins</artifactId>
+            <version>${codenvy.plugin-sdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-sdk</groupId>
             <artifactId>codenvy-ide-env-dummy</artifactId>
             <version>${codenvy.plugin-sdk.version}</version>
         </dependency>

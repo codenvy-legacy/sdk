@@ -16,7 +16,11 @@
     <parent>
         <artifactId>maven-depmgt-pom</artifactId>
         <groupId>com.codenvy</groupId>
+<<<<<<< HEAD
         <version>1.15.1-SNAPSHOT</version>
+=======
+        <version>1.16.0-SNAPSHOT</version>
+>>>>>>> 2fb4a42... Fix statring extensions
     </parent>
     <groupId>com.codenvy.sdk</groupId>
     <artifactId>codenvy-sdk-parent</artifactId>
