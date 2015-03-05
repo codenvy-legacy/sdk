@@ -127,12 +127,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
-            <artifactId>wizard-api-tutorial</artifactId>
-            <version>${codenvy.plugin-sdk.version}</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-sdk</groupId>
             <artifactId>wysiwyg-editor-tutorial</artifactId>
             <version>${codenvy.plugin-sdk.version}</version>
             <type>zip</type>
@@ -321,15 +315,6 @@
                                     <overWrite>false</overWrite>
                                     <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
                                     <destFileName>parts-api-tutorial.zip</destFileName>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>com.codenvy.plugin-sdk</groupId>
-                                    <artifactId>wizard-api-tutorial</artifactId>
-                                    <type>zip</type>
-                                    <version>${codenvy.plugin-sdk.version}</version>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/packager-conf/zip/tutorials</outputDirectory>
-                                    <destFileName>wizard-api-tutorial.zip</destFileName>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>com.codenvy.plugin-sdk</groupId>
