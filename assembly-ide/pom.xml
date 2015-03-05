@@ -322,7 +322,8 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <echo append="false" file="${project.build.directory}/classes/com/codenvy/ide/BuildInfo.properties">revision = ${revision}
+                                <echo append="false" file="${project.build.directory}/classes/com/codenvy/ide/BuildInfo.properties">
+                                    revision = ${revision}
                                     buildTime = ${timestamp}
                                     version = ${project.version}</echo>
                             </tasks>
