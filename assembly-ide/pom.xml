@@ -16,7 +16,7 @@
     <parent>
         <artifactId>codenvy-sdk-parent</artifactId>
         <groupId>com.codenvy.sdk</groupId>
-        <version>3.7.0-SNAPSHOT</version>
+        <version>3.8.0-SNAPSHOT</version>
     </parent>
     <artifactId>assembly-ide</artifactId>
     <packaging>war</packaging>
@@ -156,6 +156,11 @@
             <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-plugin-java-jseditor</artifactId>
             <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-sdk</groupId>
+            <artifactId>codenvy-ext-plugins</artifactId>
+            <version>${codenvy.plugin-sdk.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
