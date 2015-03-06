@@ -10,6 +10,7 @@
  *******************************************************************************/
 package com.codenvy.api.deploy;
 
+import com.codenvy.api.auth.DefaultAuthorizationFilter;
 import com.codenvy.api.auth.DefaultLoginFilter;
 import com.codenvy.api.auth.LoginFilter;
 import com.codenvy.ide.env.SingleEnvironmentFilter;
@@ -36,7 +37,7 @@ public class ApiServletModule extends ServletModule {
         params.put("ws-id", "1q2w3e");
         params.put("account-id", "account1234567890");
         filter("/*").through(SingleEnvironmentFilter.class, params);
-        filter("/*").through(DefaultLoginFilter.class);
+        filter("/*").through(DefaultAuthorizationFilter.class);
         serve("/ws/*").with(CodenvyEverrestWebSocketServlet.class);
         serve("/*").with(GuiceEverrestServlet.class);
     }

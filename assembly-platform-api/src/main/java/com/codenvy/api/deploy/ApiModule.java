@@ -11,9 +11,12 @@
 package com.codenvy.api.deploy;
 
 import com.codenvy.api.auth.AuthenticationService;
+import com.codenvy.api.auth.InMemoryTokenManager;
+import com.codenvy.api.auth.LocalSessionInvalidationHandler;
 import com.codenvy.api.auth.SecureRandomTokenGenerator;
 import com.codenvy.api.auth.TokenExtractor;
 import com.codenvy.api.auth.TokenGenerator;
+import com.codenvy.api.auth.TokenInvalidationHandler;
 import com.codenvy.api.auth.TokenManager;
 import com.codenvy.api.auth.UserProvider;
 import com.codenvy.api.auth.oauth.OAuthTokenProvider;
@@ -91,7 +94,8 @@ public class ApiModule extends AbstractModule {
         bind(UserProvider.class).to(SessionUserProvider.class);
         bind(TokenExtractor.class).to(SingleUserTokenExtractor.class);
         bind(AuthenticationService.class);
-        bind(TokenManager.class);
+        bind(TokenManager.class).to(InMemoryTokenManager.class);
+        bind(TokenInvalidationHandler.class).to(LocalSessionInvalidationHandler.class);
         bind(TokenGenerator.class).to(SecureRandomTokenGenerator.class);
 
 
