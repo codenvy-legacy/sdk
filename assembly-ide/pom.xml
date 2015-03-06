@@ -43,11 +43,6 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
-            <artifactId>codenvy-ext-runner</artifactId>
-            <version>${codenvy.ide.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-web</artifactId>
             <version>${codenvy.ide.version}</version>
         </dependency>
@@ -156,6 +151,11 @@
             <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-plugin-java-jseditor</artifactId>
             <version>${codenvy.plugin-java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.plugin-runner</groupId>
+            <artifactId>codenvy-plugin-runner</artifactId>
+            <version>${codenvy.plugin.runner.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.plugin-sdk</groupId>
