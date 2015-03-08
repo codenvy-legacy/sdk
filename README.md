@@ -1,4 +1,4 @@
-Eclipse Che (formerly the Codenvy SDK) is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. Che creates cross-browser applications by combining extensions into a single compiled and optimized application. Extensions are provided by Che and authored by you as Java classes that use GWT libraries. Your extensions are compiled with Che and translated to JavaScript with support for most modern browsers.
+Eclipse Che is a free and open Java framework for building Web client applications that are beautiful, fast, and modular. Che creates cross-browser applications by combining extensions into a single compiled and optimized application. Extensions are provided by Che and authored by you as Java classes that use GWT libraries. Your extensions are compiled with Che and translated to JavaScript with support for most modern browsers.
 
 Che contains:
 * A cloud IDE
@@ -31,7 +31,7 @@ git checkout 3.7.1
 
 We advise against building the master branch as you may encounter intermediate errors. 
 
-This builds just the SDK.  If you want to build Che and all of its dependent repositories together into an all-in-one assembly, instructions to do so are at [github.com/codenvy/assembly-che] (https://github.com/codenvy/assembly-che).
+This builds the SDK, which includes our Java and git plug-ins.  If you want to build Che with all known plug-ins, build [github.com/codenvy/assembly-che] (https://github.com/codenvy/assembly-che).
 
 ### Build and Run Che
 ```sh
