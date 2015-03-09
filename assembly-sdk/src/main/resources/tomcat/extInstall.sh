@@ -31,7 +31,7 @@ do
 done
 
 # Prepare to re-build Codenvy IDE
-java -cp "sdk-tools/codenvy-sdk-tools.jar" com.codenvy.ide.sdk.tools.InstallExtension --extDir=$EXT_DIR_REL_PATH --extResourcesDir=$EXT_RES_DIR_REL_PATH
+java -cp "sdk-tools/codenvy-sdk-tools.jar" InstallExtension --extDir=$EXT_DIR_REL_PATH --extResourcesDir=$EXT_RES_DIR_REL_PATH
 
 # Re-build Codenvy IDE
 cd $EXT_RES_WORK_DIR_REL_PATH

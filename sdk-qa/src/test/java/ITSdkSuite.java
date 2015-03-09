@@ -8,7 +8,7 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-import com.codenvy.test.framework.concordion.CodenvyConcordionResourceExtension;
+import org.eclipse.che.test.framework.concordion.CodenvyConcordionResourceExtension;
 
 import org.concordion.api.extension.Extensions;
 import org.concordion.integration.junit4.ConcordionRunner;

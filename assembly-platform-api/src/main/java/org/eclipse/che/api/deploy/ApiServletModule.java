@@ -8,10 +8,11 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.ide.ext.java.server;
+package org.eclipse.che.api.deploy;
 
-import com.codenvy.ide.env.SingleEnvironmentFilter;
-import com.codenvy.inject.DynaModule;
+import org.eclipse.che.ide.env.SingleEnvironmentFilter;
+import org.eclipse.che.everrest.CodenvyEverrestWebSocketServlet;
+import org.eclipse.che.inject.DynaModule;
 import com.google.inject.servlet.ServletModule;
 
 import org.everrest.guice.servlet.GuiceEverrestServlet;
@@ -32,6 +33,7 @@ public class ApiServletModule extends ServletModule {
         params.put("ws-name", "default");
         params.put("ws-id", "1q2w3e");
         filter("/*").through(SingleEnvironmentFilter.class, params);
+        serve("/ws/*").with(CodenvyEverrestWebSocketServlet.class);
         serve("/*").with(GuiceEverrestServlet.class);
     }
 }
