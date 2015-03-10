@@ -10,14 +10,16 @@
  *******************************************************************************/
 package org.eclipse.che.ide.ext.java.server;
 
-import org.eclipse.che.everrest.CodenvyAsynchronousJobPool;
-
-import org.eclipse.che.api.core.notification.WSocketEventBusClient;
-import org.eclipse.che.inject.DynaModule;
-import org.eclipse.che.vfs.impl.fs.LocalFSMountStrategy;
-import org.eclipse.che.vfs.impl.fs.WorkspaceHashLocalFSMountStrategy;
 import com.google.inject.AbstractModule;
 
+import org.eclipse.che.api.core.notification.WSocketEventBusClient;
+import org.eclipse.che.everrest.CodenvyAsynchronousJobPool;
+import org.eclipse.che.inject.DynaModule;
+import org.eclipse.che.jdt.JavaNavigationService;
+import org.eclipse.che.jdt.JavadocService;
+import org.eclipse.che.jdt.RestNameEnvironment;
+import org.eclipse.che.vfs.impl.fs.LocalFSMountStrategy;
+import org.eclipse.che.vfs.impl.fs.WorkspaceHashLocalFSMountStrategy;
 import org.everrest.core.impl.async.AsynchronousJobPool;
 import org.everrest.core.impl.async.AsynchronousJobService;
 import org.everrest.guice.PathKey;
