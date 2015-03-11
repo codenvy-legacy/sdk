@@ -28,6 +28,11 @@
     <dependencies>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-bitbucket</artifactId>
+            <version>${codenvy.plugin.git.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-builder</artifactId>
             <version>${codenvy.ide.version}</version>
         </dependency>

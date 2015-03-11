@@ -11,6 +11,7 @@
 package org.eclipse.che.api.deploy;
 
 import org.eclipse.che.api.auth.AuthenticationService;
+import org.eclipse.che.api.auth.oauth.OAuthAuthorizationHeaderProvider;
 import org.eclipse.che.api.auth.oauth.OAuthTokenProvider;
 import org.eclipse.che.api.builder.BuilderAdminService;
 import org.eclipse.che.api.builder.BuilderSelectionStrategy;
@@ -42,6 +43,7 @@ import org.eclipse.che.everrest.ETagResponseFilter;
 import org.eclipse.che.generator.archetype.ArchetypeGeneratorModule;
 import org.eclipse.che.ide.ext.java.jdi.server.DebuggerService;
 
+import org.eclipse.che.security.oauth1.OAuthAuthenticatorAuthorizationHeaderProvider;
 import org.eclipse.che.vfs.impl.fs.VirtualFileSystemFSModule;
 import org.eclipse.che.ide.ext.java.server.format.FormatService;
 import org.eclipse.che.ide.ext.ssh.server.KeyService;
@@ -97,6 +99,9 @@ public class ApiModule extends AbstractModule {
         bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
         bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
 
+        bind(org.eclipse.che.security.oauth1.OAuthAuthenticationService.class);
+        bind(OAuthAuthorizationHeaderProvider.class).to(OAuthAuthenticatorAuthorizationHeaderProvider.class);
+        bind(org.eclipse.che.security.oauth1.OAuthAuthenticatorProvider.class);
 
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);

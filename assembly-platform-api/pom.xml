@@ -29,7 +29,17 @@
         </dependency>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-bitbucket</artifactId>
+            <version>${codenvy.plugin.git.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
             <artifactId>codenvy-ext-git</artifactId>
+            <version>${codenvy.plugin.git.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.ide</groupId>
+            <artifactId>codenvy-ext-git-provider-bitbucket</artifactId>
             <version>${codenvy.plugin.git.version}</version>
         </dependency>
         <dependency>
@@ -152,6 +162,11 @@
             <groupId>com.codenvy.plugin-sdk</groupId>
             <artifactId>codenvy-runner-sdk</artifactId>
             <version>${codenvy.plugin-sdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codenvy.security</groupId>
+            <artifactId>codenvy-security-oauth1</artifactId>
+            <version>${codenvy.security.version}</version>
         </dependency>
         <dependency>
             <groupId>com.codenvy.security</groupId>
