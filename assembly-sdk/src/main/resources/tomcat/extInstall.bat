@@ -27,7 +27,7 @@ if exist %%f call mvn org.apache.maven.plugins:maven-install-plugin:2.5.1:instal
 )
 
 rem Prepare to re-build Codenvy IDE
-call java -cp "sdk-tools\codenvy-sdk-tools.jar" com.codenvy.ide.sdk.tools.InstallExtension --extDir=%EXT_DIR_REL_PATH% --extResourcesDir=%EXT_RES_DIR_REL_PATH%
+call java -cp "sdk-tools\codenvy-sdk-tools.jar" InstallExtension --extDir=%EXT_DIR_REL_PATH% --extResourcesDir=%EXT_RES_DIR_REL_PATH%
 
 rem Re-build Codenvy IDE
 cd %EXT_RES_WORK_DIR_REL_PATH%

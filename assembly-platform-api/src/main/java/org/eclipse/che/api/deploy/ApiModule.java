@@ -8,9 +8,9 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.api.deploy;
+package org.eclipse.che.api.deploy;
 
-import com.codenvy.api.auth.AuthenticationService;
+import org.eclipse.che.api.auth.AuthenticationService;
 import org.eclipse.che.api.auth.InMemoryTokenManager;
 import org.eclipse.che.api.auth.LocalSessionInvalidationHandler;
 import org.eclipse.che.api.auth.SecureRandomTokenGenerator;
@@ -19,37 +19,52 @@ import org.eclipse.che.api.auth.TokenGenerator;
 import org.eclipse.che.api.auth.TokenInvalidationHandler;
 import org.eclipse.che.api.auth.TokenManager;
 import org.eclipse.che.api.auth.UserProvider;
-import com.codenvy.api.auth.oauth.OAuthTokenProvider;
-import com.codenvy.api.builder.BuilderAdminService;
-import com.codenvy.api.builder.BuilderSelectionStrategy;
-import com.codenvy.api.builder.BuilderService;
-import com.codenvy.api.builder.LastInUseBuilderSelectionStrategy;
-import com.codenvy.api.builder.internal.SlaveBuilderService;
-import com.codenvy.api.core.notification.WSocketEventBusServer;
-import com.codenvy.api.core.rest.ApiInfoService;
-import com.codenvy.api.runner.LastInUseRunnerSelectionStrategy;
-import com.codenvy.api.runner.RunnerAdminService;
-import com.codenvy.api.runner.RunnerSelectionStrategy;
-import com.codenvy.api.runner.RunnerService;
-import com.codenvy.api.runner.internal.SlaveRunnerService;
-import com.codenvy.api.user.server.UserProfileService;
-import com.codenvy.api.user.server.UserService;
-import com.codenvy.api.workspace.server.WorkspaceService;
-import com.codenvy.everrest.CodenvyAsynchronousJobPool;
-import com.codenvy.everrest.ETagResponseFilter;
+import org.eclipse.che.api.auth.oauth.OAuthTokenProvider;
+import org.eclipse.che.api.builder.BuilderAdminService;
+import org.eclipse.che.api.builder.BuilderSelectionStrategy;
+import org.eclipse.che.api.builder.BuilderService;
+import org.eclipse.che.api.builder.LastInUseBuilderSelectionStrategy;
+import org.eclipse.che.api.builder.internal.BuilderModule;
+import org.eclipse.che.api.builder.internal.SlaveBuilderService;
+
+import org.eclipse.che.api.analytics.AnalyticsModule;
+import org.eclipse.che.api.core.notification.WSocketEventBusServer;
+import org.eclipse.che.api.core.rest.ApiInfoService;
+import org.eclipse.che.api.runner.LastInUseRunnerSelectionStrategy;
+import org.eclipse.che.api.runner.RunnerAdminService;
+import org.eclipse.che.api.runner.RunnerSelectionStrategy;
+import org.eclipse.che.api.runner.RunnerService;
+import org.eclipse.che.api.runner.internal.RunnerModule;
+import org.eclipse.che.api.runner.internal.SlaveRunnerService;
+
+import org.eclipse.che.api.factory.FactoryModule;
+import org.eclipse.che.api.project.server.BaseProjectModule;
+import org.eclipse.che.api.user.server.UserProfileService;
+import org.eclipse.che.api.user.server.UserService;
+import org.eclipse.che.api.workspace.server.WorkspaceService;
+
+import org.eclipse.che.api.vfs.server.VirtualFileSystemModule;
+import org.eclipse.che.docs.DocsModule;
+import org.eclipse.che.everrest.CodenvyAsynchronousJobPool;
+import org.eclipse.che.everrest.ETagResponseFilter;
+import org.eclipse.che.generator.archetype.ArchetypeGeneratorModule;
 import org.eclipse.che.ide.env.SessionUserProvider;
 import org.eclipse.che.ide.env.SingleUserTokenExtractor;
-import com.codenvy.ide.ext.java.jdi.server.DebuggerService;
-import com.codenvy.ide.ext.java.server.format.FormatService;
-import com.codenvy.ide.ext.ssh.server.KeyService;
-import com.codenvy.ide.ext.ssh.server.SshKeyStore;
-import com.codenvy.ide.ext.ssh.server.UserProfileSshKeyStore;
-import com.codenvy.inject.DynaModule;
-import com.codenvy.security.oauth.OAuthAuthenticationService;
-import com.codenvy.security.oauth.OAuthAuthenticatorProvider;
-import com.codenvy.security.oauth.OAuthAuthenticatorProviderImpl;
-import com.codenvy.security.oauth.OAuthAuthenticatorTokenProvider;
-import com.codenvy.vfs.impl.fs.LocalFileSystemRegistryPlugin;
+import org.eclipse.che.ide.ext.java.jdi.server.DebuggerService;
+
+import org.eclipse.che.vfs.impl.fs.VirtualFileSystemFSModule;
+import org.eclipse.che.ide.ext.java.server.format.FormatService;
+import org.eclipse.che.ide.ext.ssh.server.KeyService;
+import org.eclipse.che.ide.ext.ssh.server.SshKeyStore;
+import org.eclipse.che.ide.ext.ssh.server.UserProfileSshKeyStore;
+
+import org.eclipse.che.api.core.rest.CoreRestModule;
+import org.eclipse.che.inject.DynaModule;
+import org.eclipse.che.security.oauth.OAuthAuthenticationService;
+import org.eclipse.che.security.oauth.OAuthAuthenticatorProvider;
+import org.eclipse.che.security.oauth.OAuthAuthenticatorProviderImpl;
+import org.eclipse.che.security.oauth.OAuthAuthenticatorTokenProvider;
+import org.eclipse.che.vfs.impl.fs.LocalFileSystemRegistryPlugin;
 import com.google.inject.AbstractModule;
 
 import org.everrest.core.impl.async.AsynchronousJobPool;
@@ -63,6 +78,7 @@ public class ApiModule extends AbstractModule {
     protected void configure() {
         bind(ApiInfoService.class);
 
+        bind(AuthenticationService.class);
         bind(WorkspaceService.class);
         bind(ETagResponseFilter.class);
 
@@ -91,6 +107,7 @@ public class ApiModule extends AbstractModule {
         bind(OAuthTokenProvider.class).to(OAuthAuthenticatorTokenProvider.class);
         bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
 
+
         bind(UserProvider.class).to(SessionUserProvider.class);
         bind(TokenExtractor.class).to(SingleUserTokenExtractor.class);
         bind(AuthenticationService.class);
@@ -104,16 +121,16 @@ public class ApiModule extends AbstractModule {
 
         bind(WSocketEventBusServer.class);
 
-        install(new com.codenvy.generator.archetype.ArchetypeGeneratorModule());
+        install(new ArchetypeGeneratorModule());
 
-        install(new com.codenvy.api.core.rest.CoreRestModule());
-        install(new com.codenvy.api.analytics.AnalyticsModule());
-        install(new com.codenvy.api.project.server.BaseProjectModule());
-        install(new com.codenvy.api.builder.internal.BuilderModule());
-        install(new com.codenvy.api.runner.internal.RunnerModule());
-        install(new com.codenvy.api.vfs.server.VirtualFileSystemModule());
-        install(new com.codenvy.vfs.impl.fs.VirtualFileSystemFSModule());
-        install(new com.codenvy.api.factory.FactoryModule());
-        install(new com.codenvy.docs.DocsModule());
+        install(new CoreRestModule());
+        install(new AnalyticsModule());
+        install(new BaseProjectModule());
+        install(new BuilderModule());
+        install(new RunnerModule());
+        install(new VirtualFileSystemModule());
+        install(new VirtualFileSystemFSModule());
+        install(new FactoryModule());
+        install(new DocsModule());
     }
 }

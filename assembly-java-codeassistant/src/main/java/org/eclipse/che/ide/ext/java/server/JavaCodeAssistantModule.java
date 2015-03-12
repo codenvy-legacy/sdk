@@ -8,14 +8,18 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.ide.ext.java.server;
+package org.eclipse.che.ide.ext.java.server;
 
-import com.codenvy.everrest.CodenvyAsynchronousJobPool;
-import com.codenvy.inject.DynaModule;
-import com.codenvy.vfs.impl.fs.LocalFSMountStrategy;
-import com.codenvy.vfs.impl.fs.WorkspaceHashLocalFSMountStrategy;
 import com.google.inject.AbstractModule;
 
+import org.eclipse.che.api.core.notification.WSocketEventBusClient;
+import org.eclipse.che.everrest.CodenvyAsynchronousJobPool;
+import org.eclipse.che.inject.DynaModule;
+import org.eclipse.che.jdt.JavaNavigationService;
+import org.eclipse.che.jdt.JavadocService;
+import org.eclipse.che.jdt.RestNameEnvironment;
+import org.eclipse.che.vfs.impl.fs.LocalFSMountStrategy;
+import org.eclipse.che.vfs.impl.fs.WorkspaceHashLocalFSMountStrategy;
 import org.everrest.core.impl.async.AsynchronousJobPool;
 import org.everrest.core.impl.async.AsynchronousJobService;
 import org.everrest.guice.PathKey;
@@ -33,6 +37,6 @@ public class JavaCodeAssistantModule extends AbstractModule {
         bind(JavaNavigationService.class);
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
-        bind(com.codenvy.api.core.notification.WSocketEventBusClient.class).asEagerSingleton();
+        bind(WSocketEventBusClient.class).asEagerSingleton();
     }
 }

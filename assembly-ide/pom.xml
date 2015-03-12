@@ -222,7 +222,7 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>com.codenvy.util.ExtensionManagerGenerator</mainClass>
+                            <mainClass>org.eclipse.che.util.ExtensionManagerGenerator</mainClass>
                             <arguments>
                                 <argument>--rootDir=${generated.sources.directory}</argument>
                             </arguments>
@@ -235,7 +235,7 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>com.codenvy.util.IDEInjectorGenerator</mainClass>
+                            <mainClass>org.eclipse.che.util.IDEInjectorGenerator</mainClass>
                             <arguments>
                                 <argument>--rootDir=${generated.sources.directory}</argument>
                             </arguments>
@@ -248,7 +248,7 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
-                            <mainClass>com.codenvy.util.DtoFactoryVisitorRegistryGenerator</mainClass>
+                            <mainClass>org.eclipse.che.util.DtoFactoryVisitorRegistryGenerator</mainClass>
                             <arguments>
                                 <argument>--rootDir=${generated.sources.directory}</argument>
                             </arguments>
@@ -288,8 +288,8 @@
                 <configuration>
                     <extraJvmArgs>-Xss512m -Xmx2048m -XX:MaxPermSize=1024m</extraJvmArgs>
                     <modules>
-                        <module>com.codenvy.ide.IDE</module>
-                        <module>com.codenvy.ide.ext.java.JavaParserWorker</module>
+                        <module>org.eclipse.che.ide.IDE</module>
+                        <module>org.eclipse.che.ide.ext.java.JavaParserWorker</module>
                     </modules>
                     <logLevel>INFO</logLevel>
                     <!--<style>PRETTY</style>-->
@@ -322,7 +322,7 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <echo append="false" file="${project.build.directory}/classes/com/codenvy/ide/BuildInfo.properties">revision = ${revision}
+                                <echo append="false" file="${project.build.directory}/classes/org/eclipse/che/ide/BuildInfo.properties">revision = ${revision}
                                     buildTime = ${timestamp}
                                     version = ${project.version}</echo>
                             </tasks>

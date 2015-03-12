@@ -18,7 +18,7 @@
          metadata-complete="true">
     <display-name>Codenvy API</display-name>
     <listener>
-        <listener-class>com.codenvy.inject.CodenvyBootstrap</listener-class>
+        <listener-class>org.eclipse.che.inject.CodenvyBootstrap</listener-class>
     </listener>
     <filter>
         <filter-name>guiceFilter</filter-name>

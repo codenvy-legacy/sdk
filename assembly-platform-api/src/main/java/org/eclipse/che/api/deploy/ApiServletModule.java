@@ -8,14 +8,12 @@
  * Contributors:
  *   Codenvy, S.A. - initial API and implementation
  *******************************************************************************/
-package com.codenvy.api.deploy;
+package org.eclipse.che.api.deploy;
 
 import org.eclipse.che.api.auth.DefaultAuthorizationFilter;
-import com.codenvy.api.auth.DefaultLoginFilter;
-import com.codenvy.api.auth.LoginFilter;
-import com.codenvy.ide.env.SingleEnvironmentFilter;
-import com.codenvy.everrest.CodenvyEverrestWebSocketServlet;
-import com.codenvy.inject.DynaModule;
+import org.eclipse.che.ide.env.SingleEnvironmentFilter;
+import org.eclipse.che.everrest.CodenvyEverrestWebSocketServlet;
+import org.eclipse.che.inject.DynaModule;
 import com.google.inject.servlet.ServletModule;
 
 import org.everrest.guice.servlet.GuiceEverrestServlet;
