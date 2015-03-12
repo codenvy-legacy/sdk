@@ -21,7 +21,7 @@
         <listener-class>com.codenvy.inject.CodenvyBootstrap</listener-class>
     </listener>
     <listener>
-        <listener-class>com.codenvy.api.auth.DestroySessionListener</listener-class>
+        <listener-class>org.eclipse.che.api.auth.DestroySessionListener</listener-class>
     </listener>
     <listener>
         <listener-class>org.everrest.websockets.WSConnectionTracker</listener-class>

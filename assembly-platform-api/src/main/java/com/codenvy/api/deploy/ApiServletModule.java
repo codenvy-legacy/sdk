@@ -10,7 +10,7 @@
  *******************************************************************************/
 package com.codenvy.api.deploy;
 
-import com.codenvy.api.auth.DefaultAuthorizationFilter;
+import org.eclipse.che.api.auth.DefaultAuthorizationFilter;
 import com.codenvy.api.auth.DefaultLoginFilter;
 import com.codenvy.api.auth.LoginFilter;
 import com.codenvy.ide.env.SingleEnvironmentFilter;
