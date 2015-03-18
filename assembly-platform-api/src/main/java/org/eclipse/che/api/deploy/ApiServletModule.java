@@ -10,12 +10,12 @@
  *******************************************************************************/
 package org.eclipse.che.api.deploy;
 
-import org.eclipse.che.api.auth.DefaultAuthorizationFilter;
-import org.eclipse.che.ide.env.SingleEnvironmentFilter;
-import org.eclipse.che.everrest.CodenvyEverrestWebSocketServlet;
-import org.eclipse.che.inject.DynaModule;
 import com.google.inject.servlet.ServletModule;
 
+import org.eclipse.che.api.local.AutoLoginAuthorizationFilter;
+import org.eclipse.che.api.local.SingleEnvironmentFilter;
+import org.eclipse.che.everrest.CodenvyEverrestWebSocketServlet;
+import org.eclipse.che.inject.DynaModule;
 import org.everrest.guice.servlet.GuiceEverrestServlet;
 import org.everrest.websockets.WSConnectionTracker;
 
@@ -29,13 +29,13 @@ public class ApiServletModule extends ServletModule {
     @Override
     protected void configureServlets() {
         getServletContext().addListener(new WSConnectionTracker());
-        bind(SingleEnvironmentFilter.class).in(Singleton.class);
+        bind(AutoLoginAuthorizationFilter.class).in(Singleton.class);
         Map<String,String> params = new HashMap<>(2);
         params.put("ws-name", "default");
         params.put("ws-id", "1q2w3e");
         params.put("account-id", "account1234567890");
         filter("/*").through(SingleEnvironmentFilter.class, params);
-        filter("/*").through(DefaultAuthorizationFilter.class);
+        filter("/*").through(AutoLoginAuthorizationFilter.class);
         serve("/ws/*").with(CodenvyEverrestWebSocketServlet.class);
         serve("/*").with(GuiceEverrestServlet.class);
     }

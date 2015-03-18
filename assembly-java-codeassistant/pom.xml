@@ -32,6 +32,11 @@
             <version>${codenvy.ide.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.codenvy.platform-api</groupId>
+            <artifactId>codenvy-infrastructure-local</artifactId>
+            <version>${codenvy.platform-api.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.codenvy.plugin-java</groupId>
             <artifactId>codenvy-ext-java-codeassistant</artifactId>
             <version>${codenvy.plugin-java.version}</version>

@@ -10,7 +10,8 @@
  *******************************************************************************/
 package org.eclipse.che.ide.ext.java.server;
 
-import org.eclipse.che.ide.env.SingleEnvironmentFilter;
+
+import org.eclipse.che.api.local.SingleEnvironmentFilter;
 import org.eclipse.che.inject.DynaModule;
 import com.google.inject.servlet.ServletModule;
 
