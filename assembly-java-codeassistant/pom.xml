@@ -37,10 +37,5 @@
             <version>${codenvy.plugin-java.version}</version>
             <type>jar</type>
         </dependency>
-        <dependency>
-            <groupId>com.codenvy.plugin-sdk</groupId>
-            <artifactId>codenvy-ide-env-dummy</artifactId>
-            <version>${codenvy.plugin-sdk.version}</version>
-        </dependency>
     </dependencies>
 </project>
