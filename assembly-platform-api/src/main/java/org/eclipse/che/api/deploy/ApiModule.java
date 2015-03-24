@@ -14,15 +14,6 @@ import com.google.inject.AbstractModule;
 
 import org.eclipse.che.api.analytics.AnalyticsModule;
 import org.eclipse.che.api.auth.AuthenticationService;
-import org.eclipse.che.api.auth.CookiesTokenExtractor;
-import org.eclipse.che.api.auth.InMemoryTokenManager;
-import org.eclipse.che.api.auth.LocalSessionInvalidationHandler;
-import org.eclipse.che.api.auth.SecureRandomTokenGenerator;
-import org.eclipse.che.api.auth.TokenExtractor;
-import org.eclipse.che.api.auth.TokenGenerator;
-import org.eclipse.che.api.auth.TokenInvalidationHandler;
-import org.eclipse.che.api.auth.TokenManager;
-import org.eclipse.che.api.auth.UserProvider;
 import org.eclipse.che.api.auth.oauth.OAuthTokenProvider;
 import org.eclipse.che.api.builder.BuilderAdminService;
 import org.eclipse.che.api.builder.BuilderSelectionStrategy;
@@ -34,7 +25,7 @@ import org.eclipse.che.api.core.notification.WSocketEventBusServer;
 import org.eclipse.che.api.core.rest.ApiInfoService;
 import org.eclipse.che.api.core.rest.CoreRestModule;
 import org.eclipse.che.api.factory.FactoryModule;
-import org.eclipse.che.api.local.SessionUserProvider;
+import org.eclipse.che.api.local.LocalInfrastructureModule;
 import org.eclipse.che.api.project.server.BaseProjectModule;
 import org.eclipse.che.api.runner.LastInUseRunnerSelectionStrategy;
 import org.eclipse.che.api.runner.RunnerAdminService;
@@ -103,14 +94,6 @@ public class ApiModule extends AbstractModule {
         bind(OAuthAuthenticatorProvider.class).to(OAuthAuthenticatorProviderImpl.class);
 
 
-        bind(UserProvider.class).to(SessionUserProvider.class);
-        bind(TokenExtractor.class).to(CookiesTokenExtractor.class);
-        bind(AuthenticationService.class);
-        bind(TokenManager.class).to(InMemoryTokenManager.class);
-        bind(TokenInvalidationHandler.class).to(LocalSessionInvalidationHandler.class);
-        bind(TokenGenerator.class).to(SecureRandomTokenGenerator.class);
-
-
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
 
@@ -127,5 +110,6 @@ public class ApiModule extends AbstractModule {
         install(new VirtualFileSystemFSModule());
         install(new FactoryModule());
         install(new DocsModule());
+        install(new LocalInfrastructureModule());
     }
 }

@@ -10,9 +10,17 @@
  *******************************************************************************/
 package org.eclipse.che.ide.ext.java.server;
 
+import com.google.common.collect.ImmutableSet;
 import com.google.inject.AbstractModule;
 
+import org.eclipse.che.api.auth.CookiesTokenExtractor;
+import org.eclipse.che.api.auth.TokenExtractor;
+import org.eclipse.che.api.auth.TokenManager;
+import org.eclipse.che.api.auth.UserProvider;
 import org.eclipse.che.api.core.notification.WSocketEventBusClient;
+import org.eclipse.che.api.local.SessionUserProvider;
+import org.eclipse.che.commons.user.User;
+import org.eclipse.che.commons.user.UserImpl;
 import org.eclipse.che.everrest.CodenvyAsynchronousJobPool;
 import org.eclipse.che.inject.DynaModule;
 import org.eclipse.che.jdt.JavaNavigationService;
@@ -38,5 +46,33 @@ public class JavaCodeAssistantModule extends AbstractModule {
         bind(AsynchronousJobPool.class).to(CodenvyAsynchronousJobPool.class);
         bind(new PathKey<>(AsynchronousJobService.class, "/async/{ws-id}")).to(AsynchronousJobService.class);
         bind(WSocketEventBusClient.class).asEagerSingleton();
+        bind(TokenExtractor.class).to(CookiesTokenExtractor.class);
+        bind(UserProvider.class).toInstance(new UserProvider() {
+            @Override
+            public User getUser(String token) {
+                return new UserImpl("codenvy@codenvy.com", "codenvy", token, ImmutableSet.of("user"), false);
+            }
+        });
+        bind(TokenManager.class).toInstance(new TokenManager() {
+            @Override
+            public String createToken(String userId) {
+                throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public String getUserId(String token) {
+                return "codenvy";
+            }
+
+            @Override
+            public boolean isValid(String token) {
+                return true;
+            }
+
+            @Override
+            public String invalidateToken(String token) {
+                throw new UnsupportedOperationException();
+            }
+        });
     }
 }

@@ -11,6 +11,8 @@
 package org.eclipse.che.ide.ext.java.server;
 
 
+import org.eclipse.che.api.auth.DefaultAuthorizationFilter;
+import org.eclipse.che.api.local.AutoLoginAuthorizationFilter;
 import org.eclipse.che.api.local.SingleEnvironmentFilter;
 import org.eclipse.che.inject.DynaModule;
 import com.google.inject.servlet.ServletModule;
@@ -33,6 +35,7 @@ public class ApiServletModule extends ServletModule {
         params.put("ws-name", "default");
         params.put("ws-id", "1q2w3e");
         filter("/*").through(SingleEnvironmentFilter.class, params);
+        filter("/*").through(DefaultAuthorizationFilter.class);
         serve("/*").with(GuiceEverrestServlet.class);
     }
 }

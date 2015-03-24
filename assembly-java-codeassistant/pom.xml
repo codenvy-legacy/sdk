@@ -20,6 +20,7 @@
     </parent>
     <artifactId>assembly-java-codeassistant</artifactId>
     <packaging>war</packaging>
+    <name>Codenvy SDK :: Java Codeassistant</name>
     <dependencies>
         <dependency>
             <groupId>com.codenvy.ide</groupId>
