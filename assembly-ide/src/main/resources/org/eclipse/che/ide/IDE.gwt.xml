@@ -50,6 +50,8 @@
 
     <inherits name='org.eclipse.che.ide.ext.tutorials.Tutorials'/>
 
+    <inherits name='org.eclipse.che.env.local.LocalEnvironment'/>
+
     <!-- Platform API GWT client dependencies                       -->
     <inherits name='org.eclipse.che.api.Analytics'/>
     <inherits name='org.eclipse.che.api.Builder'/>

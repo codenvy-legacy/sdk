@@ -10,7 +10,7 @@
  *******************************************************************************/
 package org.eclipse.che.api.deploy;
 
-import org.eclipse.che.ide.env.SingleEnvironmentFilter;
+import org.eclipse.che.env.local.server.SingleEnvironmentFilter;
 import org.eclipse.che.everrest.CodenvyEverrestWebSocketServlet;
 import org.eclipse.che.inject.DynaModule;
 import com.google.inject.servlet.ServletModule;
