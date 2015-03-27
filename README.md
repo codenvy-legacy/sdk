@@ -77,7 +77,7 @@ npm is bundled with nodejs which can be downloaded from: http://nodejs.org/downl
    more details on http://yeoman.io/gettingstarted.html
 
 ### Add Your Extensions to Che
-1. Create, build and compile a Che extension into a Java JAR file. [Tutorial is here.] (http://docs.codenvy.com/che/). You can create extension JARs within Che or your favorite IDE. Build extensions in Eclipse gives you super dev mode for Eclipse, which makes incremental compilation fast.
+1. Create, build and compile a Che extension into a Java JAR file. [Tutorial is here] (http://docs.codenvy.com/che/). You can create extension JARs within Che or your favorite IDE. Build extensions in Eclipse gives you super dev mode for Eclipse, which makes incremental compilation fast.
 
 2. Copy the extension's JAR file to ```/assembly-sdk/target/tomcat-ide/ext``` directory of Che.  
 
